@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 namespace Goteo\Model\Project {
 
@@ -39,7 +57,7 @@ namespace Goteo\Model\Project {
 		public function validate(&$errors = array()) {
             // Estos son errores que no permiten continuar
             if (empty($this->project)) {
-                $errors[] = 'There is no project to which assigned accounts';
+                $errors[] = 'No hay ningun proyecto al que asignar cuentas';
                 //Text::get('validate-account-noproject');
                 return false;
             }
@@ -56,7 +74,7 @@ namespace Goteo\Model\Project {
 				self::query($sql, $values);
 				return true;
 			} catch(\PDOException $e) {
-				$errors[] = "The accounts have not been properly assigned. Please check the data." . $e->getMessage();
+				$errors[] = "Las cuentas no se han asignado correctamente. Por favor, revise los datos." . $e->getMessage();
                 return false;
 			}
 

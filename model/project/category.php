@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 
 namespace Goteo\Model\Project {
@@ -108,11 +126,11 @@ namespace Goteo\Model\Project {
 		public function validate(&$errors = array()) {
             // Estos son errores que no permiten continuar
             if (empty($this->id))
-                $errors[] = 'There is no category to save';
+                $errors[] = 'No hay ninguna categoria para guardar';
                 //Text::get('validate-category-empty');
 
             if (empty($this->project))
-                $errors[] = 'There is no project to which assigned';
+                $errors[] = 'No hay ningun proyecto al que asignar';
                 //Text::get('validate-category-noproject');
 
             //cualquiera de estos errores hace fallar la validación
@@ -131,7 +149,7 @@ namespace Goteo\Model\Project {
 				self::query($sql, $values);
 				return true;
 			} catch(\PDOException $e) {
-				$errors[] = "The category {$category} is not properly assigned. Please check the data." . $e->getMessage();
+				$errors[] = "La categoria {$category} no se ha asignado correctamente. Por favor, revise los datos." . $e->getMessage();
                 return false;
 			}
 
@@ -155,7 +173,7 @@ namespace Goteo\Model\Project {
                 self::query("DELETE FROM project_category WHERE category = :category AND project = :project", $values);
 				return true;
 			} catch(\PDOException $e) {
-				$errors[] = 'Unable to remove the category'. $this->id .'Project' . $this->project . ' ' . $e->getMessage();
+				$errors[] = 'No se ha podido quitar la categoria ' . $this->id . ' del proyecto ' . $this->project . ' ' . $e->getMessage();
                 //Text::get('remove-category-fail');
                 return false;
 			}
