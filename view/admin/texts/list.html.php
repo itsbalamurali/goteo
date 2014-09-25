@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 use Goteo\Library\Text,
     Goteo\Core\ACL;
@@ -7,7 +25,7 @@ $translator = ACL::check('/translate') ? true : false;
 
 $filters = $this['filters'];
 $botones = array(
-    'edit' => '[<?php echo Text::_("Edit"); ?>]',
+    'edit' => '[Editar]',
     'remove' => '[Quitar]',
     'up' => '[&uarr;]',
     'down' => '[&darr;]'
@@ -38,7 +56,7 @@ $per = 100 / $cols;
             <br />
             <label for="filter-<?php echo $id; ?>"><?php echo $fil['label']; ?></label>
             <input name="<?php echo $id; ?>" value="<?php echo (string) $fil['value']; ?>" />
-            <input type="submit" name="filter" value="<?php echo Text::_("Search"); ?>">
+            <input type="submit" name="filter" value="Buscar">
         <?php endif; ?>
         <?php endforeach; ?>
     </form>
@@ -48,31 +66,31 @@ $per = 100 / $cols;
 <!-- lista -->
 <div class="widget board">
 <?php if ($filters['filtered'] != 'yes') : ?>
-    <p><?php echo Text::_("It's not necessary to use a filter, there are too many searches.");?></p>
+    <p>Es necesario poner algun filtro, hay demasiados registros!</p>
 <?php elseif (!empty($this['data'])) : ?>
     <table>
         <thead>
             <tr>
-                <th><!-- editar --></th>
-                <th><?php echo Text::_("Text"); ?></th>
-                <th><?php echo Text::_("Grouping"); ?></th>
+                <th><!-- Editar --></th>
+                <th>Texto</th>
+                <th>Agrupación</th>
                 <th><!-- Traducir --></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($this['data'] as $item) : ?>
             <tr>
-                <td><a href="/admin/texts/edit/<?php echo $item->id; ?>">[<?php echo Text::_("Edit"); ?>]</a></td>
+                <td><a href="/admin/texts/edit/<?php echo $item->id; ?>">[Editar]</a></td>
                 <td><?php echo $item->text; ?></td>
                 <td><?php echo $item->group; ?></td>
                 <?php if ($translator) : ?>
-                <td><a href="/translate/texts/edit/<?php echo $item->id; ?>" >[<?php echo Text::_("Translate")?>]</a></td>
+                <td><a href="/translate/texts/edit/<?php echo $item->id; ?>" >[Traducir]</a></td>
                 <?php endif; ?>
             </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
     <?php else : ?>
-    <p><?php echo Text::_("No records found"); ?></p>
+    <p>No se han encontrado registros</p>
     <?php endif; ?>
 </div>

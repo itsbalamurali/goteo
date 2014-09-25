@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 
 use Goteo\Library\Text,
@@ -28,7 +46,7 @@ if (!$post instanceof Model\Blog\Post) {
     $allow = array(
         array(
             'value'     => 1,
-            'label'     => Text::_("Yes")
+            'label'     => Text::_("Sí")
             ),
         array(
             'value'     => 0,
@@ -43,7 +61,7 @@ if (!$post instanceof Model\Blog\Post) {
             'type'  => 'html',
             'class' => 'inline gallery-image',
             'html'  => is_object($image) ?
-                       $image . '<img src="'.SRC_URL.'/image/'.$image->id.'/128/128" alt="'.Text::_("Image").'" /><button class="image-remove weak" type="submit" name="gallery-'.$image->id.'-remove" title="'.Text::_("Remove image").'" value="remove"></button>' :
+                       $image . '<img src="'.SRC_URL.'/image/'.$image->id.'/128/128" alt="'.Text::_("Imagen").'" /><button class="image-remove weak" type="submit" name="gallery-'.$image->id.'-remove" title="'.Text::_("Quitar imagen").'" value="remove"></button>' :
                        ''
         );
 
@@ -116,13 +134,13 @@ $(document).ready(function(){
                 'required'  => true,
                 'cols'      => 40,
                 'rows'      => 4,
-                'title'     => Text::_("Text entry"),
+                'title'     => Text::_("Texto de la entrada"),
                 'hint'      => Text::get('tooltip-updates-text'),
                 'errors'    => !empty($errors['text']) ? array($errors['text']) : array(),
                 'value'     => $post->text
             ),
             'image' => array(
-                'title'     => Text::_("Image"),
+                'title'     => Text::_("Imagen"),
                 'type'      => 'group',
                 'hint'      => Text::get('tooltip-updates-image'),
                 'errors'    => !empty($errors['image']) ? array($errors['image']) : array(),
@@ -146,7 +164,7 @@ $(document).ready(function(){
 
             'media' => array(
                 'type'      => 'textbox',
-                'title'     => Text::_("Video"),
+                'title'     => Text::_("Vídeo"),
                 'class'     => 'media',
                 'hint'      => Text::get('tooltip-updates-media'),
                 'errors'    => !empty($errors['media']) ? array($errors['media']) : array(),
@@ -178,13 +196,13 @@ $(document).ready(function(){
             'date' => array(
                 'type'      => 'datebox',
                 'required'  => true,
-                'title'     => Text::_("Date of publication"),
+                'title'     => Text::_("Fecha de publicación"),
                 'hint'      => Text::get('tooltip-updates-date'),
                 'size'      => 8,
                 'value'     => $post->date
             ),
             'allow' => array(
-                'title'     => Text::_("Allows Comment"),
+                'title'     => Text::_("Permite comentarios"),
                 'type'      => 'slider',
                 'options'   => $allow,
                 'class'     => 'currently cols_' . count($allow),
@@ -193,7 +211,7 @@ $(document).ready(function(){
                 'value'     => (int) $post->allow
             ),
             'publish' => array(
-                'title'     => Text::_("Posted"),
+                'title'     => Text::_("Publicado"),
                 'type'      => 'slider',
                 'options'   => $allow,
                 'class'     => 'currently cols_' . count($allow),
@@ -202,7 +220,7 @@ $(document).ready(function(){
                 'value'     => (int) $post->publish
             ),
             'home' => array(
-                'title'     => Text::_("in Focus"),
+                'title'     => Text::_("En portada"),
                 'type'      => 'slider',
                 'options'   => $allow,
                 'class'     => 'currently cols_' . count($allow),
@@ -211,7 +229,7 @@ $(document).ready(function(){
                 'value'     => (int) $post->home
             ),
             'footer' => array(
-                'title'     => Text::_("Link in Footer"),
+                'title'     => Text::_("Enlace en footer"),
                 'type'      => 'slider',
                 'options'   => $allow,
                 'class'     => 'currently cols_' . count($allow),

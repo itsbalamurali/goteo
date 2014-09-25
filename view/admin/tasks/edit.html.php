@@ -45,7 +45,7 @@ $nodes = $this['nodes'];
             <?php endif; ?>
         </p>
 
-        <input type="submit" name="save" value="<?php echo Text::_("Save");?>" /><br />
+        <input type="submit" name="save" value="Guardar" /><br />
 
     </form>
 </div>

@@ -1,9 +1,25 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 use Goteo\Core\View,
     Goteo\Library\Text,
-    Goteo\Model\Project\Cost,
-    Goteo\Model\Project\Support,
     Goteo\Model\Project\Category,
     Goteo\Model\Invest,
     Goteo\Model\Image;
@@ -61,11 +77,6 @@ if (isset($this['investor']) && is_object($this['investor'])) {
 
         <?php if (!empty($project->gallery) && (current($project->gallery) instanceof Image)): ?>
         <a href="<?php echo SITE_URL ?>/project/<?php echo $project->id ?>"<?php echo $blank; ?>><img alt="<?php echo $project->name ?>" src="<?php echo current($project->gallery)->getLink(255, 130, true) ?>" /></a>
-                
-        <?php elseif (!empty($project->image)) : ?>
-        <a href="<?php echo SITE_URL ?>/project/<?php echo $project->id ?>">
-        <img alt="<?php echo $project->name ?>" src="<?php echo $project->image->getLink(255, 130, true) ?>"/>
-        </a>
         <?php endif ?>
         <?php if (!empty($categories)): ?>
         <div class="categories">
@@ -111,7 +122,7 @@ if (isset($this['investor']) && is_object($this['investor'])) {
      *
     if ($this['dashboard'] === true) : // si estamos en el dashboard no hay (apoyar y el ver se abre en una ventana nueva) ?>
     <div class="buttons">
-        <?php if ($this['own'] === true) : // si es propio puede ir a editar lo ?>
+        <?php if ($this['own'] === true) : // si es propio puede ir a editarlo ?>
         <a class="button red suportit" href="<?php echo SITE_URL ?>/project/edit/<?php echo $project->id ?>"><?php echo Text::get('regular-edit'); ?></a>
         <?php endif; ?>
         <a class="button view" href="<?php echo SITE_URL ?>/project/<?php echo $project->id ?>" target="_blank"><?php echo Text::get('regular-view_project'); ?></a>

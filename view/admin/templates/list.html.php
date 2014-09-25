@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 use Goteo\Library\Text,
     Goteo\Core\ACL;
@@ -12,22 +30,22 @@ $filters = $this['filters'];
         <table>
             <tr>
                 <td>
-                    <label for="group-filter"><?php echo Text::_("Filter grouping:"); ?></label><br />
+                    <label for="group-filter">Filtrar agrupaci&oacute;n:</label><br />
                     <select id="group-filter" name="group">
-                        <option value=""><?php echo Text::_("All clusters"); ?></option>
+                        <option value="">Todas las agrupaciones</option>
                     <?php foreach ($this['groups'] as $groupId=>$groupName) : ?>
                         <option value="<?php echo $groupId; ?>"<?php if ($filters['group'] == $groupId) echo ' selected="selected"';?>><?php echo $groupName; ?></option>
                     <?php endforeach; ?>
                     </select>
                 </td>
                 <td>
-                    <label for="name-filter"><?php echo Text::_("Filter by Name or Subject"); ?></label><br />
+                    <label for="name-filter">Filtrar por nombre o asunto:</label><br />
                     <input type="text" id ="name-filter" name="name" value ="<?php echo $filters['name']?>" />
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="submit" name="filter" value="<?php echo Text::_("Filter"); ?>">
+                    <input type="submit" name="filter" value="Filtrar">
                 </td>
             </tr>
         </table>
@@ -39,26 +57,26 @@ $filters = $this['filters'];
     <table>
         <thead>
             <tr>
-                <th><!-- editar --></th>
-                <th><?php echo Text::_("Template"); ?></th>
-                <th><?php echo Text::_("Description"); ?></th>
+                <th><!-- Editar --></th>
+                <th>Plantilla</th>
+                <th>Descripción</th>
                 <th><!-- traducir --></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($this['templates'] as $template) : ?>
             <tr>
-                <td><a href="/admin/templates/edit/<?php echo $template->id; ?>">[<?php echo Text::_("Edit"); ?>]</a></td>
+                <td><a href="/admin/templates/edit/<?php echo $template->id; ?>">[Editar]</a></td>
                 <td><?php echo $template->name; ?></td>
                 <td><?php echo $template->purpose; ?></td>
                 <?php if ($translator) : ?>
-                <td><a href="/translate/template/edit/<?php echo $template->id; ?>" >[<?php echo Text::_("Translate"); ?>]</a></td>
+                <td><a href="/translate/template/edit/<?php echo $template->id; ?>" >[Traducir]</a></td>
                 <?php endif; ?>
             </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
     <?php else : ?>
-   <p><?php echo Text::_("No records found"); ?></p>
+    <p>No se han encontrado registros</p>
     <?php endif; ?>
 </div>

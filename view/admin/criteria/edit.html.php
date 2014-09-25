@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 
 use Goteo\Library\Text;
@@ -25,41 +43,41 @@ jQuery(document).ready(function ($) {
 
         <p>
         <?php if ($this['action'] == 'add') : ?>
-            <label for="criteria-section"><?php echo Text::_('Section:'); ?></label><br />
+            <label for="criteria-section"><?php echo Text::_('Sección:'); ?></label><br />
             <select id="criteria-section" name="section">
-                <option value="" disabled><?php echo Text::_('Choose section'); ?></option>
+                <option value="" disabled><?php echo Text::_('Elige la sección'); ?></option>
                 <?php foreach ($this['sections'] as $id=>$name) : ?>
                 <option value="<?php echo $id; ?>"<?php if ($id == $this['criteria']->section) echo ' selected="selected"'; ?>><?php echo $name; ?></option>
                 <?php endforeach; ?>
             </select>
         <?php else : ?>
-            <label for="criteria-section"><?php echo Text::_("Section"); ?> <?php echo $this['sections'][$this['criteria']->section]; ?></label><br />
+            <label for="criteria-section">Sección: <?php echo $this['sections'][$this['criteria']->section]; ?></label><br />
             <input type="hidden" name="section" value="<?php echo $this['criteria']->section; ?>" />
         <?php endif; ?>
         </p>
 
         <p>
-            <label for="criteria-title"><?php echo Text::_('Title:'); ?></label><br />
+            <label for="criteria-title"><?php echo Text::_('Título:'); ?></label><br />
             <input type="text" name="title" id="criteria-title" value="<?php echo $this['criteria']->title; ?>" />
         </p>
 
         <p>
-            <label for="criteria-description"><?php echo Text::_('Description:'); ?></label><br />
+            <label for="criteria-description"><?php echo Text::_('Descripción:'); ?></label><br />
             <textarea name="description" id="criteria-description" cols="60" rows="10"><?php echo $this['criteria']->description; ?></textarea>
         </p>
 
         <p>
-            <label for="criteria-order"><?php echo Text::_('Position:'); ?></label><br />
+            <label for="criteria-order"><?php echo Text::_('Posición:'); ?></label><br />
             <select name="move">
-                <option value="same" selected="selected" disabled><?php echo Text::_('Such as'); ?></option>
-                <option value="up"><?php echo Text::_('Before '); ?></option>
-                <option value="down"><?php echo Text::_('After '); ?></option>
+                <option value="same" selected="selected" disabled><?php echo Text::_('Tal cual'); ?></option>
+                <option value="up"><?php echo Text::_('Antes de '); ?></option>
+                <option value="down"><?php echo Text::_('Después de '); ?></option>
             </select>&nbsp;
             <input type="text" name="order" id="criteria-order" value="<?php echo $this['criteria']->order; ?>" size="4" />
             &nbsp;de&nbsp;<span id="criteria-num"><?php echo $this['criteria']->cuantos; ?></span>
         </p>
 
 
-        <input type="submit" name="save" value="<?php echo Text::_("Save"); ?>" />
+        <input type="submit" name="save" value="Guardar" />
     </form>
 </div>

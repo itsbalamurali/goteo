@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 use Goteo\Library\Text;
 
@@ -14,7 +32,7 @@ foreach ($filters as $key=>$value) {
 
 $pagedResults = new \Paginated($this['projects'], 10, isset($_GET['page']) ? $_GET['page'] : 1);
 ?>
-<a href="/admin/translates" class="button"><?php echo Text::_("Assigning translators"); ?></a>
+<a href="/admin/translates" class="button">Asignar traductores</a>
 
 <div class="widget board">
     <form id="filter-form" action="/admin/projects" method="get">
@@ -22,13 +40,13 @@ $pagedResults = new \Paginated($this['projects'], 10, isset($_GET['page']) ? $_G
         <table>
             <tr>
                 <td>
-                    <label for="name-filter"><?php echo Text::_("Alias/Email the author:"); ?></label><br />
+                    <label for="name-filter">Alias/Email del autor:</label><br />
                     <input type="text" id ="name-filter" name="name" value ="<?php echo $filters['name']?>" />
                 </td>
                 <td>
-                    <label for="category-filter"><?php echo Text::_("Category:"); ?></label><br />
+                    <label for="category-filter">De la categoría:</label><br />
                     <select id="category-filter" name="category" onchange="document.getElementById('filter-form').submit();">
-                        <option value=""><?php echo Text::_("Any Category:"); ?></option>
+                        <option value="">Cualquier categoría</option>
                     <?php foreach ($this['categories'] as $categoryId=>$categoryName) : ?>
                         <option value="<?php echo $categoryId; ?>"<?php if ($filters['category'] == $categoryId) echo ' selected="selected"';?>><?php echo $categoryName; ?></option>
                     <?php endforeach; ?>
@@ -37,14 +55,14 @@ $pagedResults = new \Paginated($this['projects'], 10, isset($_GET['page']) ? $_G
             </tr>
             <tr>
                 <td>
-                    <label for="proj_name-filter"><?php echo Text::_("Project Name:"); ?></label><br />
+                    <label for="proj_name-filter">Nombre del proyecto:</label><br />
                     <input id="proj_name-filter" name="proj_name" value="<?php echo $filters['proj_name']; ?>" style="width:250px"/>
                 </td>
                 <td>
-                    <label for="status-filter"><?php echo Text::_("Show by State:"); ?></label><br />
+                    <label for="status-filter">Mostrar por estado:</label><br />
                     <select id="status-filter" name="status" onchange="document.getElementById('filter-form').submit();">
-                        <option value="-1"<?php if ($filters['status'] == -1) echo ' selected="selected"';?>><?php echo Text::_("All States"); ?></option>
-                        <option value="-2"<?php if ($filters['status'] == -2) echo ' selected="selected"';?>><?php echo Text::_("In Negotiation"); ?></option>
+                        <option value="-1"<?php if ($filters['status'] == -1) echo ' selected="selected"';?>>Todos los estados</option>
+                        <option value="-2"<?php if ($filters['status'] == -2) echo ' selected="selected"';?>>En negociacion</option>
                     <?php foreach ($this['status'] as $statusId=>$statusName) : ?>
                         <option value="<?php echo $statusId; ?>"<?php if ($filters['status'] == $statusId) echo ' selected="selected"';?>><?php echo $statusName; ?></option>
                     <?php endforeach; ?>
@@ -55,10 +73,10 @@ $pagedResults = new \Paginated($this['projects'], 10, isset($_GET['page']) ? $_G
             </tr>
             <tr>
                 <td>
-                    <input type="submit" name="filter" value="<?php echo Text::_("Search"); ?>">
+                    <input type="submit" name="filter" value="Buscar">
                 </td>
                 <td>
-                    <label for="order-filter"><?php echo Text::_("Sort By:"); ?></label><br />
+                    <label for="order-filter">Ordenar por:</label><br />
                     <select id="order-filter" name="order" onchange="document.getElementById('filter-form').submit();">
                     <?php foreach ($this['orders'] as $orderId=>$orderName) : ?>
                         <option value="<?php echo $orderId; ?>"<?php if ($filters['order'] == $orderId) echo ' selected="selected"';?>><?php echo $orderName; ?></option>
@@ -69,13 +87,13 @@ $pagedResults = new \Paginated($this['projects'], 10, isset($_GET['page']) ? $_G
         </table>
     </form>
     <br clear="both" />
-    <a href="/admin/projects/?reset=filters"><?php echo Text::_("Remove filters"); ?></a>
+    <a href="/admin/projects/?reset=filters">Quitar filtros</a>
 <?php if ($filters['filtered'] != 'yes') : ?>
-    <p><?php echo Text::_('It\'s not necessary to use a filter, there are too many searches.'); ?></p>
+    <p>Es necesario poner algun filtro, hay demasiados registros!</p>
 <?php elseif (empty($this['projects'])) : ?>
-    <p><?php echo Text::_("No records found"); ?></p>
+    <p>No se han encontrado registros</p>
 <?php else: ?>
-    <p><strong>OJO!</strong><?php echo Text::_("Results limited to 999 records at most."); ?></p>
+    <p><strong>OJO!</strong> Resultado limitado a 999 registros como máximo.</p>
 <?php endif; ?>
 </div>
 
@@ -87,13 +105,13 @@ $pagedResults = new \Paginated($this['projects'], 10, isset($_GET['page']) ? $_G
     <table>
         <thead>
             <tr>
-                <th style="width: 250px;"><?php echo Text::_("Project"); ?></th> <!-- edit -->
-                <th style="min-width: 150px;"><?php echo Text::_("Creator"); ?></th> <!-- mailto -->
-                <th style="min-width: 75px;"><?php echo Text::_("Received"); ?></th> <!-- enviado a revision -->
-                <th style="min-width: 80px;"><?php echo Text::_("Status"); ?></th>
-                <th style="min-width: 50px;"><?php echo Text::_("Node"); ?></th>
-                <th style="min-width: 50px;"><?php echo Text::_("Minimum"); ?></th>
-                <th style="min-width: 50px;"><?php echo Text::_("Optimum"); ?></th>
+                <th style="width: 250px;">Proyecto</th> <!-- edit -->
+                <th style="min-width: 150px;">Creador</th> <!-- mailto -->
+                <th style="min-width: 75px;">Recibido</th> <!-- enviado a revision -->
+                <th style="min-width: 80px;">Estado</th>
+                <th style="min-width: 50px;">Nodo</th>
+                <th style="min-width: 50px;">M&iacute;nimo</th>
+                <th style="min-width: 50px;">&Oacute;ptimo</th>
             </tr>
         </thead>
 
@@ -116,7 +134,7 @@ $pagedResults = new \Paginated($this['projects'], 10, isset($_GET['page']) ? $_G
             <tr>
                 <td colspan="7">
                     IR A:&nbsp;
-                    <a href="/project/edit/<?php echo $project->id; ?>" target="_blank">[<?php echo Text::_("Edit"); ?>]</a>
+                    <a href="/project/edit/<?php echo $project->id; ?>" target="_blank">[Editar]</a>
                     <a href="/admin/users/?id=<?php echo $project->owner; ?>" target="_blank">[Impulsor]</a>
                     <?php if (!isset($_SESSION['admin_node']) 
                             || (isset($_SESSION['admin_node']) && $_SESSION['admin_node'] == \GOTEO_NODE)
@@ -136,7 +154,7 @@ $pagedResults = new \Paginated($this['projects'], 10, isset($_GET['page']) ? $_G
                     <a href="<?php echo "/admin/projects/accounts/{$project->id}"; ?>">[Cuentas]</a>
                     <?php if ($project->status < 4) : ?><a href="<?php echo "/admin/projects/rebase/{$project->id}"; ?>" onclick="return confirm('Esto es MUY DELICADO, seguimos?');">[Id]</a><?php endif; ?>
                     &nbsp;|&nbsp;
-                    <?php if ($project->status < 2) : ?><a href="<?php echo "/admin/projects/review/{$project->id}"; ?>" onclick="return confirm('El creador no podrá editar lo más, ok?');">[A revisión]</a><?php endif; ?>
+                    <?php if ($project->status < 2) : ?><a href="<?php echo "/admin/projects/review/{$project->id}"; ?>" onclick="return confirm('El creador no podrá editarlo más, ok?');">[A revisión]</a><?php endif; ?>
                     <?php if ($project->status < 3 && $project->status > 0) : ?><a href="<?php echo "/admin/projects/publish/{$project->id}"; ?>" onclick="return confirm('El proyecto va a comenzar los 40 dias de la primera ronda de campaña, ¿comenzamos?');">[Publicar]</a><?php endif; ?>
                     <?php if ($project->status != 1) : ?><a href="<?php echo "/admin/projects/enable/{$project->id}"; ?>" onclick="return confirm('Mucho Ojo! si el proyecto esta en campaña, ¿Reabrimos la edicion?');">[Reabrir edición]</a><?php endif; ?>
                     <?php if ($project->status == 4) : ?><a href="<?php echo "/admin/projects/fulfill/{$project->id}"; ?>" onclick="return confirm('El proyecto pasara a ser un caso de éxito, ok?');">[Retorno Cumplido]</a><?php endif; ?>

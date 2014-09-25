@@ -14,27 +14,27 @@ foreach ($invest->rewards as $key => $data) {
 ?>
 <div class="widget">
     <p>
-        <strong><?php echo Text::_('Project:');?></strong> <?php echo $project->name ?> (<?php echo $this['status'][$project->status] ?>)<br />
-        <strong><?php echo Text::_('User:');?> </strong><?php echo $user->name ?><br />
-        <strong><?php echo Text::_('Quantity Supplied:');?> </strong><?php echo $invest->amount ?> &euro; <br />
+        <strong>Proyecto:</strong> <?php echo $project->name ?> (<?php echo $this['status'][$project->status] ?>)<br />
+        <strong>Usuario: </strong><?php echo $user->name ?><br />
+        <strong>Cantidad aportada: </strong><?php echo $invest->amount ?> &euro; <br />
     </p>
 </div>
 
 <form method="post" action="/admin/rewards/edit/<?php echo  $invest->id; ?>" >
-    <h3><?php echo Text::_('Reward');?></h3>
+    <h3>Recompensa</h3>
     <ul style="list-style: none;">
 
         <li>
             <label>
                 <input class="individual_reward" type="checkbox" id="resign" name="resign" value="1" <?php if ($invest->resign) echo ' checked="checked"'; ?>/>
-                <?php echo Text::_('Donation');?>
+                Donativo
             </label>
         </li>
         <li><hr /></li>
         <li>
             <label>
                 <input class="individual_reward" type="radio" id="no_reward" name="selected_reward" value="0" amount="0" <?php if (empty($ewards)) echo ' checked="checked"'; ?>/>
-                <?php echo Text::_('No reward.'); ?>
+                Ninguna recompensa.
             </label>
         </li>
         <!-- <span class="chkbox"></span> -->

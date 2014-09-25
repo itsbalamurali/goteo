@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 use Goteo\Library\Text,
     Goteo\Core\View,
@@ -46,11 +64,11 @@ include 'view/header.html.php';
             <?php if (isset($_SESSION['user']->roles['superadmin'])) : ?>
             <div class="widget board">
                 <ul>
-                    <li><a href="/admin/projects"><?php echo Text::_("Projects"); ?></a></li>
-                    <li><a href="/admin/users"><?php echo Text::_("Users"); ?></a></li>
-                    <li><a href="/admin/accounts"><?php echo Text::_("Contributions"); ?></a></li>
-                    <li><a href="/admin/texts"><?php echo Text::_("Texts"); ?></a></li>
-                    <li><a href="/admin/tasks"><?php echo Text::_("Tasks"); ?></a></li>
+                    <li><a href="/admin/projects"><?php echo Text::_("Proyectos"); ?></a></li>
+                    <li><a href="/admin/users"><?php echo Text::_("Usuarios"); ?></a></li>
+                    <li><a href="/admin/accounts"><?php echo Text::_("Aportes"); ?></a></li>
+                    <li><a href="/admin/texts"><?php echo Text::_("Textos"); ?></a></li>
+                    <li><a href="/admin/tasks"><?php echo Text::_("Tareas"); ?></a></li>
                     <li><a href="/admin/newsletter"><?php echo Text::_("Mailings"); ?></a></li>
                 </ul>
             </div>
@@ -76,7 +94,7 @@ include 'view/header.html.php';
         // Central pendientes
     ?>
         <div class="widget admin-home">
-            <h3 class="title"><?php echo Text::_("Pending tasks"); ?></h3>
+            <h3 class="title"><?php echo Text::_("Tareas pendientes"); ?></h3>
             <?php if (!empty($this['tasks'])) : ?>
             <table>
                 <?php foreach ($this['tasks'] as $task) : ?>
@@ -87,7 +105,7 @@ include 'view/header.html.php';
                 <?php endforeach; ?>
             </table>
             <?php else : ?>
-            <p><?php echo Text::_("No more pending tasks"); ?></p>
+            <p><?php echo Text::_("No tienes tareas pendientes"); ?></p>
             <?php endif; ?>
         </div>
     <?php
@@ -111,8 +129,8 @@ include 'view/header.html.php';
 
                     });
                     </script>
-                    <h3><?php echo Text::_("Recent Activity"); ?></h3>
-                    <?php echo Text::_("View feeds for::"); ?>
+                    <h3><?php echo Text::_("actividad reciente"); ?></h3>
+                    <?php echo Text::_("Ver Feeds por:"); ?>
 
                     <p class="categories">
                         <?php foreach (Feed::_admin_types() as $id=>$cat) : ?>
@@ -131,7 +149,7 @@ include 'view/header.html.php';
                         <?php endforeach; ?>
                     </div>
 
-                    <a href="/admin/recent/<?php echo isset($_GET['feed']) ? '?feed='.$_GET['feed'] : ''; ?>" style="margin-top:10px;float:right;text-transform:uppercase">see more</a>
+                    <a href="/admin/recent/<?php echo isset($_GET['feed']) ? '?feed='.$_GET['feed'] : ''; ?>" style="margin-top:10px;float:right;text-transform:uppercase">Ver más</a>
                     
                 </div>
             </div>

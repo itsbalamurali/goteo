@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 use Goteo\Library\Text,
     Goteo\Library\i18n\Lang;
@@ -21,11 +39,11 @@ function assign() {
 </script>
 <div class="widget">
 <?php if ($this['action'] == 'edit') : ?>
-    <h3 class="title"><?php echo Text::_('Translators for the project'); ?> <?php echo $project->name ?></h3>
+    <h3 class="title">Traductores para el proyecto <?php echo $project->name ?></h3>
         <!-- asignar -->
         <table>
             <tr>
-                <th><?php echo Text::_('Translation'); ?></th>
+                <th>Traductor</th>
                 <th></th>
             </tr>
             <?php foreach ($project->translators as $userId=>$userName) : ?>
@@ -38,7 +56,7 @@ function assign() {
                 <form id="form-assign" action="/admin/translates/assign/<?php echo $project->id; ?>" method="get">
                 <td colspan="2">
                     <select id="assign-user" name="user">
-                        <option value=""><?php echo Text::_('Select another translator'); ?></option>
+                        <option value="">Selecciona otro traductor</option>
                         <?php foreach ($this['translators'] as $user) :
                             if (in_array($user->id, array_keys($project->translators))) continue;
                             ?>
@@ -46,13 +64,13 @@ function assign() {
                         <?php endforeach; ?>
                     </select>
                 </td>
-                <td><a href="#" onclick="return assign();" class="button"><?php echo Text::_('assign'); ?></a></td>
+                <td><a href="#" onclick="return assign();" class="button">Asignar</a></td>
                 </form>
             </tr>
         </table>
         <hr />
-        <a href="/admin/translates/close/<?php echo $project->id; ?>" class="button" onclick="return confirm('Seguro que deseas dar por finalizada esta traducción?')"><?php echo Text::_('Close the translation'); ?></a>&nbsp;&nbsp;&nbsp;
-        <a href="/admin/translates/send/<?php echo $project->id; ?>" class="button green" onclick="return confirm('Se va a enviar un email automaticamente, ok?')"><?php echo Text::_('Warn the author'); ?></a>
+        <a href="/admin/translates/close/<?php echo $project->id; ?>" class="button" onclick="return confirm('Seguro que deseas dar por finalizada esta traducción?')">Cerrar la traducción</a>&nbsp;&nbsp;&nbsp;
+        <a href="/admin/translates/send/<?php echo $project->id; ?>" class="button green" onclick="return confirm('Se va a enviar un email automaticamente, ok?')">Avisar al autor</a>
         <hr />
 <?php endif; ?>
 
@@ -61,9 +79,9 @@ function assign() {
         <table>
             <tr>
                 <td><?php if ($this['action'] == 'add') : ?>
-                    <label for="add-proj"><?php echo Text::_('Project we enable'); ?></label><br />
+                    <label for="add-proj">Proyecto que habilitamos</label><br />
                     <select id="add-proj" name="project">
-                        <option value=""><?php echo Text::_('Select the Project'); ?></option>
+                        <option value="">Selecciona el proyecto</option>
                         <?php foreach ($this['availables'] as $proj) : ?>
                             <option value="<?php echo $proj->id; ?>"<?php if ($_GET['project'] == $proj->id) echo ' selected="selected"';?>><?php echo $proj->name; ?></option>
                         <?php endforeach; ?>
@@ -72,7 +90,7 @@ function assign() {
                     <input type="hidden" name="project" value="<?php echo $project->id; ?>" />
                 <?php endif; ?></td>
                 <td><!-- Idioma original -->
-                    <label for="orig-lang"><?php echo Text::_('Original language project'); ?></label><br />
+                    <label for="orig-lang">Idioma original del proyecto</label><br />
                     <select id="orig-lang" name="lang">
                         <?php foreach ($langs as $item) : ?>
                             <option value="<?php echo $item->id; ?>"<?php if ($project->lang == $item->id || (empty($project->lang) && $item->id == 'es' )) echo ' selected="selected"';?>><?php echo $item->name; ?></option>
@@ -83,6 +101,6 @@ function assign() {
         </table>
 
 
-       <input type="submit" name="save" value="<?php echo Text::_('Save'); ?>" />
+       <input type="submit" name="save" value="Guardar" />
     </form>
 </div>

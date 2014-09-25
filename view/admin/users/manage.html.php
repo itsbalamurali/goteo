@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 use Goteo\Library\Text;
 
@@ -9,11 +27,11 @@ $langs = $this['langs'];
 <div class="widget">
     <table>
         <tr>
-            <td width="140px">Username</td>
+            <td width="140px">Nombre de usuario</td>
             <td><a href="/user/profile/<?php echo $user->id ?>" target="_blank"><?php echo $user->name ?></a></td>
         </tr>
         <tr>
-            <td>Login Access</td>
+            <td>Login de acceso</td>
             <td><strong><?php echo $user->id ?></strong></td>
         </tr>
         <tr>
@@ -21,11 +39,11 @@ $langs = $this['langs'];
             <td><?php echo $user->email ?></td>
         </tr>
         <tr>
-            <td>Node</td>
+            <td>Nodo</td>
             <td><?php echo $this['nodes'][$user->node] ?></td>
         </tr>
         <tr>
-            <td>Current roles</td>
+            <td>Roles actuales</td>
             <td>
                 <?php
                 foreach ($user->roles as $role=>$roleData) {
@@ -42,7 +60,7 @@ $langs = $this['langs'];
             </td>
         </tr>
         <tr>
-            <td>Roles available</td>
+            <td>Roles disponibles</td>
             <td>
                 <?php
                 foreach ($roles as $roleId=>$roleName) {
@@ -57,22 +75,22 @@ $langs = $this['langs'];
             </td>
         </tr>
         <tr>
-            <td>Account Status</td>
+            <td>Estado de la cuenta</td>
             <td>
                 <?php if ($user->active) : ?>
-                    <a href="<?php echo "/admin/users/manage/{$user->id}/ban"; ?>" style="color:green;text-decoration:none;font-weight:bold;">Active</a>
+                    <a href="<?php echo "/admin/users/manage/{$user->id}/ban"; ?>" style="color:green;text-decoration:none;font-weight:bold;">Activa</a>
                 <?php else : ?>
-                    <a href="<?php echo "/admin/users/manage/{$user->id}/unban"; ?>" style="color:red;text-decoration:none;font-weight:bold;">Inactive</a>
+                    <a href="<?php echo "/admin/users/manage/{$user->id}/unban"; ?>" style="color:red;text-decoration:none;font-weight:bold;">Inactiva</a>
                 <?php endif; ?>
             </td>
         </tr>
         <tr>
-            <td>Visibility</td>
+            <td>Visibilidad</td>
             <td>
                 <?php if (!$user->hide) : ?>
                     <a href="<?php echo "/admin/users/manage/{$user->id}/hide"; ?>" style="color:green;text-decoration:none;font-weight:bold;">Visible</a>
                 <?php else : ?>
-                    <a href="<?php echo "/admin/users/manage/{$user->id}/show"; ?>" style="color:red;text-decoration:none;font-weight:bold;">hidden</a>
+                    <a href="<?php echo "/admin/users/manage/{$user->id}/show"; ?>" style="color:red;text-decoration:none;font-weight:bold;">Oculto</a>
                 <?php endif; ?>
             </td>
         </tr>
@@ -80,14 +98,14 @@ $langs = $this['langs'];
 </div>
 <div class="widget board">
     <ul>
-        <li><a href="/admin/users/edit/<?php echo $user->id; ?>">[Change email / password]</a></li>
-        <li><a href="/admin/users/move/<?php echo $user->id; ?>">[Move to another node]</a></li>
-        <li><a href="/admin/users/impersonate/<?php echo $user->id; ?>">[Impersonate]</a></li>
+        <li><a href="/admin/users/edit/<?php echo $user->id; ?>">[Cambiar email/contraseña]</a></li>
+        <li><a href="/admin/users/move/<?php echo $user->id; ?>">[Mover a otro Nodo]</a></li>
+        <li><a href="/admin/users/impersonate/<?php echo $user->id; ?>">[Suplantar]</a></li>
         <?php if (isset($_SESSION['admin_menu']['projects']['options']['accounts'])) : ?>
-        <li><a href="/admin/accounts/add/?user=<?php echo $user->id; ?>">[Create contribution]</a></li>
+        <li><a href="/admin/accounts/add/?user=<?php echo $user->id; ?>">[Crear aporte]</a></li>
         <?php endif; ?>
-        <li><a href="/admin/<?php echo (isset($_SESSION['admin_node'])) ? 'invests' : 'accounts'; ?>/?name=<?php echo $user->email; ?>">[Contributions history]</a></li>
-        <li><a href="/admin/sended/?user=<?php echo urlencode($user->email); ?>">[ Shipments history]</a></li>
+        <li><a href="/admin/<?php echo (isset($_SESSION['admin_node'])) ? 'invests' : 'accounts'; ?>/?name=<?php echo $user->email; ?>">[Historial aportes]</a></li>
+        <li><a href="/admin/sended/?user=<?php echo urlencode($user->email); ?>">[Historial envíos]</a></li>
     </ul>
 
 
@@ -97,8 +115,8 @@ $langs = $this['langs'];
 
 <?php if (isset($user->roles['translator'])) : ?>
 <div class="widget board">
-    <h3>Language Translator</h3>
-    <?php if (empty($user->translangs)) : ?><p style="font-weight: bold; color:red;">It has no language assigned!</p><?php endif; ?>
+    <h3>Idiomas de traductor</h3>
+    <?php if (empty($user->translangs)) : ?><p style="font-weight: bold; color:red;">¡No tiene ningún idioma asignado!</p><?php endif; ?>
     <form method="post" action="/admin/users/translang">
         <input type="hidden" name="user" value="<?php echo $user->id; ?>" />
         <table>
@@ -110,7 +128,7 @@ $langs = $this['langs'];
             </tr>
             <?php endforeach; ?>
         </table>
-        <input type="submit" value="Apply">
+        <input type="submit" value="Aplicar">
     </form>
 </div>
 <?php endif; ?>

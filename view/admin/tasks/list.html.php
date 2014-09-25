@@ -22,7 +22,7 @@ use Goteo\Library\Text;
 
 $filters = $this['filters'];
 ?>
-<a href="/admin/tasks/add" class="button"><?php echo Text::_("New Task"); ?></a>
+<a href="/admin/tasks/add" class="button">Nueva Tarea</a>
 
 <div class="widget board">
     <form id="filter-form" action="/admin/tasks" method="get">
@@ -58,9 +58,9 @@ $filters = $this['filters'];
         <thead>
             <tr>
                 <th></th> <!-- edit -->
-                <th><?php Text::_("Node"); ?></th>
-                <th><?php Text::_("Task"); ?></th>
-                <th><?php Text::_("Status"); ?></th>
+                <th>Nodo</th>
+                <th>Tarea</th>
+                <th>Estado</th>
                 <th></th> <!-- remove -->
             </tr>
         </thead>
@@ -68,17 +68,17 @@ $filters = $this['filters'];
         <tbody>
             <?php foreach ($this['tasks'] as $task) : ?>
             <tr>
-                <td><a href="/admin/tasks/edit/<?php echo $task->id; ?>" title="<?php echo Text::_("Edit"); ?>">[<?php echo Text::_("Edit"); ?>]</a></td>
+                <td><a href="/admin/tasks/edit/<?php echo $task->id; ?>" title="Editar">[Editar]</a></td>
                 <td><strong><?php echo $this['nodes'][$task->node]; ?></strong></td>
                 <td><?php echo substr($task->text, 0, 150); ?></td>
                 <td><?php echo (empty($task->done)) ? 'Pendiente' : 'Realizada ('.$task->user->name.')';?></td>
-                <td><a href="/admin/tasks/remove/<?php echo $task->id; ?>" title="Eliminar" onclick="return confirm('<?php echo Text::_("The task is removed irreversibly, ok?"); ?>')">[Eliminar]</a></td>
+                <td><a href="/admin/tasks/remove/<?php echo $task->id; ?>" title="Eliminar" onclick="return confirm('La tarea se eliminará irreversiblemente, ok?')">[Eliminar]</a></td>
             </tr>
             <?php endforeach; ?>
         </tbody>
 
     </table>
     <?php else : ?>
-    <p><?php echo Text::_("No records found"); ?></p>
+    <p>No se han encontrado registros</p>
     <?php endif; ?>
 </div>

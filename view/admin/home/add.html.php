@@ -31,7 +31,7 @@ $availables = $this['availables'];
     <input type="hidden" name="order" value="<?php echo $home->order ?>" />
 
 <p>
-    <label for="home-item"><?php echo Text::_("Item");?></label><br />
+    <label for="home-item">Elemento:</label><br />
     <select id="home-item" name="item">
     <?php foreach ($availables as $item=>$name) : ?>
         <option value="<?php echo $item; ?>"><?php echo $name; ?></option>
@@ -39,5 +39,5 @@ $availables = $this['availables'];
     </select>
 </p>
 
-    <input type="submit" name="save" value="<?php echo Text::_("Add to");?>" />
+    <input type="submit" name="save" value="A&ntilde;adir" />
 </form>

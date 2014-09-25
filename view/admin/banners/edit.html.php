@@ -1,7 +1,7 @@
 <?php
 /*
  *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
- *  This file is part of Goteo.
+ *	This file is part of Goteo.
  *
  *  Goteo is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Affero General Public License as published by
@@ -36,9 +36,9 @@ $status = Model\Project::status();
     <input type="hidden" name="id" value="<?php echo $banner->id; ?>" />
 
 <p>
-    <label for="banner-project"><?php echo Text::_("Project"); ?>:</label><br />
+    <label for="banner-project"><?php echo Text::_("Proyecto"); ?>:</label><br />
     <select id="banner-project" name="project">
-        <option value="" ><?php echo Text::_("Select the project to show in the banner"); ?></option>
+        <option value="" ><?php echo Text::_("Seleccionar el proyecto a mostrar en el banner"); ?></option>
     <?php foreach ($projects as $project) : ?>
         <option value="<?php echo $project->id; ?>"<?php if ($banner->project == $project->id) echo' selected="selected"';?>><?php echo $project->name . ' ('. $status[$project->status] . ')'; ?></option>
     <?php endforeach; ?>
@@ -46,14 +46,14 @@ $status = Model\Project::status();
 </p>
 
 <p>
-    <label for="banner-image"><?php echo Text::_("Select the project to show in the banner"); ?></label><br />
+    <label for="banner-image"><?php echo Text::_("Imagen de fondo: 700 x 156 (estricto)"); ?></label><br />
     <input type="file" id="banner-image" name="image" />
     <?php if (!empty($banner->image)) : ?>
         <br />
         <input type="hidden" name="prev_image" value="<?php echo $banner->image->id ?>" />
-        <img src="<?php echo $banner->image->getLink(700, 156, true) ?>" title="<?php echo Text::_("Album Fund"); ?>" alt="<?php echo Text::_("Image Fails"); ?>"/>
+        <img src="<?php echo $banner->image->getLink(700, 156, true) ?>" title="<?php echo Text::_("Fondo album"); ?>" alt="<?php echo Text::_("falla imagen"); ?>"/>
     <?php endif; ?>
 </p>
 
-    <input type="submit" name="save" value="<?php echo Text::_("Save"); ?>" />
+    <input type="submit" name="save" value="<?php echo Text::_("Guardar"); ?>" />
 </form>

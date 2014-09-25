@@ -21,7 +21,7 @@ $items = $this['items'];
 
         });
         </script>
-        <h3 class="title">Recent Activity</h3>
+        <h3 class="title">actividad reciente</h3>
         Ver Feeds por:
 
         <p class="categories">

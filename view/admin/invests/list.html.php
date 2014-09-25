@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 use Goteo\Library\Text,
     Goteo\Model\Invest;
@@ -59,12 +77,12 @@ $filters = $this['filters'];
         </div>
     </form>
     <br clear="both" />
-    <a href="/admin/invests/?reset=filters"><?php echo Text::_("Remove filters"); ?></a>
+    <a href="/admin/invests/?reset=filters"><?php echo Text::_("Quitar filtros"); ?></a>
 </div>
 
 <div class="widget board">
 <?php if ($filters['filtered'] != 'yes') : ?>
-    <p><?php echo Text::_("It's not necessary to use a filter, there are too many searches."); ?></p>
+    <p><?php echo Text::_("Es necesario poner algun filtro, hay demasiados registros!"); ?></p>
 <?php elseif (!empty($this['list'])) : ?>
 <?php $Total = 0; foreach ($this['list'] as $invest) { $Total += $invest->amount; } ?>
     <p><strong>TOTAL:</strong>  <?php echo number_format($Total, 0, '', '.') ?> &euro;</p>

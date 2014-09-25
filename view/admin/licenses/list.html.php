@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 use Goteo\Library\Text,
     Goteo\Core\ACL;
@@ -9,9 +27,9 @@ $filters = $this['filters'];
 ?>
 <div class="widget board">
     <form id="filter-form" action="/admin/licenses" method="get">
-        <label for="group-filter"><?php echo Text::_("Show per group:"); ?></label>
+        <label for="group-filter"><?php echo Text::_("Mostrar por grupo:"); ?></label>
         <select id="group-filter" name="group" onchange="document.getElementById('filter-form').submit();">
-            <option value=""><?php echo Text::_("All groups"); ?></option>
+            <option value=""><?php echo Text::_("Todos los grupos"); ?></option>
         <?php foreach ($this['groups'] as $groupId=>$groupName) : ?>
             <option value="<?php echo $groupId; ?>"<?php if ($filters['group'] == $groupId) echo ' selected="selected"';?>><?php echo $groupName; ?></option>
         <?php endforeach; ?>
@@ -33,11 +51,11 @@ $filters = $this['filters'];
         <thead>
             <tr>
                 <th><!-- Edit --></th>
-                <th><?php echo Text::_("Number"); ?></th> <!-- name -->
+                <th><?php echo Text::_("Nombre"); ?></th> <!-- name -->
                 <th><!-- Icon --></th>
                 <th><?php echo Text::_("Tooltip"); ?></th> <!-- description -->
-                <th><?php echo Text::_("Grouping"); ?></th> <!-- group -->
-                <th><?php echo Text::_("Position"); ?></th> <!-- order -->
+                <th><?php echo Text::_("Agrupación"); ?></th> <!-- group -->
+                <th><?php echo Text::_("Posición"); ?></th> <!-- order -->
                 <th><!-- Move up --></th>
                 <th><!-- Move down --></th>
                 <th><!-- Traducir--></th>
@@ -48,7 +66,7 @@ $filters = $this['filters'];
         <tbody>
             <?php foreach ($this['licenses'] as $license) : ?>
             <tr>
-                <td><a href="/admin/licenses/edit/<?php echo $license->id; ?>">[<?php echo Text::_("Edit"); ?>]</a></td>
+                <td><a href="/admin/licenses/edit/<?php echo $license->id; ?>">[<?php echo Text::_("Editar"); ?>]</a></td>
                 <td><?php echo $license->name; ?></td>
                 <td><img src="/view/css/license/<?php echo $license->id; ?>.png" alt="<?php echo $license->id; ?>" title="<?php echo $license->name; ?>" /></td>
                 <td><?php echo $license->description; ?></td>
@@ -65,6 +83,6 @@ $filters = $this['filters'];
 
     </table>
     <?php else : ?>
-   <p><?php echo Text::_("No records found"); ?></p>
+    <p>No se han encontrado registros</p>
     <?php endif; ?>
 </div>

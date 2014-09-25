@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 use Goteo\Library\Text;
 
@@ -8,8 +26,7 @@ $filters = $this['filters'];
 <div class="widget board">
 <form id="filter-form" action="/admin/reviews" method="get">
    
-    
-    <label for="project-filter"><?php echo Text::_('Project:'); ?></label>
+    <label for="project-filter">Del proyecto:</label>
     <select id="project-filter" name="project" onchange="document.getElementById('filter-form').submit();">
         <option value="">--</option>
         <?php foreach ($this['projects'] as $projId=>$projName) : ?>
@@ -19,17 +36,17 @@ $filters = $this['filters'];
 
     <br />
 
-    <label for="status-filter"><?php echo Text::_('Show by state:');?></label>
+    <label for="status-filter">Mostrar por estado:</label>
     <select id="status-filter" name="status" onchange="document.getElementById('filter-form').submit();">
-        <option value=""><?php echo Text::_('All');?></option>
+        <option value="">Todas</option>
     <?php foreach ($this['status'] as $statusId=>$statusName) : ?>
         <option value="<?php echo $statusId; ?>"<?php if ($filters['status'] == $statusId) echo ' selected="selected"';?>><?php echo $statusName; ?></option>
     <?php endforeach; ?>
     </select>
 
-    <label for="checker-filter"><?php echo Text::_('Assigned to:'); ?></label>
+    <label for="checker-filter">Asignados a:</label>
     <select id="checker-filter" name="checker" onchange="document.getElementById('filter-form').submit();">
-        <option value=""><?php echo Text::_('You All'); ?></option>
+        <option value="">De todos</option>
     <?php foreach ($this['checkers'] as $checker) : ?>
         <option value="<?php echo $checker->id; ?>"<?php if ($filters['checker'] == $checker->id) echo ' selected="selected"';?>><?php echo $checker->name; ?></option>
     <?php endforeach; ?>
@@ -43,13 +60,13 @@ $filters = $this['filters'];
             <table>
                 <thead>
                     <tr>
-                        <th width="30%"><?php echo Text::_('Project'); ?></th> <!-- edit -->
-                        <th width="20%"><?php echo Text::_('Creator'); ?></th> <!-- mailto -->
+                        <th width="30%">Proyecto</th> <!-- edit -->
+                        <th width="20%">Creador</th> <!-- mailto -->
                         <th width="5%">%</th> <!-- segun estado -->
-                        <th width="5%"><?php echo Text::_('Points'); ?></th> <!-- segun estado -->
+                        <th width="5%">Puntos</th> <!-- segun estado -->
                         <th>
                             <!-- Iniciar revision si no tiene registro de revision -->
-                            <!-- editar si tiene registro -->
+                            <!-- Editar si tiene registro -->
                         </th>
                         <th><!-- Ver informe si tiene registro --></th>
                         <th><!-- Cerar si abierta --></th>
@@ -63,7 +80,7 @@ $filters = $this['filters'];
                         <td><?php echo $project->progress; ?></td>
                         <td><?php echo $project->score . ' / ' . $project->max; ?></td>
                         <?php if (!empty($project->review)) : ?>
-                        <td><a href="/admin/reviews/edit/<?php echo $project->project; ?>">[<?php echo Text::_("Edit"); ?>]</a></td>
+                        <td><a href="/admin/reviews/edit/<?php echo $project->project; ?>">[Editar]</a></td>
                         <td><a href="/admin/reviews/report/<?php echo $project->project; ?>" target="_blank">[Ver informe]</a></td>
                             <?php if ( $project->status > 0 ) : ?>
                         <td><a href="/admin/reviews/close/<?php echo $project->review; ?>">[Cerrar]</a></td>

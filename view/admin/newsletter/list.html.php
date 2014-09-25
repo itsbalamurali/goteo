@@ -35,14 +35,14 @@ $template = Template::get($tpl);
 
 ?>
 <div class="widget board">
-    <p>Select the template. Translated content will be used, you may want <a href="/admin/templates?group=massive" target="_blank">Review them</a></p>
-    <p><strong>NOTE:</strong> with this system you can not add variables in the content, the same content for all recipients is generated.<br/>
-    For custom content you must use the functionality<a href="/admin/mailing" ><?php echo Text::_("Communication submitted"); ?></a>.</p>
+    <p>Seleccionar la plantilla. Se utilizará el contenido traducido, quizás quieras <a href="/admin/templates?group=massive" target="_blank">revisarlas</a></p>
+    <p><strong>NOTA:</strong> con este sistema no se pueden añadir variables en el contenido, se genera el mismo contenido para todos los destinatarios.<br/>
+    Para contenido personalizado hay que usar la funcionalidad <a href="/admin/mailing" >Comunicaciones</a>.</p>
 
-    <form action="/admin/newsletter/init" method="post" onsubmit="return confirm('This will email automatically, do you want to continue?');">
+    <form action="/admin/newsletter/init" method="post" onsubmit="return confirm('El envio se activará automáticamente, seguimos?');">
 
     <p>
-        <label>Massive Template
+        <label>Plantillas masivas: 
             <select id="template" name="template" >
             <?php foreach ($templates as $tplId=>$tplName) : ?>
                 <option value="<?php echo $tplId; ?>" <?php if ( $tplId == $tpl) echo 'selected="selected"'; ?>><?php echo $tplName; ?></option>
@@ -51,11 +51,11 @@ $template = Template::get($tpl);
         </label>
     </p>
     <p>
-        <label><input type="checkbox" name="test" value="1" checked="checked"/> It is a test (a test target is sent)</label>
+        <label><input type="checkbox" name="test" value="1" checked="checked"/> Es una prueba (se envia a los destinatarios de pruebas)</label>
     </p>
         
     <p>
-        <label><input type="checkbox" name="nolang" value="1" checked="checked"/>Only in Spanish (not considering user preferred language)</label>
+        <label><input type="checkbox" name="nolang" value="1" checked="checked"/>Solo en español (no tener en cuenta idioma preferido de usuario)</label>
     </p>
         
     <p>
@@ -71,8 +71,8 @@ $template = Template::get($tpl);
         <thead>
             <tr>
                 <th></th>
-                <th>Date</th>
-                <th>Subject</th>
+                <th>Fecha</th>
+                <th>Asunto</th>
                 <th></th>
                 <th></th>
                 <th></th>
@@ -82,7 +82,7 @@ $template = Template::get($tpl);
         <tbody>
             <?php foreach ($list as $item) : ?>
             <tr>
-                <td><a href="/admin/newsletter/detail/<?php echo $item->id; ?>">[Details]</a></td>
+                <td><a href="/admin/newsletter/detail/<?php echo $item->id; ?>">[Detalles]</a></td>
                 <td><?php echo $item->date; ?></td>
                 <td><?php echo $item->subject; ?></td>
                 <td><?php echo $item->active ? '<span style="color:green;font-weight:bold;">Activo</span>' : '<span style="color:red;font-weight:bold;">Inactivo</span>'; ?></td>

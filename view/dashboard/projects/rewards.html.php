@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 use Goteo\Core\View,
     Goteo\Library\Text,
@@ -63,8 +81,8 @@ switch ($order) {
 ?>
 <div class="widget gestrew">
     <div class="message">
-       THIS IS A VIEWING OPTIONS RETURN YOUR CHOOSING COFINANCERS. <br /> 
-         NO NEED TO MANAGE THOSE RETURNS TO HAVE REACHED THE MINIMUM AMOUNT DESIRED
+        ESTO ES UNA VISUALIZACIÓN DE LAS OPCIONES DE RETORNO QUE ELIGEN TUS COFINANCIADORES.<br />
+        NO TIENES QUE GESTIONAR ESOS RETORNOS HASTA HABER LLEGADO AL MÍNIMO DE LA CANTIDAD DESEADA
     </div>
     <div class="rewards">
         <?php $num = 1; 
@@ -72,11 +90,11 @@ switch ($order) {
                 $who = Invest::choosed($rewardData->id); ?>
             <div class="reward <?php if(($num % 4)==0)echo " last"?>">
             	<div class="orden"><?php echo $num; ?></div>
-                <span class="aporte">Contributions of <span class="num"><?php echo $rewardData->amount; ?></span> <span class="euro">&nbsp;</span></span>
-                <span class="cofinanciadores">co-financiers <span class="num"><?php echo count($who); ?></span></span>
+                <span class="aporte">Aportaciones de <span class="num"><?php echo $rewardData->amount; ?></span> <span class="euro">&nbsp;</span></span>
+                <span class="cofinanciadores">cofinanciadores <span class="num"><?php echo count($who); ?></span></span>
                 <div class="tiporec"><ul><li class="<?php echo $rewardData->icon; ?>"><?php echo Text::recorta($rewardData->reward, 40); ?></li></ul></div>
                 <div class="contenedorrecompensa">	
-                	<span class="recompensa"><strong style="color:#666;">reward:</strong><br/> <?php echo Text::recorta($rewardData->description, 100); ?></span>
+                	<span class="recompensa"><strong style="color:#666;">Recompensa:</strong><br/> <?php echo Text::recorta($rewardData->description, 100); ?></span>
                 </div>
                 <a class="button green" onclick="msgto('<?php echo $rewardData->id; ?>')" >mensaje a ese grupo</a>
             </div>
@@ -93,7 +111,7 @@ switch ($order) {
         return false;
     }
 </script><div class="widget gestrew">
-    <h2 class="title">Manage returns</h2>
+    <h2 class="title">Gestionar retornos</h2>
     <a name="gestrew"></a>
    <form id="invests-filter-form" name="filter_form" action="<?php echo '/dashboard/projects/rewards/filter#gestrew'; ?>" method="post">
        <input type="hidden" id="invests-filter" name="filter" value="<?php echo $filter; ?>" />
@@ -203,7 +221,7 @@ switch ($order) {
 
                 <p>
                     <input type="checkbox" id="msg_all" name="msg_all" value="1" onclick="alert('a todos es a todos, no tiene en cuenta el resto de marcados');" />
-                    <label for="msg_all">All co-financiers of the project</label>
+                    <label for="msg_all">A todos los cofinanciadores de este proyecto</label>
                 </p>
 
                 <p>

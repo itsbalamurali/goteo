@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 
 use Goteo\Library\Text,
@@ -7,7 +25,7 @@ use Goteo\Library\Text,
 //$templates = Template::getAllMini();
 $templates = array(
     '11' => Text::_("Base"),
-    '27' => Text::_("Contact technical support")
+    '27' => Text::_("Aviso a los talleristas")
 );
 // lista de destinatarios segun filtros recibidos, todos marcados por defecto
 ?>
@@ -15,7 +33,7 @@ $templates = array(
 jQuery(document).ready(function ($) {
 
     $('#template_load').click(function () {
-       if (confirm(Text::_("The subject and the actual content substiruira by the one in the template. We continue?"))) {
+       if (confirm(Text::_("El asunto y el contenido actual se substiruira por el que hay en la plantilla. Seguimos?"))) {
 
            if ($('#template').val() == '0') {
             $('#mail_subject').val('');
@@ -31,48 +49,48 @@ jQuery(document).ready(function ($) {
 });
 </script>
 <div class="widget">
-    <p><?php echo Text::_("N in the content, the following variables were replaced & aacute:"); ?></p>
+    <p><?php echo Text::_("Las siguientes variables se sustituir&aacute;n en el contenido:"); ?></p>
     <ul>
-        <li><strong>%USERID%</strong><?php echo Text::_("To access the id of the recipient"); ?></li>
-        <li><strong>%USEREMAIL%</strong><?php echo Text::_(" For the email recipient"); ?></li>
-        <li><strong>%USERNAME%</strong><?php echo Text::_(" For the name of the recipient"); ?></li>
-        <li><strong>%SITEURL%</strong><?php echo Text::_(" For the url of this platform "); ?>(<?php echo SITE_URL ?>)</li>
+        <li><strong>%USERID%</strong><?php echo Text::_(" Para el id de acceso del destinatario"); ?></li>
+        <li><strong>%USEREMAIL%</strong><?php echo Text::_(" Para el email del destinatario"); ?></li>
+        <li><strong>%USERNAME%</strong><?php echo Text::_(" Para el nombre del destinatario"); ?></li>
+        <li><strong>%SITEURL%</strong><?php echo Text::_(" Para la url de esta plataforma "); ?>(<?php echo SITE_URL ?>)</li>
         <?php if ($this['filters']['type'] == 'owner' || $this['filters']['type'] == 'investor') : ?>
-            <li><strong>%PROJECTID%</strong><?php echo Text::_(" For the id of the project"); ?></li>
-            <li><strong>%PROJECTNAME%</strong><?php echo Text::_(" For the project name"); ?></li>
-            <li><strong>%PROJECTURL%</strong><?php echo Text::_(" For project url"); ?></li>
+            <li><strong>%PROJECTID%</strong><?php echo Text::_(" Para el id del proyecto"); ?></li>
+            <li><strong>%PROJECTNAME%</strong><?php echo Text::_(" Para el nombre del proyecto"); ?></li>
+            <li><strong>%PROJECTURL%</strong><?php echo Text::_(" Para la url del proyecto"); ?></li>
         <?php endif; ?>
     </ul>
 </div>
 <div class="widget">
-    <p><?php echo Text::_("We will communicate with ") . $_SESSION['mailing']['filters_txt']; ?></p>
+    <p><?php echo Text::_("Vamos a comunicarnos con ") . $_SESSION['mailing']['filters_txt']; ?></p>
     <form action="/admin/mailing/send" method="post">
     <dl>
-        <dt><?php echo Text::_("Select template:"); ?></dt>
+        <dt><?php echo Text::_("Seleccionar plantilla:"); ?></dt>
         <dd>
             <select id="template" name="template" >
-                <option value="0"><?php echo Text::_("No template"); ?></option>
+                <option value="0"><?php echo Text::_("Sin plantilla"); ?></option>
             <?php foreach ($templates as $templateId=>$templateName) : ?>
                 <option value="<?php echo $templateId; ?>"><?php echo $templateName; ?></option>
             <?php endforeach; ?>
             </select>
-            <input type="button" id="template_load" value="<?php echo Text::_("Load"); ?>" />
+            <input type="button" id="template_load" value="<?php echo Text::_("Cargar"); ?>" />
         </dd>
     </dl>
     <dl>
-        <dt><?php echo Text::_("Subject:"); ?></dt>
+        <dt><?php echo Text::_("Asunto:"); ?></dt>
         <dd>
             <input id="mail_subject" name="subject" value="<?php echo $_SESSION['mailing']['subject']?>" style="width:500px;"/>
         </dd>
     </dl>
     <dl>
-        <dt><?php echo Text::_("Contents: (html code; linebreaks should be with &lt;br /&gt;)"); ?></dt>
+        <dt><?php echo Text::_("Contenido: (en c&oacute;digo html; los saltos de linea deben ser con &lt;br /&gt;)"); ?></dt>
         <dd>
             <textarea id="mail_content" name="content" cols="100" rows="10"></textarea>
         </dd>
     </dl>
     <dl>
-        <dt><?php echo Text::_("List recipients:"); ?></dt>
+        <dt><?php echo Text::_("Lista destinatarios:"); ?></dt>
         <dd>
             <ul>
                 <?php foreach ($_SESSION['mailing']['receivers'] as $usrid=>$usr) : ?>
@@ -89,7 +107,7 @@ jQuery(document).ready(function ($) {
         </dd>
     </dl>
 
-    <input type="submit" name="send" value="<?php echo Text::_('Send'); ?>"  onclick="return confirm(Text::_("You have reviewed the contents and found the audience?"));"/>
+    <input type="submit" name="send" value="Enviar"  onclick="return confirm(Text::_("Has revisado el contenido y comprobado los destinatarios?"));"/>
 
     </form>
 </div>

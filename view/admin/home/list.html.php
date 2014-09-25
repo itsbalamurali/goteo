@@ -54,8 +54,8 @@ $admins = Home::_admins();
     <table>
         <thead>
             <tr>
-                <th><?php echo Text::_("Position");?></th> <!-- order -->
-                <th><?php echo Text::_("Item");?></th> <!-- item -->
+                <th>Posición</th> <!-- order -->
+                <th>Elemento</th> <!-- item -->
                 <th><!-- Subir --></th>
                 <th><!-- Bajar --></th>
                 <th><!-- Quitar--></th>
@@ -74,14 +74,14 @@ $admins = Home::_admins();
                 ?></td>
                 <td><a href="/admin/home/up/<?php echo $item->item; ?>/side">[&uarr;]</a></td>
                 <td><a href="/admin/home/down/<?php echo $item->item; ?>/side">[&darr;]</a></td>
-                <td><a href="/admin/home/remove/<?php echo $item->item; ?>/side">[<?php echo Text::_("Remove"); ?>]</a></td>
+                <td><a href="/admin/home/remove/<?php echo $item->item; ?>/side">[Quitar]</a></td>
             </tr>
             <?php endforeach; ?>
         </tbody>
 
     </table>
     <?php else : ?>
-    <p></p>
+    <p>No hay ning&uacute;n elemento lateral en portada</p>
     <?php endif; ?>
 
     <?php if (!empty($side_availables)) : ?>
@@ -91,14 +91,14 @@ $admins = Home::_admins();
     <input type="hidden" name="order" value="<?php echo $side_new->order ?>" />
 
     <p>
-        <label for="home-item"><?php echo Text::_("New Item");?></label><br />
+        <label for="home-item">Nuevo elemento:</label><br />
         <select id="home-item" name="item">
         <?php foreach ($side_availables as $item=>$name) : ?>
             <option value="<?php echo $item; ?>"><?php echo $name; ?></option>
         <?php endforeach; ?>
         </select>
         <br />
-        <input type="submit" name="save" value="<?php echo Text::_("Add to");?>" />
+        <input type="submit" name="save" value="A&ntilde;adir" />
     </p>
 
     </form>
@@ -112,8 +112,8 @@ $admins = Home::_admins();
     <table>
         <thead>
             <tr>
-                <th><?php echo Text::_("Position");?></th> <!-- order -->
-                <th><?php echo Text::_("Item");?></th> <!-- item -->
+                <th>Posición</th> <!-- order -->
+                <th>Elemento</th> <!-- item -->
                 <th><!-- Subir --></th>
                 <th><!-- Bajar --></th>
                 <th><!-- Quitar--></th>
@@ -132,14 +132,14 @@ $admins = Home::_admins();
                 ?></td>
                 <td><a href="/admin/home/up/<?php echo $item->item; ?>/main">[&uarr;]</a></td>
                 <td><a href="/admin/home/down/<?php echo $item->item; ?>/main">[&darr;]</a></td>
-                <td><a href="/admin/home/remove/<?php echo $item->item; ?>/main">[<?php echo Text::_("Remove"); ?>]</a></td>
+                <td><a href="/admin/home/remove/<?php echo $item->item; ?>/main">[Quitar]</a></td>
             </tr>
             <?php endforeach; ?>
         </tbody>
 
     </table>
     <?php else : ?>
-    <p>No ning &uacute; n elements cover</p> <!-- hay ning&uacute;n elemento en portada -->
+    <p>No hay ning&uacute;n elemento en portada</p>
     <?php endif; ?>
 
     <?php if (!empty($availables)) : ?>
@@ -149,14 +149,14 @@ $admins = Home::_admins();
     <input type="hidden" name="order" value="<?php echo $new->order ?>" />
 
     <p>
-        <label for="home-item"><?php echo Text::_("New Item");?></label><br />
+        <label for="home-item">Nuevo elemento:</label><br />
         <select id="home-item" name="item">
         <?php foreach ($availables as $item=>$name) : ?>
             <option value="<?php echo $item; ?>"><?php echo $name; ?></option>
         <?php endforeach; ?>
         </select>
         <br />
-        <input type="submit" name="save" value="<?php echo Text::_("Add to");?>" />
+        <input type="submit" name="save" value="A&ntilde;adir" />
     </p>
 
     </form>

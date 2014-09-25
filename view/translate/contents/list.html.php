@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 use Goteo\Library\Text,
     Goteo\Library\Content;
@@ -76,7 +94,7 @@ $types = $fields[$table];
                 <td><?php echo $item->fieldName ?></td>
                 <td><?php echo $item->id ?></td>
                 <?php if ($table == 'post') : ?>
-                <td><a href="/blog/<?php echo $item->id; ?>?preview=<?php echo $_SESSION['user']->id ?>" target="_blank">[<?php echo Text::_("View"); ?>]</a></td>
+                <td><a href="/blog/<?php echo $item->id; ?>?preview=<?php echo $_SESSION['user']->id ?>" target="_blank">[Ver]</a></td>
                 <?php endif; ?>
             </tr>
         <?php endwhile; ?>
