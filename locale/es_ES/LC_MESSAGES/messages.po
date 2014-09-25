@@ -1,0 +1,4027 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WinnersFund\n"
+"POT-Creation-Date: 2014-09-15 21:50+0530\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Julian Martinez <julian.m90@hotmail.com>\n"
+"Language-Team: WinnersFund Translations <balamurali@live.com>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"El admin %s ha dado por ejecutado el aporte manual a nombre de %s por la cantidad de %s (id: %s) al proyecto %s del dia %s\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPathExcluded-0: C:\\Users\\Balamurali\\Desktop\\beta.winnersfund.com\\.git\n"
+"X-Poedit-SearchPath-0: C:\\Users\\Balamurali\\Desktop\\beta.winnersfund.com\n"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:62
+msgid "Contribution administration"
+msgstr "Gestión de aportes"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:64
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:79
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:88
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:100
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:110
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:120
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:136
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:144
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:153
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:161
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:180
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:197
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:206
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:220
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:229
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:235
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:245
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:260
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:268
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:277
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:286
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:295
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:304
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:316
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:437
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:444
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:451
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:458
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:465
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:472
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:479
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:486
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:493
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:500
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:507
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:514
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:521
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:528
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:540
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:547
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:554
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:566
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:573
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:580
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:587
+msgid "Listing"
+msgstr "Listando"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:65
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:66
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:154
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/details.html.php:56
+msgid "Contribution details"
+msgstr "Cambiando el estado al aporte"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:67
+msgid "Manual contribution"
+msgstr "Aporte manual"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:68
+msgid "Relocating the contribution"
+msgstr "Reubicando el aporte"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:69
+msgid "Realisation of charge"
+msgstr "Ejecución del cargo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:70
+msgid "Cancelling contribution"
+msgstr "Cancelando aporte"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:71
+msgid "Project report"
+msgstr "Informe de proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:72
+msgid "Viewing logs"
+msgstr "Viendo logs"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:77
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:435
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:571
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:44
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:349
+msgid "Banners"
+msgstr "Banderolos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:80
+msgid "New Banner"
+msgstr "Nuevo banner"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:81
+msgid "Editing Banner"
+msgstr "Editando Banner"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:82
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:438
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:574
+msgid "Translating Banner"
+msgstr "Traduciendo Banner"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:86
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:442
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:578
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:43
+msgid "Blog"
+msgstr "Blog"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:89
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/list.html.php:38
+msgid "New Entry"
+msgstr "Nueva Entrada"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:90
+msgid "Editing Entry"
+msgstr "Editando Entrada"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:91
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:445
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:581
+msgid "Translating Entry"
+msgstr "Traduciendo Entrada"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:92
+msgid "Placing Entry on Front Page"
+msgstr "Ordenando las entradas en Portada"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:93
+msgid "Placing Entry in Footer"
+msgstr "Ordenando las entradas en el Footer"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:98
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:40
+msgid "Categories"
+msgstr "Categorías"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:101
+msgid "New Category"
+msgstr "Nueva Categoría"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:102
+msgid "Editing Category"
+msgstr "Editando Categoría"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:103
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:473
+msgid "Translating Category"
+msgstr "Traduciendo Categoría"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:104
+msgid "Keywords"
+msgstr "Palabras clave"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:108
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:498
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:46
+msgid "Review criteria"
+msgstr "Criterios de revisión"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:111
+msgid "New Criteria"
+msgstr "Nuevo Criterio"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:112
+msgid "Editing Criteria"
+msgstr "Editando Criterio"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:113
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:501
+msgid "Translating Criteria"
+msgstr "Traduciendo Criterio"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:118
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:456
+msgid "FAQs"
+msgstr "FAQs"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:121
+msgid "New Question"
+msgstr "Nueva Pregunta"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:122
+msgid "Editing Question"
+msgstr "Editando Pregunta"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:123
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:459
+msgid "Translating Question"
+msgstr "Traduciendo Pregunta"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:128
+msgid "Featured on frontpage"
+msgstr "Elementos en portada"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:130
+msgid "Manage"
+msgstr "Gestiónar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:134
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:382
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:512
+msgid "Glossary"
+msgstr "Solo usuario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:137
+msgid "Editing Term"
+msgstr "Editando Término"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:138
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:515
+msgid "Translating Term"
+msgstr "Traduciendo Término"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:142
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:484
+msgid "Types of Return"
+msgstr "Tipos de Retorno"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:145
+msgid "Editing Type"
+msgstr "Editando Tipo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:146
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:487
+msgid "Translating Type"
+msgstr "Traduciendo Tipo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:151
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/index.html.php:69
+msgid "Contributions"
+msgstr "Aportes"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:159
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:477
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:39
+msgid "Licenses"
+msgstr "Licencias"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:162
+#: msgid "Translating License"
+#: msgstr "Traduciendo Licencia"
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:163
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:480
+msgid "Translating License"
+msgstr "Traduciendo Licencia"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:168
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:172
+msgid "Communication submitted"
+msgstr "Comunicaciones"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:170
+msgid "Selecting recipients"
+msgstr "Seleccionando destinatarios"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:171
+msgid "Writing Content"
+msgstr "Escribiendo contenido"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:178
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:538
+msgid "Micronews"
+msgstr "Micronoticias"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:181
+msgid "New Micronews"
+msgstr "Nueva Micronoticia"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:182
+msgid "Editing Micronews"
+msgstr "Editando Micronoticia"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:183
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:541
+msgid "Translating Micronews"
+msgstr "Traduciendo Micronoticia"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:187
+msgid "Bulletin"
+msgstr "Boletín"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:189
+msgid "Automatic shipment status"
+msgstr "Estado del envío automático"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:190
+msgid "Iniciating a new bulletin"
+msgstr "Iniciando un nuevo boletín"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:191
+msgid "Watching full list"
+msgstr "Viendo listado completo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:195
+msgid "Pages"
+msgstr "Páginas"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:198
+msgid "Editing Page"
+msgstr "Editando Página"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:204
+msgid "Project Managment"
+msgstr "Gestión de proyectos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:207
+msgid "Project Date"
+msgstr "Fechas del proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:208
+msgid "Project Accounts"
+msgstr "Cuentas del proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:209
+msgid "Project Images"
+msgstr "Imágenes del proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:210
+msgid "Moving project to another node"
+msgstr "Moviendo a otro Nodo el proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:211
+msgid "Assigning a call project"
+msgstr "Asignando a una Convocatoria el proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:212
+msgid "Financial Report of the project"
+msgstr "Informe Financiero del proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:213
+msgid "Changing Project Id"
+msgstr "Cambiando Id de proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:218
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:545
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/home.php:44
+msgid "Featured projects"
+msgstr "Proyectos destacados"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:221
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/list.html.php:25
+msgid "New Featured"
+msgstr "Nuevas funciones"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:222
+msgid "Editing Featured"
+msgstr "Editando Destacado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:223
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:548
+msgid "Translating Featured"
+msgstr "Traduciendo Destacado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:227
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/home.php:46
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/index.html.php:132
+msgid "Recent Activity"
+msgstr "Actividad reciente"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:233
+msgid "Revisions"
+msgstr "Reviews"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:236
+msgid "Initiating briefing"
+msgstr "Iniciando briefing"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:237
+msgid "Editing briefing"
+msgstr "Editando briefing"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:238
+msgid "Report"
+msgstr "Informe"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:243
+msgid "Rewards"
+msgstr "Recompensas"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:246
+msgid "Managing Rewards"
+msgstr "Gestión de recompensas"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:251
+msgid "Sending History"
+msgstr "Historial envíos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:253
+msgid "Emails sent"
+msgstr "Emails enviados"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:258
+msgid "Institutional Support"
+msgstr "Apoyos institucionales"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:261
+msgid "New Sponsor"
+msgstr "Nuevo Patrocinador"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:262
+msgid "Editing Sponsor"
+msgstr "Editando Patrocinador"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:266
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:491
+msgid "Blog tags"
+msgstr "Tags de blog"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:269
+msgid "New Tag"
+msgstr "Nuevo Tag"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:270
+msgid "Editing Tag"
+msgstr "Editando Tag"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:271
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:494
+msgid "Translating Tag"
+msgstr "Traduciendo Tag"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:275
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:505
+msgid "Email Templates"
+msgstr "Plantillas de email"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:278
+msgid "Editing Templates"
+msgstr "Editando Plantilla"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:279
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:508
+msgid "Translating Templates"
+msgstr "Traduciendo Plantilla"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:284
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:449
+msgid "Interface texts"
+msgstr "Textos interficie"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:287
+msgid "Editing Original"
+msgstr "Editando Original"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:288
+msgid "Translating text"
+msgstr "Traduciendo Texto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:293
+msgid "Project translations"
+msgstr "Traducciones de proyectos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:296
+msgid "Enabling translation"
+msgstr "Habilitando traducción"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:297
+msgid "Assigning translation"
+msgstr "Asignando traducción"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:302
+msgid "User Management"
+msgstr "Gestión de usuarios"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:305
+msgid "Creating user"
+msgstr "Creando Usuario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:306
+msgid "Editing User"
+msgstr "Editando Usuario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:307
+msgid "Managing User"
+msgstr "Gestionando"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:308
+msgid "Impersonating the User"
+msgstr "Suplantando al Usuario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:309
+msgid "Moving the user to another Node "
+msgstr "Moviendo a otro Nodo el usuario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:314
+msgid "Levels of meritocracy"
+msgstr "Niveles de meritocracia"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:317
+msgid "Editing levels"
+msgstr "Editando Nivel"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:361
+msgid "Admin"
+msgstr "Admin"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:540
+msgid "Contents"
+msgstr "Contenidos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:541
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/index.html.php:67
+msgid "Projects"
+msgstr "Proyectos"
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:543
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:535
+msgid "Cover"
+msgstr "Portada"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:544
+msgid "Texts and Translations"
+msgstr "Textos y Traducciones"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin.php:545
+msgid "Services"
+msgstr "Servicios"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/home.php:76
+msgid "All items are already available on the cover"
+msgstr "Todos los artículos están disponibles en la portada"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/home.php:96
+msgid "All side elements are already available on the cover"
+msgstr "Todos los elementos secundarios ya están disponibles en la cubierta"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/pages.php:90
+msgid "Institutional modified page (admin)"
+msgstr "modificacion de página institucional (admin)"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/projects.php:81
+msgid "Was not saved correctly "
+msgstr "No se ha guardado correctamente"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/projects.php:91
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/projects.php:119
+msgid "Project accounts have been updated"
+msgstr "Se han actualizado las cuentas del proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/projects.php:113
+msgid "Term could not be removed"
+msgstr "No se ha podido actualizar campo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/projects.php:135
+msgid "There is already a project with this ID"
+msgstr "Ya hay un proyecto con ese Id."
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/projects.php:140
+msgid "The project is not being edited or revised, no changes can be made."
+msgstr "El proyecto no está ni en Edición ni en Revisión, no se modifica nada."
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/projects.php:145
+msgid "Verify project"
+msgstr "Verificar el proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/projects.php:148
+msgid "There has been a failure, verify project"
+msgstr "Ha fallado algo en el rebase, verificar el proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/projects.php:224
+msgid "Change state/dates/accounts/nodes of a project from the admin account"
+msgstr "Cambio estado/fechas/cuentas/nodo de un proyecto desde el admin"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/projects.php:351
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/translates.php:62
+msgid "There's no project to apply to"
+msgstr "No hay proyecto sobre el que operar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/projects.php:391
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:70
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:74
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:79
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:96
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:102
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:125
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/licenses/edit.html.php:39
+msgid "Name"
+msgstr "Nombre"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/projects.php:392
+msgid "Sent to review"
+msgstr "Enviado a revision"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:49
+msgid "We have lost sight of the project or revision"
+msgstr "Hemos perdido de vista el proyecto o la revisión"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:64
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:159
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:196
+msgid "Review started correctly"
+msgstr "Revisión iniciada correctamente"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:69
+msgid "assessment began (admin)"
+msgstr "valoración iniciada (admin)"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:72
+msgid "Initiating"
+msgstr "Iniciado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:81
+msgid "Information was edited correctly"
+msgstr "Datos editados correctamente"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:86
+msgid "Is has not been possible to save the information"
+msgstr "No se han podido grabar los datos."
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:108
+msgid "Review is now closed"
+msgstr "La revisión se ha cerrado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:113
+msgid "assessment is finished (admin)"
+msgstr "valoración finalizada (admin)"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:116
+msgid "Finished"
+msgstr "Finalizada"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:123
+msgid "The review has not been able to be closed"
+msgstr "La revisión no se ha podido cerrar."
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:164
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:201
+msgid "assign review (admin)"
+msgstr "asignar revision (admin)"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:167
+msgid "Assigned"
+msgstr "Asignado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:204
+msgid "Deallocated"
+msgstr "Desasignado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:248
+msgid "No initiated"
+msgstr "No iniciada"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:249
+msgid "Open"
+msgstr "Abierta"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/reviews.php:250
+msgid "Closed"
+msgstr "Cerrada"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/sponsors.php:54
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/tags.php:52
+msgid "Add"
+msgstr "Añadir"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/sponsors.php:70
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/sponsors.php:162
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/sponsors.php:216
+msgid "Sponsor"
+msgstr "Patrocinador"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/sponsors.php:75
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/sponsors.php:217
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:124
+msgid "Link"
+msgstr "Enlace"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/sponsors.php:81
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/sponsors.php:173
+msgid "Logo"
+msgstr "Logo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/sponsors.php:86
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/sponsors.php:178
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/sponsors.php:219
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/list.html.php:47
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/faq/edit.html.php:69
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/faq/list.html.php:47
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/home/list.html.php:57
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/home/list.html.php:115
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/licenses/list.html.php:58
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/list.html.php:35
+msgid "Position"
+msgstr "Posición"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/sponsors.php:127
+msgid "Information was saved correctly"
+msgstr "Datos grabados correctamente"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/sponsors.php:130
+msgid "was not correctly saved"
+msgstr "No se guardo correctamente"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/sponsors.php:167
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/sended/list.html.php:92
+msgid "link"
+msgstr "Link"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/sponsors.php:199
+msgid "The record has been removed"
+msgstr "Se ha eliminado el registro"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/sponsors.php:202
+msgid "Is has not been possible to delete the record"
+msgstr "No se ha podido eliminar el registro"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/sponsors.php:212
+msgid "New sponsor"
+msgstr "Nuevo patrocinador"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/sponsors.php:218
+msgid "image"
+msgstr "imagen"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/tags.php:62
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/tags.php:116
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/tags.php:144
+msgid "Tag"
+msgstr "Tag"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/tags.php:87
+msgid "The tag has been updated"
+msgstr "El tag ha sido actualizado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/tags.php:90
+msgid "Was not saved correctly"
+msgstr "No se ha guardado correctamente."
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/tags.php:140
+msgid "New tag"
+msgstr "Nuevo tag"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/tags.php:145
+msgid "Entry"
+msgstr "Entrada"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/templates.php:49
+msgid "The template has been updated successfully"
+msgstr "La plantilla se ha actualizado correctamente"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/templates.php:52
+msgid "Was not correctly saved."
+msgstr "No se guardo correctamente"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/texts.php:39
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/templates/list.html.php:35
+msgid "All clusters"
+msgstr "Todas las agrupaciones"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/texts.php:58
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/texts.php:144
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/texts/list.html.php:75
+msgid "Text"
+msgstr "Texto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/texts.php:59
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/icons/list.html.php:47
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/licenses/list.html.php:57
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/texts/list.html.php:76
+msgid "Grouping"
+msgstr "Agrupación"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/texts.php:65
+msgid "Filter by grouping:"
+msgstr "Filtrar por agrupación:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/texts.php:71
+msgid "Search text:"
+msgstr "Buscar texto:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/texts.php:104
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:166
+msgid "Data updated"
+msgstr "El texto ha sido actualizado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/texts.php:133
+msgid "Apply"
+msgstr "Aplicar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/translates.php:45
+msgid "There are no projects available to translate"
+msgstr "No hay más proyectos disponibles para traducir"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/translates.php:83
+msgid "Translation assigned correctly"
+msgstr "Traducción asignada correctamente"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/translates.php:86
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/translates.php:95
+msgid "was not saved correctly"
+msgstr "No se ha guardado correctamente"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/translates.php:90
+msgid "unassigned"
+msgstr "Sin Asignar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/translates.php:92
+msgid "Translation correctly unassigned"
+msgstr "Traducción desasignada correctamente"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/translates.php:124
+msgid "we have lost sight of the project or revision"
+msgstr "Hemos perdido de vista el proyecto o revisión"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/translates.php:134
+msgid "translation details were updated"
+msgstr "Detalles de traducción se han actualizado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/translates.php:141
+msgid "Project enabled for translation (admin)"
+msgstr "Proyecto habilitado para la traducción (admin)"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/translates.php:156
+msgid "Failed to enable translation for project"
+msgstr "Ha fallado al habilitar la traducción del proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/translates.php:158
+msgid "Failed to update the information of this translation"
+msgstr "Ha fallado al actualizar los datos de la traducción"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/translates.php:223
+msgid "Translation complete (admin)"
+msgstr "Traducción completa (admin)"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/translates.php:233
+msgid "Failed during finalization of the translation"
+msgstr "Falló al finalizar la traducción"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:39
+msgid "Disabled"
+msgstr "Desactivado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:43
+msgid "Enabled"
+msgstr "Habilitado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:47
+msgid "Shown"
+msgstr "Mostrado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:51
+msgid "Hidden"
+msgstr "Ocultado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:55
+msgid "Made into a reviwer"
+msgstr "Convertido en un revisor"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:59
+msgid "Removed as reviewer"
+msgstr "Quitado de revisor"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:63
+msgid "Added as translator"
+msgstr "Hecho traductor"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:67
+msgid "Removed translator"
+msgstr "Traductor retirado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:71
+msgid "Added as Admin"
+msgstr "Añadido como Admin"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:75
+msgid "Removed as Admin"
+msgstr "Removido como Admin"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:145
+msgid "the email"
+msgstr "el email"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:149
+msgid "The password"
+msgstr "La contraseña"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:157
+msgid "Perform task on user(Admin)"
+msgstr "Realizar tareas al usuario (Admin)"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:172
+msgid "Was not saved correctly."
+msgstr "No se ha guardado correctamente."
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:241
+msgid "Perform task on User."
+msgstr "Realizar tareas en usuario."
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:280
+msgid "We have lost sight of the User"
+msgstr "Hemos perdido de vista el usuario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:300
+msgid "Is not selected language, the user will have problems in translation panel!"
+msgstr "¡No se ha seleccionado el idioma, el usuario tendrá problemas en el panel de traducción!"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:302
+msgid "The translator has been applied to the selected languages"
+msgstr "Se han aplicado al traductor los idiomas seleccionados"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:377
+msgid "Active"
+msgstr "Activo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:378
+msgid "Inactive"
+msgstr "Inactivo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:384
+msgid "Drivers"
+msgstr "Impulsores"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:385
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:93
+msgid "Co-financiers"
+msgstr "Cofinanciadores"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:386
+msgid "Collaborators"
+msgstr "Colaboradores"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:390
+msgid "Date of creation"
+msgstr "Fecha de alta"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:391
+msgid "Alias"
+msgstr "Alias"
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:393
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/users.php:394
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:29
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:94
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/list.html.php:55
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:108
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/edit.html.php:40
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/list.html.php:33
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/reviews/list.html.php:64
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:13
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:56
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/list.html.php:54
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/dashboard/projects/selector.html.php:25
+msgid "Project"
+msgstr "Proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/worth.php:47
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/worth.php:51
+msgid "Level meritocracy modified"
+msgstr "Niveles de meritocracia modificados"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/admin/worth.php:61
+msgid "It has not been correctly saved."
+msgstr "No se ha guardado correctamente."
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/dashboard/projects.php:65
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/banners/list.html.php:37
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/banners/list.html.php:50
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/list.html.php:113
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/list.html.php:116
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/list.html.php:58
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/faq/list.html.php:58
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/glossary/list.html.php:33
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/glossary/list.html.php:43
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/icons/list.html.php:44
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/licenses/list.html.php:69
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/pages/list.html.php:35
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/pages/list.html.php:45
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/images.html.php:54
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:137
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:157
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/list.html.php:38
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/list.html.php:54
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/reviews/list.html.php:70
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/reviews/list.html.php:84
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/tasks/list.html.php:71
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/templates/list.html.php:60
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/templates/list.html.php:69
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/texts/list.html.php:74
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/texts/list.html.php:83
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/list.html.php:53
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/list.html.php:63
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/worth/list.html.php:29
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/translate/pages/list.html.php:29
+msgid "Edit"
+msgstr "Edit"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:44
+msgid "You have no language, contact the site administrator"
+msgstr "No tienes ningún idioma, contacta con el administrador"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:432
+msgid "Manage Texts and Translations"
+msgstr "Gestión de Textos y Traducciones"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:463
+msgid "Institutional Content"
+msgstr "Contenidos institucionales"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:466
+msgid "Translating page content"
+msgstr "Traduciendo contenido de Página"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:470
+msgid "Categories and Interests"
+msgstr "Categorias e Intereses"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:519
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:50
+msgid "Ideas about"
+msgstr "Ideas about"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:522
+msgid "Translating Idea"
+msgstr "Traduciendo Idea"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:529
+msgid "Translating Level"
+msgstr "Traduciendo Nivel"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:552
+msgid "Recommended Projects"
+msgstr "Proyectos recomendados"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:555
+msgid "Translating recommended"
+msgstr "Traduciendo recomendado"
+
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:567
+msgid "Translating"
+msgstr "Traduciendo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:585
+msgid "Institutional pages"
+msgstr "Páginas institucionales"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/controller/translate.php:588
+msgid "Translating Page"
+msgstr "Traduciendo página"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/ExtensionTest.php:10
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/ExtensionTest.php:25
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/ExtensionTest.php:29
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/InstanceTest.php:11
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/InstanceTest.php:34
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/InstanceTest.php:35
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/InstanceTest.php:39
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/PHPTest.php:11
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/PHPTest.php:26
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/PHPTest.php:27
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/PHPTest.php:31
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/gettext.php:8
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/gettext.php:9
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/gettext.php:10
+msgid "File does not exist"
+msgid_plural "Files donnot exists"
+msgstr[0] "El archivo no existe"
+msgstr[1] "Los archivos no existen"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/ExtensionTest.php:11
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/ExtensionTest.php:26
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/ExtensionTest.php:30
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/ExtensionTest.php:35
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/ExtensionTest.php:36
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/InstanceTest.php:12
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/InstanceTest.php:36
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/InstanceTest.php:40
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/InstanceTest.php:45
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/InstanceTest.php:46
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/PHPTest.php:12
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/PHPTest.php:28
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/PHPTest.php:32
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/PHPTest.php:37
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/PHPTest.php:38
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/gettext.php:11
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/gettext.php:12
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/gettext.php:13
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/gettext.php:14
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/gettext.php:15
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/gettext.php:16
+msgid "File is too small"
+msgid_plural "Files are too small"
+msgstr[0] "El archivo es demasiado pequeño"
+msgstr[1] "Los achivo son demasiado pequeños"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/ExtensionTest.php:12
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/ExtensionTest.php:19
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/ExtensionTest.php:27
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/ExtensionTest.php:31
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/InstanceTest.php:13
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/InstanceTest.php:20
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/InstanceTest.php:37
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/InstanceTest.php:41
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/PHPTest.php:13
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/PHPTest.php:20
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/PHPTest.php:29
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/PHP-Gettext/tests/PHPTest.php:33
+msgid "Foobar"
+msgid_plural "Foobar"
+msgstr[0] "Foobar"
+msgstr[1] "Foobar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:36
+msgid "Featured Projects"
+msgstr "Proyectos destacados"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:37
+msgid "Sponsored Projects"
+msgstr "Proyectos apadrinados"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:38
+msgid "altered the type of return/reward (admin)"
+msgstr "Tipos de retorno/recompensa"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:41
+msgid "News"
+msgstr "Noticias"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:42
+msgid "Faq"
+msgstr "FAQ"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:45
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/edit.html.php:190
+msgid "Tags"
+msgstr "Tags"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:47
+msgid "Meritocracy"
+msgstr "Meritocracia"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:48
+msgid "Automatic email templates"
+msgstr "Plantillas emails automáticos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:49
+msgid "Glossary of Terms"
+msgstr "Glosario de términos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:58
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:62
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:66
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:83
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:87
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:91
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:99
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:105
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:109
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:114
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:128
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/list.html.php:85
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/list.html.php:46
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/faq/edit.html.php:59
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/faq/list.html.php:46
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/pages/edit.html.php:53
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/edit.html.php:51
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/templates/edit.html.php:30
+msgid "Title"
+msgstr "Título"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:59
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:63
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:67
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:71
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:75
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:80
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:88
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:123
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/faq/edit.html.php:64
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/pages/list.html.php:37
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/edit.html.php:56
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/templates/list.html.php:62
+msgid "Description"
+msgstr "Sección comunidad"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:84
+msgid "Excerpt"
+msgstr "Entradilla"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:92
+msgid "Text entered"
+msgstr "Texto entrada"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:93
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:111
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:116
+msgid "Middle legend"
+msgstr "Leyenda media"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:106
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:110
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:115
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/templates/edit.html.php:35
+msgid "Content"
+msgstr "Contenido"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:126
+msgid "Extended Text"
+msgstr "Texto ampliado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/content.php:127
+msgid "Legend"
+msgstr "Leyenda"
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/feed.php:56
+msgid "Administrator"
+msgstr "Administrador"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/feed.php:60
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:109
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:44
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/add.html.php:32
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:33
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:142
+msgid "User"
+msgstr "Usuario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/feed.php:68
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:178
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:45
+msgid "Call"
+msgstr "Convocatoria"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/feed.php:72
+msgid "Transfers"
+msgstr "Transferencias"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/feed.php:76
+msgid "System"
+msgstr "Sistema"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/feed.php:264
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/feed.php:305
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/feed.php:389
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/banner.php:226
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/blog.php:162
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/blog/post.php:434
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/blog/post.php:464
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/blog/post/comment.php:197
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/blog/post/tag.php:154
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/blog/post/tag.php:183
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/category.php:163
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/criteria.php:126
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/faq.php:207
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/glossary.php:167
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/icon.php:180
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/image.php:125
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/info.php:187
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:388
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/license.php:167
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/news.php:130
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/post.php:269
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/post.php:310
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/promote.php:179
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/review.php:99
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/review.php:487
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/review.php:506
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/sponsor.php:163
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user.php:487
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user.php:1243
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user.php:1297
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user/interest.php:122
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user/review.php:80
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user/translate.php:216
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user/translate.php:244
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user/web.php:68
+msgid "Has not been saved properly."
+msgstr "No se ha guardado correctamente. "
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/template.php:106
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/template.php:130
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/message.php:189
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/message.php:218
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:808
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:853
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:1370
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:1384
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:1419
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:1433
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:1447
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:1461
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:1475
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:1489
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:1503
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user.php:309
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user.php:341
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user.php:506
+msgid "Has not been properly recorded."
+msgstr "No se ha grabado correctamente."
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/template.php:139
+msgid "Registration without id"
+msgstr "Registro sin id"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/template.php:144
+msgid "Registration without title"
+msgstr "Registro sin titulo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/template.php:149
+msgid "Registration without content"
+msgstr "Registro sin contenido"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/template.php:197
+msgid "General Purpose"
+msgstr "Propósito general"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/template.php:198
+msgid "User Registration and Access"
+msgstr "Registro y acceso usuario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/template.php:199
+msgid "Project Activity"
+msgstr "Actividad proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/template.php:200
+msgid "Auto-tips dissemination"
+msgstr "Auto-tips difusión"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/template.php:201
+msgid "Contribution Process"
+msgstr "Proceso aporte"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/template.php:202
+msgid "Communication"
+msgstr "Comunicación"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/template.php:203
+msgid "Notices to the author"
+msgstr "Avisos al autor"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:329
+msgid "Home"
+msgstr "Inicio"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:330
+msgid "User Profile Page"
+msgstr "Pagina de perfil de usuario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:331
+msgid "Project and form public"
+msgstr "Proyecto y forma pública"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:332
+msgid "General form of project"
+msgstr "Propósito general"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:333
+msgid "User Profile Management"
+msgstr "Pagina de perfil de usuario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:334
+msgid "Personal User Data"
+msgstr "Datos personales del usuario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:336
+msgid "Project costs"
+msgstr "Cuentas del proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:337
+msgid "Returns and rewards of the project"
+msgstr "Colaboraciones del proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:338
+msgid "Project Collaborations"
+msgstr "Colaboraciones de proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:339
+msgid "Project Preview"
+msgstr "Previsualización del proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:340
+msgid "User Dashboard"
+msgstr "Convocatorias: dashboard"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:341
+msgid "User registration"
+msgstr "Registro de usuario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:342
+msgid "Login page"
+msgstr "Página de inicio de sesión"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:343
+msgid "Section view projects"
+msgstr "Sección ver proyectos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:344
+msgid "section community"
+msgstr "Sección comunidad"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:346
+msgid "Blog/Updates"
+msgstr "Blog/Actualizaciones"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:347
+msgid "FAQ page"
+msgstr "Página de FAQ"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:348
+msgid "Contact page"
+msgstr "Pagina de contacto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:350
+msgid "Bring  a project to homepage"
+msgstr "Llevar un proyecto a la Página principal"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:351
+msgid "Tooltips types of needs"
+msgstr "Información sobre tipos de necesidades"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:352
+msgid "Banners and headers"
+msgstr "Títulos y encabezados"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:353
+msgid "Footer"
+msgstr "Footer"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:354
+msgid "Social Network Accounts"
+msgstr "Cuentas de redes sociales"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:355
+msgid "Accountant Panel"
+msgstr "Panel de contador"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:356
+msgid "Translator Panel"
+msgstr "Panel Traductor"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:357
+msgid "Top Menu"
+msgstr "Menú superior"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:358
+msgid "Recent Events"
+msgstr "Eventos recientes"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:359
+msgid "Automated Emails"
+msgstr "Emails automaticos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:360
+msgid "Blue Notices"
+msgstr "Anuncios azul"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:361
+msgid "Catastrophic Errors"
+msgstr "Errores catastroficos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:362
+msgid "Calls: Public"
+msgstr "Convocatorias: Publico"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:363
+msgid "Calls: Form"
+msgstr "Convocatorias: Formulario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:364
+msgid "Calls: dashboard"
+msgstr "Convocatorias: dashboard"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:365
+msgid "Wall of friends"
+msgstr "Wall of friends"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:366
+msgid "nodes"
+msgstr "Nodos"
+
+# msgstr ""
+# ");\n"
+# "\n""                if (!empty($invest->resign))\n"
+# msgid ""
+# "                    echo \"<br />\".Text::_("");\n"
+# "\n"
+# "                if (!empty($invest->resign))\n"
+# "                    echo \"<br />\".Text::_("
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/library/text.php:367
+#: php-format
+msgid "the project %s"
+msgstr "porcentaje del proyecto"
+
+# msgstr ""
+# ");\n"
+# "\n""                if (!empty($invest->resign))\n"
+# msgid ""
+# "                    echo \"<br />\".Text::_("");\n"
+# "\n"
+# "                if (!empty($invest->resign))\n"
+# "                    echo \"<br />\".Text::_("
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/banner.php:173
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:309
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/message.php:143
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/review.php:61
+msgid "Missing project"
+msgstr "Falta proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/banner.php:176
+msgid "Missing image"
+msgstr "Falta imagen"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/blog/post/comment.php:162
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/glossary.php:116
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/info.php:130
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/message.php:146
+msgid "Missing Text"
+msgstr "Falta texto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/category.php:130
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/icon.php:141
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/license.php:123
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/sponsor.php:112
+msgid "Missing Name"
+msgstr "Falta nombre"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/criteria.php:83
+msgid "Missing section"
+msgstr "Falta seccion"
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/faq.php:159
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/home.php:148
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/promote.php:136
+msgid "Missing Node"
+msgstr "Falta nodo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/faq.php:162
+msgid "section is missing"
+msgstr "Falta sección"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/home.php:36
+msgid "Sides"
+msgstr "Laterales"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/home.php:37
+msgid "Centers"
+msgstr "Centrales"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/home.php:43
+msgid "Blog Entries"
+msgstr "Entradas de blog"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/home.php:62
+msgid "Project selector"
+msgstr "Selector proyectos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/home.php:63
+msgid "Project categories"
+msgstr "Categorias de proyectos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/home.php:64
+msgid "Projects Summary"
+msgstr "Resumen proyectos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/home.php:65
+msgid "Summary calls"
+msgstr "Resumen convocatorias"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/home.php:66
+msgid "Sponsors"
+msgstr "Patrocinadores"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/home.php:145
+msgid "Missing element"
+msgstr "Falta elemento"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/icon.php:201
+msgid "Collective return"
+msgstr "Retorno colectivo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/icon.php:202
+msgid "Individual reward"
+msgstr "Recompensa individual"
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:111
+msgid "Pending"
+msgstr "Pendientes"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:112
+msgid "Accomplished"
+msgstr "Cumplidos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:300
+msgid "The amount is not correct"
+msgstr "La cantidad no es correcta"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:303
+msgid "Missing payment method"
+msgstr "Falta metodo de pago"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:306
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/message.php:140
+msgid "Missing user"
+msgstr "Falta usuario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:1009
+msgid "Incomplete"
+msgstr "Incompleto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:1010
+msgid "Pre-approved"
+msgstr "Preaprobado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:1011
+msgid "Collected"
+msgstr "Cobrado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:1012
+msgid "Canceled"
+msgstr "Cancelado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:1013
+msgid "Paid to the project"
+msgstr "Pagado al proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:1014
+msgid "Archived (returned)"
+msgstr "Archivado (devuelto)"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:1015
+msgid "Relocated"
+msgstr "Reubicado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:1031
+msgid "Paypal"
+msgstr "Paypal"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:1032
+msgid "Card"
+msgstr "Tarjeta"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:1033
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:120
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:124
+msgid "Manual"
+msgstr "Manual"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:1086
+msgid "The PayPal contribution"
+msgstr "El aporte PayPal"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:1086
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:1102
+msgid "should not be in state '"
+msgstr "no debería estar en estado '"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:1102
+msgid "The POS contribution"
+msgstr "El aporte TPV"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:1131
+msgid "ATTENTION! In the second round but it is NOT checked the date through to the second round!"
+msgstr "ATENCION! En segunda ronda pero NO está marcada la fecha de pase a segunda ronda!"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/invest.php:1327
+msgid "Has not been calculated well the parameter $eq act"
+msgstr "No se ha calculado bien el parametro $act_eq"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/news.php:93
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/sponsor.php:115
+msgid "Missing URL"
+msgstr "Falta url"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/post.php:300
+msgid "Without data"
+msgstr "Sin datos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:186
+msgid "The new project of"
+msgstr "El nuevo proyecto de"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:545
+msgid "The project has no id"
+msgstr "El proyecto no tiene id"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:557
+msgid "The project has no creator user"
+msgstr "El proyecto no tiene usuario creador"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:1514
+msgid "The project is not ruled out either in edition"
+msgstr "El proyecto no esta descartado ni en edicion"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:1700
+msgid "Failed to verify unique id for the project."
+msgstr "Fallo al verificar id única para el proyecto. "
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:2312
+msgid "In first round"
+msgstr "En primera ronda"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:2313
+msgid "In second round"
+msgstr "En segunda ronda"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/project.php:2314
+msgid "Campaign completed"
+msgstr "Campaña completada"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/promote.php:139
+msgid "It appears and has no project"
+msgstr "Se muestra y no tiene proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user.php:1052
+msgid "Drip Admin"
+msgstr "Admin Goteo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user.php:1053
+msgid "The User"
+msgstr "El usuario "
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user.php:1053
+msgid "it is dismissed "
+msgstr "se da de baja"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user.php:1054
+msgid "Have requested to unsubscribe to the mail"
+msgstr "Han solicitado la baja para el mail"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user.php:1054
+msgid "That corresponds to the user"
+msgstr "que corresponde al usuario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user.php:1055
+msgid "And has left the following message:"
+msgstr "y ha dejado el siguiente mensaje:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user/interest.php:100
+msgid "There is no interest to save"
+msgstr "No hay ningun interes para guardar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user/interest.php:103
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user/review.php:61
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user/translate.php:188
+msgid "There is no user to assign"
+msgstr "No hay ningun usuario al que asignar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user/review.php:58
+msgid "There is no review to assign"
+msgstr "No hay una revision para asignar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user/translate.php:185
+msgid "There is no translation to assign"
+msgstr "No hay una traducción para asignar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user/web.php:92
+msgid "Unable to remove the web"
+msgstr "No se ha podido quitar la web "
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/model/user/web.php:92
+msgid " from user"
+msgstr "del usuario "
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:68
+msgid "Details of the transaction"
+msgstr "Detalles de la transaccion"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:70
+msgid "Amount contributed"
+msgstr "Cantidad aportada"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:74
+msgid "Campaign:"
+msgstr "Campaña: "
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:80
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/banners/list.html.php:33
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:99
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:122
+msgid "Estate"
+msgstr "Estado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:85
+msgid "Date of the contribution"
+msgstr "Fecha del aporte"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:89
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/details.html.php:77
+msgid "Charge executed the:"
+msgstr "Cargo ejecutado el:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:92
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/details.html.php:80
+msgid "Money returned the:"
+msgstr "Dinero devuelto el: "
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:100
+msgid "YES"
+msgstr "SI"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:100
+msgid "NO"
+msgstr "NO"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:105
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:36
+msgid "Payment Method"
+msgstr "Método de pago"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:109
+msgid "Capital irrigation"
+msgstr "Capital riego"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:112
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/details.html.php:90
+msgid "Anonymous Contribution"
+msgstr "Aporte anónimo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:115
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/details.html.php:93
+msgid "Donation of"
+msgstr "Donativo de"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:118
+msgid "Manual generated by admin"
+msgstr "Manual generado por admin"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:124
+msgid "Tracking Codes"
+msgstr "Códigos de seguimiento"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:124
+msgid "Go to the contribution"
+msgstr "Ir al aporte"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:139
+msgid "Chosen rewards"
+msgstr "Recompensas elegidas"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:147
+msgid "Direction"
+msgstr "Dirección"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:159
+msgid "Show technical details"
+msgstr "Mostrar detalles técnicos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:165
+msgid "Details of the return"
+msgstr "Detalles de la devolución"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:166
+msgid "You should go to paypal panel to view the details of a refund"
+msgstr "Hay que ir al panel de paypal para ver los detalles de una devolución"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:170
+msgid "You should go to the bank panel for details of contributions by POS."
+msgstr "Hay que ir al panel del banco para ver los detalles de los aportes mediante TPV."
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:172
+msgid "There is nothing to do with the manual inputs."
+msgstr "No hay nada que hacer con los aportes manuales."
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:176
+msgid "Capital associated irrigation"
+msgstr "Capital riego asociado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:181
+msgid "See full contribution of irrigation"
+msgstr "Ver aporte completo de riego"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:195
+msgid "Technical details of the transaction"
+msgstr "Detalles técnicos de la transaccion"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:200
+msgid "Preapproval details"
+msgstr "Detalles del preapproval"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/details.html.php:209
+msgid "Details of the charge"
+msgstr "Detalles del cargo"
+
+# msgstr ""
+# ");\n"
+# "\n""                if (!empty($invest->resign))\n"
+# msgid ""
+# "                    echo \"<br />\".Text::_("");\n"
+# "\n"
+# "                if (!empty($invest->resign))\n"
+# "                    echo \"<br />\".Text::_("
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:30
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:15
+msgid "All Projects"
+msgstr "Proyectos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:32
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/index.html.php:68
+msgid "Users"
+msgstr "Usuarios"
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:35
+msgid "Method of payment"
+msgstr "Método de pago"
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:38
+msgid "State of Contribution "
+msgstr "Estado de contribución"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:39
+msgid "All states"
+msgstr "Todos los estados"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:41
+msgid "Campaign "
+msgstr "Campaña"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:42
+msgid "All campaigns"
+msgstr "Todas las campañas"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:44
+msgid "To be reviewed"
+msgstr "Para revisión"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:45
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/icons/list.html.php:31
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/reviews/list.html.php:42
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:30
+msgid "All"
+msgstr "Todo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:47
+msgid "Scope of Logs"
+msgstr "Alcance de los registros"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:49
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:10
+msgid "Filters"
+msgstr "Filtros"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:65
+msgid "Date from"
+msgstr "Fecha desde"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:69
+msgid "Date to"
+msgstr "Fecha hasta"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:73
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:40
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/sended/list.html.php:66
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/templates/list.html.php:48
+msgid "Filter"
+msgstr "Filtro"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:77
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:80
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:90
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:44
+msgid "Remove filters"
+msgstr "Quitar filtros"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:82
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:85
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:92
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/sended/list.html.php:74
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/texts/list.html.php:69
+msgid "It's not necessary to use a filter, there are too many searches."
+msgstr "Es necesario poner algun filtro, hay demasiadas busquedas!"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:85
+msgid "TOTAL"
+msgstr "TOTAL"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:92
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/list.html.php:86
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/sended/list.html.php:82
+msgid "Date"
+msgstr "Fecha"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:95
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/list.html.php:44
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:111
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/list.html.php:34
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/tasks/list.html.php:63
+msgid "Status"
+msgstr "Estado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:96
+msgid "Method"
+msgstr "Metodo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:97
+msgid "State Contribution"
+msgstr "Contribución del estado"
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:99
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:48
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:103
+msgid "Extra"
+msgstr "Extra"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:106
+msgid "Details"
+msgstr "Detalles"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:118
+msgid "Anonymous"
+msgstr "Anonimo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:119
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/edit.html.php:30
+msgid "Donation"
+msgstr "Donativo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/list.html.php:128
+msgid "No transactions that match the filters."
+msgstr "No hay transacciones que coincidan con los filtros."
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/viewer.html.php:43
+msgid "Select log by type and date"
+msgstr "Seleccionar log por tipo y fecha"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/viewer.html.php:46
+msgid "Process Type"
+msgstr "Tipo de proceso"
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/viewer.html.php:49
+msgid "Charges"
+msgstr "Cargos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/viewer.html.php:50
+msgid "Verifications"
+msgstr "Verificaciones"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/viewer.html.php:51
+msgid "Announcements"
+msgstr "Avisos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/viewer.html.php:52
+msgid "Payments"
+msgstr "Pagos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/viewer.html.php:56
+msgid "Log date"
+msgstr "Fecha del log"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/viewer.html.php:65
+msgid "File"
+msgstr "archivo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/accounts/viewer.html.php:66
+msgid "Not found"
+msgstr "No encontrado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/banners/edit.html.php:41
+msgid "Select the project to be displayed in the banner"
+msgstr "Seleccionar el proyecto a mostrar en el banner"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/banners/edit.html.php:49
+msgid "Background Image: 700 x 156 (strict)"
+msgstr "Imagen de fondo: 700 x 156 (estricto)"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/banners/edit.html.php:54
+msgid "Album background"
+msgstr "Fondo album"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/banners/edit.html.php:54
+msgid "Image failure"
+msgstr "falla imagen"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/banners/list.html.php:25
+msgid "New banner"
+msgstr "Nuevo banner"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/banners/list.html.php:34
+msgid "Postition"
+msgstr "Posición"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/banners/list.html.php:35
+msgid "Upload"
+msgstr "Subir"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/banners/list.html.php:36
+msgid "Download"
+msgstr "Bajar"
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/banners/list.html.php:58
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/list.html.php:73
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/faq/list.html.php:73
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/glossary/list.html.php:55
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/icons/list.html.php:69
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/licenses/list.html.php:86
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/list.html.php:108
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/images.html.php:104
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:94
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/list.html.php:70
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/sended/list.html.php:107
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/tasks/list.html.php:82
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/templates/list.html.php:80
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/texts/list.html.php:94
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/list.html.php:75
+msgid "No records found"
+msgstr "No se han encontrado registros"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/edit.html.php:49
+msgid "Yes"
+msgstr "Sí"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/edit.html.php:53
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/edit.html.php:65
+msgid "No"
+msgstr "NO"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/edit.html.php:64
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/edit.html.php:143
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/glossary/edit.html.php:38
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/glossary/edit.html.php:106
+msgid "Image"
+msgstr "Imagen"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/edit.html.php:64
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/glossary/edit.html.php:38
+msgid "Remove image"
+msgstr "Quitar imagen"
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/edit.html.php:137
+msgid "Entry text"
+msgstr "Texto de la entrada"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/edit.html.php:167
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/glossary/edit.html.php:130
+msgid "Video"
+msgstr "Vídeo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/edit.html.php:199
+msgid "Date of publication"
+msgstr "Fecha de publicación"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/edit.html.php:205
+msgid "Allows comments"
+msgstr "Permite comentarios"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/edit.html.php:223
+msgid "On the cover"
+msgstr "En portada"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/edit.html.php:232
+msgid "Link in Footer"
+msgstr "Enlace en footer"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/list.html.php:40
+msgid "Sort the cover"
+msgstr "Ordenar la cubierta"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/list.html.php:45
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/list.html.php:58
+msgid "Show"
+msgstr "Mostrar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/list.html.php:57
+msgid "Any"
+msgstr "Cualquier"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/list.html.php:87
+msgid "Author"
+msgstr "Autor"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/list.html.php:94
+msgid "Published"
+msgstr "Publicado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/list.html.php:111
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/pages/list.html.php:48
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/list.html.php:48
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/translate/contents/list.html.php:97
+msgid "View"
+msgstr "Vista"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/list.html.php:119
+msgid "Remove cover"
+msgstr "Quitar cubierta"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/list.html.php:120
+msgid "Put on the cover"
+msgstr "Poner en la portada"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/list.html.php:136
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/list.html.php:137
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/list.html.php:64
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/faq/list.html.php:64
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/glossary/list.html.php:46
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/list.html.php:88
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/pages/list.html.php:51
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/list.html.php:61
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/templates/list.html.php:73
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/texts/list.html.php:87
+msgid "Translate"
+msgstr "Traducir"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/blog/list.html.php:140
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/list.html.php:66
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/faq/list.html.php:66
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/home/list.html.php:77
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/home/list.html.php:135
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/list.html.php:91
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/list.html.php:63
+msgid "Remove"
+msgstr "Quitar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/edit.html.php:46
+msgid "Section:"
+msgstr "Sección:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/edit.html.php:48
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/faq/edit.html.php:47
+msgid "Choose section"
+msgstr "Elegir sección"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/edit.html.php:54
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/faq/edit.html.php:45
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/faq/edit.html.php:53
+msgid "Section"
+msgstr "Sección:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/edit.html.php:60
+msgid "Title:"
+msgstr "Título:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/edit.html.php:65
+msgid "Description:"
+msgstr "Descripción:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/edit.html.php:70
+msgid "Position:"
+msgstr "Posición:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/edit.html.php:72
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/faq/edit.html.php:71
+msgid "Such as"
+msgstr "Como"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/edit.html.php:73
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/faq/edit.html.php:72
+msgid "Before "
+msgstr "Antes"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/edit.html.php:74
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/faq/edit.html.php:73
+msgid "After "
+msgstr "Después"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/edit.html.php:81
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/faq/edit.html.php:80
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/licenses/edit.html.php:56
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/pages/edit.html.php:60
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/accounts.html.php:66
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/dates.html.php:101
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/edit.html.php:68
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/reviews/edit.html.php:47
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/tasks/edit.html.php:48
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/templates/edit.html.php:39
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/edit.html.php:104
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/worth/edit.html.php:40
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/translate/contents/edit.html.php:55
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/translate/pages/edit.html.php:67
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/translate/texts/edit.html.php:44
+msgid "Save"
+msgstr "Guardar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/list.html.php:27
+msgid "Add Criteria"
+msgstr "Añadir criterio"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/list.html.php:31
+msgid "Show the section criteria:"
+msgstr "Mostrar los criterios de la sección:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/criteria/list.html.php:66
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/glossary/list.html.php:48
+msgid "Are you sure you want to delete this search?"
+msgstr "Seguro que deseas eliminar esta busqueda?"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/faq/list.html.php:27
+msgid "Add question"
+msgstr "Añadir pregunta"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/faq/list.html.php:31
+msgid "Show questions from:"
+msgstr "Mostrar las preguntas de:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/glossary/edit.html.php:38
+msgid "remove"
+msgstr "remove"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/glossary/edit.html.php:77
+msgid "Glossary Term, description, images and media (be seen at VIMEO website, youtube, president, slideshare)"
+msgstr "Termino de glosario, descripción, imágenes y media (vimeo, youtube, presi, slideshare)"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/glossary/edit.html.php:95
+msgid "Term"
+msgstr "Término"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/glossary/edit.html.php:102
+msgid "Explanation of the term"
+msgstr "Explicación del término"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/glossary/edit.html.php:115
+msgid "Upload image"
+msgstr "Subir una imagen"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/glossary/edit.html.php:137
+msgid "Preview"
+msgstr "Vista previa"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/glossary/list.html.php:26
+msgid "New term"
+msgstr "Nuevo término"
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/glossary/list.html.php:48
+msgid "Quit"
+msgstr "Abandonar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/home/add.html.php:34
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/home/list.html.php:58
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/home/list.html.php:116
+msgid "Item"
+msgstr "Articulo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/home/add.html.php:42
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/home/list.html.php:101
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/home/list.html.php:159
+msgid "Add to"
+msgstr "Añadir a"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/home/list.html.php:94
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/home/list.html.php:152
+msgid "New Item"
+msgstr "Nuevo artículo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/icons/edit.html.php:32
+msgid "Grouping:"
+msgstr "Agrupación:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/icons/edit.html.php:34
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/icons/list.html.php:59
+msgid "Both"
+msgstr "Ambas"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/icons/edit.html.php:40
+msgid "Number:"
+msgstr "Numero:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/icons/edit.html.php:43
+msgid "Tooltip Text:"
+msgstr "Texto de Información sobre herramientas:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/icons/edit.html.php:48
+msgid "Save:"
+msgstr "Guardar:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/icons/list.html.php:29
+msgid "Show rates for:"
+msgstr "Mostrar tarifas para:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/icons/list.html.php:45
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/licenses/list.html.php:54
+msgid "Number"
+msgstr "Numero"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/icons/list.html.php:56
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:66
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/worth/list.html.php:39
+msgid "[Edit]"
+msgstr "[Editar]"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/icons/list.html.php:61
+msgid "[Translate]"
+msgstr "[Traducir]"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/index.html.php:70
+msgid "Texts"
+msgstr "Textos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/index.html.php:71
+msgid "Tasks"
+msgstr "Tareas"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/index.html.php:72
+msgid "Mailings"
+msgstr "Mailings"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/index.html.php:97
+msgid "Pending tasks"
+msgstr "Tareas pendientes"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/index.html.php:108
+msgid "No more pending tasks"
+msgstr "No más tareas pendientes"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/index.html.php:133
+msgid "View feeds for::"
+msgstr "Ver fuentes de ::"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/add.html.php:28
+msgid "Amount:"
+msgstr "Importe:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/add.html.php:34
+msgid "Select user who does the contribution"
+msgstr "Seleccionar usuario que hace el aporte"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/add.html.php:43
+msgid "Select the project to which it is contributed"
+msgstr "Seleccionar el proyecto al que se aporta"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/add.html.php:51
+msgid "Anonymous Contribution:"
+msgstr "Aporte anónimo:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/add.html.php:55
+msgid "Generate contribution"
+msgstr "Generar aporte"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/details.html.php:48
+msgid "Run charge now"
+msgstr "Ejecutar cargo ahora"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/details.html.php:52
+msgid "Relocate this contribution"
+msgstr "Reubicar este aporte"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/details.html.php:58
+msgid "Amount provided:"
+msgstr "Cantidad aportada:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/details.html.php:62
+msgid "Campaign"
+msgstr "Campaña"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/details.html.php:96
+msgid "Manual generated by admin:"
+msgstr "Manual generado por admin: "
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/details.html.php:102
+msgid "Tracking Codes:"
+msgstr "Códigos de seguimiento: "
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/details.html.php:102
+msgid "Go to the transaction"
+msgstr "Ir a la transacción"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/details.html.php:115
+msgid "Chosen rewards:"
+msgstr "Recompensas elegidas:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/details.html.php:123
+msgid "Address:"
+msgstr "Dirección:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:31
+msgid "All projects"
+msgstr "Todos los proyectos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:34
+msgid "All users"
+msgstr "Todos los usuarios"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:37
+msgid "All methods"
+msgstr "Todos los métodos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:39
+msgid "Project Status"
+msgstr "Estado de proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:40
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:43
+msgid "All status"
+msgstr "Todos los estados"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:42
+msgid "Status of contributions"
+msgstr "Estado de aporte"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:46
+msgid "All the calls"
+msgstr "Todas las convocatorias"
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:95
+msgid "Contribution ID"
+msgstr "Aporte ID"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:97
+msgid "Cofinancier"
+msgstr "Cofinanciador"
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/list.html.php:101
+msgid "Contribution state"
+msgstr "Estado aporte"
+
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/move.html.php:53
+msgid "Select the project that moves the contribution"
+msgstr "Seleccionar el proyecto al que se mueve el aporte"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/move.html.php:61
+msgid "Relocate"
+msgstr "Reubicar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/move.html.php:62
+msgid "The original contribution will disappear of the co-funding institutions and will not be treated automatically at the end of round, shall we continue?"
+msgstr "El aporte original va a desaparecer de los cofinanciadores y no se va a tratar automaticamente al final de ronda, ¿Seguimos?"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:82
+msgid "Contributions report"
+msgstr "Informe de aportes"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:83
+msgid "Gross amounts (does not take into account commissions or failed executions by PayPal nor SaNostra)"
+msgstr "Cantidades en bruto (no se tiene en cuenta ejecuciones fallidas ni comisiones PayPal ni SaNostra)"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:85
+msgid "By Recipient"
+msgstr "Por destinatario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:88
+msgid "M&eacute; everything"
+msgstr "M&eacute;todo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:89
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:123
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:143
+msgid "Amount"
+msgstr "Cantidad"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:119
+msgid "By status"
+msgstr "Por estado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:139
+msgid "By Cofinanciers"
+msgstr "Por cofinanciadores"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:163
+msgid "Correct transaction Report"
+msgstr "Informe de transacciones correctas"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:164
+msgid "Incidents are not taken into account in the count of users/operations in amounts in commissions or in net."
+msgstr "Las incidencias NO se tienen en cuenta en el conteo de usuarios/operaciones ni en importes ni en comisiones ni en netos."
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:171
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:253
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:377
+msgid "1st Round"
+msgstr "1a Ronda"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:172
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:254
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:378
+msgid "2nd Round"
+msgstr "2a Ronda"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:231
+#, php-format
+msgid "8% of the net"
+msgstr "8% del neto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:243
+#, php-format
+msgid "92% of the net"
+msgstr "92% del neto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:263
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:270
+msgid "Without incidents"
+msgstr "Sin incidencias"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:273
+msgid "Amount of incidents"
+msgstr "Importe Incidencias"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:289
+msgid "Preapprovals executed correctly"
+msgstr "Preapprovals ejecutados correctamente"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:301
+#, php-format
+msgid "8% of the correct operations"
+msgstr "8% de las operaciones correctas"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:313
+#, php-format
+msgid "92% of the correct operations"
+msgstr "92% de las operaciones correctas"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:321
+msgid "Drip Fee"
+msgstr "Fee a Goteo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:325
+#, php-format
+msgid "0,35 per operation + 3,4% of the amount of drip (8% of the correct one)"
+msgstr "0,35 por operacion + 3,4% del importe de goteo (8% del correcto)"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:333
+msgid "Promoter Fee"
+msgstr "Fee al Promotor"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:337
+#, php-format
+msgid "0,35 per operation + 3,4% of the amount of the project (8% of the correct one)"
+msgstr "0,35 por operacion + 3,4% del importe del proyecto (8% del correcto)"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:345
+msgid "Drip Net"
+msgstr "Neto Goteo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:357
+msgid "Project Net"
+msgstr "Neto Proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:383
+msgid "No Users"
+msgstr "Nº Usuarios"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:390
+msgid "No Operations"
+msgstr "Nº Operaciones"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:397
+msgid "Incidence"
+msgstr "Incidencias"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:401
+msgid "Contributions via PayPal, POS or irrigation Capital assets"
+msgstr "Aportes mediante PayPal, TPV o de Capital Riego activos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:404
+msgid "Correct"
+msgstr "Correcto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:408
+msgid "Contributions of cash prior to the campaign"
+msgstr "Aportes de cash anteriores a la campa&ntilde;a"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/invests/report.html.php:414
+msgid "Notes:"
+msgstr "Notas"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/licenses/edit.html.php:31
+msgid "Group:"
+msgstr "Grupo:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/licenses/edit.html.php:33
+msgid "None"
+msgstr "Ninguno"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/licenses/edit.html.php:42
+msgid "Tooltip Text"
+msgstr "Texto de Información sobre herramientas"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/licenses/edit.html.php:48
+msgid "Type:"
+msgstr "Tipo:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/licenses/list.html.php:30
+msgid "Show per group:"
+msgstr "Mostrar por grupo:"
+
+# msgstr ""
+# ");\n"
+# "\n""                if (!empty($invest->resign))\n"
+# msgid ""
+# "                    echo \"<br />\".Text::_("");\n"
+# "\n"
+# "                if (!empty($invest->resign))\n"
+# "                    echo \"<br />\".Text::_("
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/licenses/list.html.php:32
+msgid "All groups"
+msgstr "Todos los grupos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/licenses/list.html.php:38
+msgid "Show by return type:"
+msgstr "Mostrar por tipo de retorno:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/licenses/list.html.php:40
+msgid "All types"
+msgstr "Todos los tipos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/licenses/list.html.php:56
+msgid "Tooltip"
+msgstr "Tooltip"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/edit.html.php:27
+msgid "Base"
+msgstr "Base"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/edit.html.php:28
+msgid "Contact technical support"
+msgstr "Aviso a los talleristas"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/edit.html.php:52
+msgid "N in the content, the following variables were replaced & aacute:"
+msgstr "N en el contenido, las siguientes variables fueron sustituidos y aacute:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/edit.html.php:54
+msgid "To access the id of the recipient"
+msgstr "Para acceder a la identificación del destinatario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/edit.html.php:55
+msgid " For the email recipient"
+msgstr "Para el destinatario del mensaje de correo electrónico"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/edit.html.php:56
+msgid " For the name of the recipient"
+msgstr "Para el nombre del destinatario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/edit.html.php:57
+msgid " For the url of this platform "
+msgstr "Para la dirección url de esta plataforma"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/edit.html.php:59
+msgid " For the id of the project"
+msgstr "Para el código del proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/edit.html.php:60
+msgid " For the project name"
+msgstr "Para el nombre del proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/edit.html.php:61
+msgid " For project url"
+msgstr "Para el URL del proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/edit.html.php:66
+msgid "We will communicate with "
+msgstr "Nos comunicaremos con"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/edit.html.php:69
+msgid "Select template:"
+msgstr "Seleccionar plantilla:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/edit.html.php:72
+msgid "No template"
+msgstr "Sin plantilla"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/edit.html.php:77
+msgid "Load"
+msgstr "Cargar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/edit.html.php:81
+msgid "Subject:"
+msgstr "Asunto:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/edit.html.php:87
+msgid "Contents: (html code; linebreaks should be with &lt;br /&gt;)"
+msgstr "Contenido: código html: saltos debe ser con <br / >)"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/edit.html.php:93
+msgid "List recipients:"
+msgstr "Lista de destinatarios:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/edit.html.php:110
+msgid "Send"
+msgstr "Enviar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/list.html.php:32
+msgid "At"
+msgstr "En"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/list.html.php:40
+msgid "Project that contains the name"
+msgstr "Proyecto que contiene el nombre"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/list.html.php:53
+msgid "Contributed by"
+msgstr "Aportado por"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/list.html.php:55
+msgid "Any method"
+msgstr "Cualquier metodo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/list.html.php:64
+msgid "Stakeholders in order"
+msgstr "Los interesados con el fin"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/list.html.php:66
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/list.html.php:79
+msgid "Anyone/Anything"
+msgstr "Cualquier persona/Cualquier cosa"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/list.html.php:73
+msgid "Whose name or email contains"
+msgstr "Cuyo nombre o correo electrónico contiene"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/list.html.php:77
+msgid "That are"
+msgstr "Que son"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/list.html.php:87
+msgid "Search for recipients"
+msgstr "Buscar destinatarios"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/send.html.php:31
+msgid "The communication has been sent correctly with this content:"
+msgstr "La comunicación se ha enviado correctamente con este contenido:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/send.html.php:34
+msgid "We wanted to communicate with"
+msgstr "Buscábamos comunicarnos con "
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/send.html.php:34
+msgid "and finally we have sent to the following recipients: "
+msgstr "y finalmente hemos enviado a los siguientes destinatarios: "
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/send.html.php:36
+msgid "Send to"
+msgstr "Enviado a "
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/mailing/send.html.php:36
+msgid "Failed to send to"
+msgstr "Fallo al enviar a "
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/pages/edit.html.php:56
+msgid "Header"
+msgstr "Encabezado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/pages/list.html.php:27
+msgid "New Page"
+msgstr "Nueva Página"
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:35
+msgid "Assigning translators"
+msgstr "Asignar traductores"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:43
+msgid "Alias/Email the author:"
+msgstr "Alias/correo electrónico del autor:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:47
+msgid "Category:"
+msgstr "Categoría:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:49
+msgid "Any Category:"
+msgstr "Cualquier Categoría"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:58
+msgid "Project Name:"
+msgstr "Nombre del Proyecto:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:62
+msgid "Show by State:"
+msgstr "Mostrar por estado:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:64
+msgid "All States"
+msgstr "Todos los estados"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:65
+msgid "In Negotiation"
+msgstr "En negociación"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:76
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/texts/list.html.php:59
+msgid "Search"
+msgstr "Buscar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:79
+msgid "Sort By:"
+msgstr "Filtrar por:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:96
+msgid "Results limited to 999 records at most."
+msgstr "Los resultados están limitados a 999 registros"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:109
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/reviews/list.html.php:65
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/list.html.php:55
+msgid "Creator"
+msgstr "Creador"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:110
+msgid "Received"
+msgstr "Recivido"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:112
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/tasks/list.html.php:61
+msgid "Node"
+msgstr "Nodo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:113
+msgid "Minimum"
+msgstr "Minimo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/projects/list.html.php:114
+msgid "Optimum"
+msgstr "Optimo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/edit.html.php:42
+msgid "Select the project to highlight"
+msgstr "Seleccione el proyecto para resaltar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/edit.html.php:51
+msgid "Maximum 24 Characters"
+msgstr "Maximo 24 caracteres"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/edit.html.php:56
+msgid "Maximum 100 Characters"
+msgstr "Maximo 100 caracteres"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/edit.html.php:62
+msgid "Posted"
+msgstr "Publicado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/promote/list.html.php:56
+msgid "Hide"
+msgstr "Esconder"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/reviews/list.html.php:30
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/edit.html.php:17
+msgid "Project:"
+msgstr "Proyecto:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/reviews/list.html.php:40
+msgid "Show by state:"
+msgstr "Mostrar por estado:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/reviews/list.html.php:48
+msgid "Assigned to:"
+msgstr "Asignado a:"
+
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/reviews/list.html.php:67
+msgid "Points"
+msgstr "Puntos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/edit.html.php:18
+msgid "User:"
+msgstr "Usuario:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/edit.html.php:19
+msgid "Quantity Supplied:"
+msgstr "Cantidad suministrada:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/edit.html.php:24
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:57
+msgid "Reward"
+msgstr "Recompensa"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/edit.html.php:37
+msgid "No reward."
+msgstr "Ninguna recompensa."
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:23
+msgid "Alias ​​/ User Email:"
+msgstr "Alias / Email del usuario:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:28
+msgid "Show by state reward:"
+msgstr "Mostrar por estado de la recompensa:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:49
+msgid "It's NOT necessary to use a filter, there are too many searches."
+msgstr "No es necesario usar un filtro, hay demasiadas búsquedas."
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:55
+msgid "cofinancier"
+msgstr "cofinanciador"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:58
+msgid "State"
+msgstr "Estado"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:71
+msgid "Slope"
+msgstr "Pendiente"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:72
+msgid "[mark fulfilled]"
+msgstr "[Marcar cumplido]"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:74
+msgid "Fulfilled"
+msgstr "Cumplido"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:75
+msgid "[To mark]"
+msgstr "A marcar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/rewards/list.html.php:83
+msgid "No contributions that match the filters."
+msgstr "Ninguna contribución que coincidan con los filtros."
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/sended/list.html.php:39
+msgid "ID, name or email of the recipient"
+msgstr "ID, nombre o correo electrónico del destinatario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/sended/list.html.php:44
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/sended/list.html.php:81
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/templates/list.html.php:61
+msgid "Template"
+msgstr "Plantilla"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/sended/list.html.php:46
+msgid "All Templates"
+msgstr "Todas las plantillas"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/sended/list.html.php:58
+msgid "From Date"
+msgstr "Desde de la fecha"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/sended/list.html.php:62
+msgid "To Date"
+msgstr "Hasta la fecha"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/sended/list.html.php:80
+msgid "Recipient"
+msgstr "Destinatario"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/tasks/list.html.php:25
+msgid "New Task"
+msgstr "Nueva tarea"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/tasks/list.html.php:62
+msgid "Task"
+msgstr "Tarea"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/tasks/list.html.php:75
+msgid "The task is removed irreversibly, ok?"
+msgstr "¿La tarea se elimina irreversiblemente, ok?"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/templates/list.html.php:33
+msgid "Filter grouping:"
+msgstr "Agrupación de filtros:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/templates/list.html.php:42
+msgid "Filter by Name or Subject"
+msgstr "Filtrar por nombre o tema"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/edit.html.php:42
+msgid "Translators for the project"
+msgstr "Traductores para el proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/edit.html.php:46
+msgid "Translation"
+msgstr "Traducciones"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/edit.html.php:59
+msgid "Select another translator"
+msgstr "Seleccione otro traductor"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/edit.html.php:67
+msgid "assign"
+msgstr "asignar"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/edit.html.php:72
+msgid "Close the translation"
+msgstr "Cerrar la traducción"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/edit.html.php:73
+msgid "Warn the author"
+msgstr "Avisar al autor"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/edit.html.php:82
+msgid "Project we enable"
+msgstr "Proyecto que habilitamos"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/edit.html.php:84
+msgid "Select the Project"
+msgstr "Seleccionar proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/edit.html.php:93
+msgid "Original language project"
+msgstr "Idioma original del proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/list.html.php:25
+msgid "New project to translate"
+msgstr "Nuevo proyecto para traducir"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/list.html.php:29
+msgid "Projects User"
+msgstr "Usuario del proyecto"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/list.html.php:31
+msgid "All Producers"
+msgstr "Todos los productores"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/list.html.php:37
+msgid "Assigned to translator:"
+msgstr "Asignando traducción"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/list.html.php:39
+msgid "All translators"
+msgstr "Todos los traductores"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/translates/list.html.php:56
+msgid "language"
+msgstr "Idioma"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/worth/edit.html.php:31
+msgid "Level name:"
+msgstr "Nombre de nivel:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/worth/edit.html.php:36
+msgid "Flow:"
+msgstr "Flujo:"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/worth/list.html.php:30
+msgid "Level"
+msgstr "Nivel"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/worth/list.html.php:31
+msgid "Flow"
+msgstr "flujo"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/admin/worth/list.html.php:49
+msgid "IMPOSSIBLE !!! No records found"
+msgstr "IMPOSIBLE !!! No se encontraron registros"
+
+#: C:\Users\Balamurali\Desktop\beta.winnersfund.com/view/review/index.html.php:43
+msgid "My panel reviewer"
+msgstr "Mi panel de revision"
+
+#~ msgid "Details of the contribution"
+#~ msgstr "Detalles del aporte"
+
+#~ msgid "Editing License"
+#~ msgstr "Editando Licencia"
+
+
+#~ msgid "Adding a new report"
+#~ msgstr "Iniciando un nuevo boletín"
+
+#~ msgid "See full list"
+#~ msgstr "Viendo listado completo"
+
+#~ msgid "Project administration"
+#~ msgstr "Gestión de proyectos"
+
+#~ msgid "Project dates"
+#~ msgstr "Fechas del proyecto"
+
+#~ msgid "Project images"
+#~ msgstr "Imágenes del proyecto"
+
+#~ msgid "Assigning a contribution to the project"
+#~ msgstr "Asignando a una Convocatoria el proyecto"
+
+#~ msgid "Project financer report"
+#~ msgstr "Informe Financiero del proyecto"
+
+#~ msgid "Changing project ID"
+#~ msgstr "Cambiando Id de proyecto"
+
+#~ msgid "Editing Feature"
+#~ msgstr "Editando Destacado"
+
+#~ msgid "Translating Feature"
+#~ msgstr "Traduciendo Destacado"
+
+#~ msgid "Starting briefing"
+#~ msgstr "Iniciando briefing"
+
+#~ msgid "Processing reward"
+#~ msgstr "Gestionando recompensa"
+
+#~ msgid "History of dispatches"
+#~ msgstr "Historial envíos"
+
+#~ msgid "Sent emails"
+#~ msgstr "Emails enviados"
+
+#~ msgid "Institutional Supports"
+#~ msgstr "Apoyos institucionales"
+
+#~ msgid "Translating Template"
+#~ msgstr "Traduciendo Plantilla"
+
+#~ msgid "Impersonating User"
+#~ msgstr "Suplantando al Usuario"
+
+#~ msgid "Moving the user to another node "
+#~ msgstr "Moviendo a otro Nodo el usuario "
+
+#~ msgid "Frontpage"
+#~ msgstr "Portada"
+
+#~ msgid "All available components are now on the front page"
+#~ msgstr "Todos los elementos disponibles ya estan en portada"
+
+#~ msgid "Page adjustments (admin)"
+#~ msgstr "modificacion de página institucional (admin)"
+
+#~ msgid "Initialised"
+#~ msgstr "Iniciado"
+
+#~ msgid "Entries"
+#~ msgstr "Entradas"
+
+#~ msgid "Level of meritocracy has been updated"
+#~ msgstr "Nivel de meritocracia modificado"
+
+#~ msgid "You don't have any blog space, please contact the administrator"
+#~ msgstr "No tienes ningún idioma, contacta con el administrador"
+
+#~ msgid "Translating "
+#~ msgstr "Traduciendo"
+
+#~ msgid "FAQ"
+#~ msgstr "Faq"
+
+#~ msgid "Register without ID"
+#~ msgstr "Registro sin id"
+
+#~ msgid "Record without content"
+#~ msgstr "Registro sin contenido"
+
+#~ msgid "Project activity"
+#~ msgstr "Actividad proyecto"
+
+#~ msgid "Project, Publish and Questionnaire"
+#~ msgstr "Proyecto, pública y formulario"
+
+#~ msgid "Project listing"
+#~ msgstr "Costes del proyecto"
+
+#~ msgid "Manage project accounts"
+#~ msgstr "Retornos y recompensas del proyecto"
+
+#~ msgid "Project section"
+#~ msgstr "Sección descubre proyectos"
+
+#~ msgid "Blue warnings"
+#~ msgstr "Avisos azules"
+
+#~ msgid "Contract Form"
+#~ msgstr "Formulario Contrato"
+
+#~ msgid "Missing text"
+#~ msgstr "Falta texto"
+
+#~ msgid "Missing name"
+#~ msgstr "Falta nombre"
+
+#~ msgid "Missing node"
+#~ msgstr "Falta nodo"
+
+#~ msgid "Blog entries"
+#~ msgstr "Entradas de blog"
+
+#~ msgid "Project summaries"
+#~ msgstr "Resumen proyectos"
+
+#~ msgid "Contribution summary"
+#~ msgstr "Resumen convocatorias"
+
+#~ msgid "Missing component"
+#~ msgstr "Falta elemento"
+
+#~ msgid "The quantity is incorrect"
+#~ msgstr "La cantidad no es correcta"
+
+#~ msgid "Charged"
+#~ msgstr "Cobrado"
+
+#~ msgid "Paypal contribution"
+#~ msgstr "El aporte PayPal"
+
+#~ msgid "Shouldn't be in process"
+#~ msgstr "no debería estar en estado '"
+
+#~ msgid "TPV contribution"
+#~ msgstr "El aporte TPV"
+
+#~ msgid ""
+#~ "Warning! In the second round, but date of the second round has not been"
+#~ msgstr ""
+#~ "ATENCION! En segunda ronda pero NO está marcada la fecha de pase a segunda"
+
+#~ msgid "indicated!"
+#~ msgstr "ronda!"
+
+#~ msgid "The parameter $act_eq has not been calculated properly"
+#~ msgstr "No se ha calculado bien el parametro $act_eq"
+
+#~ msgid "No data"
+#~ msgstr "Sin datos"
+
+#~ msgid "The project has no ID"
+#~ msgstr "El proyecto no tiene id"
+
+#~ msgid "The project hasn't been discarded and is not being edited."
+#~ msgstr "El proyecto no esta descartado ni en edicion"
+
+#~ msgid "Error during verification of unique project ID"
+#~ msgstr "Fallo al verificar id única para el proyecto."
+
+#~ msgid "In the first round"
+#~ msgstr "En primera ronda"
+
+#~ msgid "In the second round"
+#~ msgstr "En segunda ronda"
+
+#~ msgid "Displayed and has no project"
+#~ msgstr "Se muestra y no tiene proyecto"
+
+#~ msgid "The user"
+#~ msgstr "El usuarios"
+
+#~ msgid "it is written off"
+#~ msgstr " se da de baja"
+
+#~ msgid "They have asked for the email to be written off."
+#~ msgstr "Han solicitado la baja para el mail"
+
+#~ msgid "that corresponds to the user"
+#~ msgstr "que corresponde al usuario"
+
+#~ msgid "has left the following message"
+#~ msgstr "y ha dejado el siguiente mensaje:"
+
+#~ msgid "It has not been possible to remove the web"
+#~ msgstr "No se ha podido quitar la web"
+
+#~ msgid "Transaction details"
+#~ msgstr "Detalles de la transaccion"
+
+#~ msgid " Contribution Quantity"
+#~ msgstr "Cantidad aportada"
+
+#~ msgid "Date of contribution"
+#~ msgstr "Fecha del aporte"
+
+#~ msgid "Charges executed (admin)"
+#~ msgstr "Cargo ejecutado el:"
+
+#~ msgid "Money returned on:"
+#~ msgstr "Dinero devuelto el:"
+
+#~ msgid "Risk capital"
+#~ msgstr "Capital riego"
+
+#~ msgid "Log viewer"
+#~ msgstr "Visor de logs"
+
+#~ msgid "Cost"
+#~ msgstr "Importe"
+
+#~ msgid "Communications"
+#~ msgstr "Verificaciones"
+
+#~ msgid "Warnings"
+#~ msgstr "Avisos"
+
+#~ msgid "file"
+#~ msgstr "archivo"
+
+#~ msgid "Image error"
+#~ msgstr "falla imagen"
+
+#~ msgid "Introduction text"
+#~ msgstr "Texto de la entrada"
+
+#~ msgid "Allow comments"
+#~ msgstr "Permite comentarios"
+
+#~ msgid "Description of Term"
+#~ msgstr "Explicación del término"
+
+#~ msgid "Upload an image"
+#~ msgstr "Subir una imagen"
+
+#~ msgid "Name:"
+#~ msgstr "Nombre:"
+
+#~ msgid "Costs:"
+#~ msgstr "Importe:"
+
+#~ msgid "Select which user makes the contribution"
+#~ msgstr "Seleccionar usuario que hace el aporte"
+
+#~ msgid "Execute the charges immediately"
+#~ msgstr "Ejecutar cargo ahora"
+
+#~ msgid "Tracking codes:"
+#~ msgstr "Códigos de seguimiento:"
+
+#~ msgid "Rewards chosen:"
+#~ msgstr "Recompensas elegidas:"
+
+#~ msgid "All calls"
+#~ msgstr "Todas las convocatorias"
+
+#~ msgid "Select which project to move the contribution to"
+#~ msgstr "Seleccionar el proyecto al que se mueve el aporte"
+
+#~ msgid ""
+#~ "The original contribution will disappear automatically from the co-"
+#~ "financiers and will not be dealt with at the end of the round, do you "
+#~ "want to continue?"
+#~ msgstr ""
+#~ "El aporte original va a desaparecer de los cofinanciadores y no se va "
+#~ "atratar automaticamente al final de ronda, ¿Seguimos?"
+
+#~ msgid "Contribution reports"
+#~ msgstr "Informe de aportes"
+
+#~ msgid ""
+#~ "Gross figures (not taking into account failed executions or PayPal fees "
+#~ "or Sanostra)"
+#~ msgstr ""
+#~ "Cantidades en bruto (no se tiene en cuenta ejecuciones fallidas ni "
+#~ "comisiones PayPal ni SaNostra)"
+
+#~ msgid "Report of correct transactions"
+#~ msgstr "Informe de transacciones correctas"
+
+#~ msgid ""
+#~ "NO incidents are taken into account in the count of users/transactions or "
+#~ "amounts, fees or net."
+#~ msgstr ""
+#~ "Las incidencias NO se tienen en cuenta en el conteo de usuarios/"
+#~ "operaciones ni en importes ni en comisiones ni en netos."
+
+#~ msgid "Incident costs"
+#~ msgstr "Importe Incidencias"
+
+#~ msgid "8% of correct operations"
+#~ msgstr "8% de las operaciones correctas"
+
+#~ msgid "Fee to trickle"
+#~ msgstr "Fee a Goteo"
+
+#~ msgid "0.35 per operation + 3,4% of the trickle amount (8% of the correct)"
+#~ msgstr "0,35 por operacion + 3,4% del importe de goteo (8% del correcto)"
+
+#~ msgid "Developer fee"
+#~ msgstr "Fee al Promotor"
+
+#~ msgid "Net trickle"
+#~ msgstr "Neto Goteo"
+
+#~ msgid "Number of users"
+#~ msgstr "Nº Usuarios"
+
+#~ msgid "Number of operations"
+#~ msgstr "Nº Operaciones"
+
+#~ msgid "Contributions via Paypal, TPV, or  Irrigation Equity assets"
+#~ msgstr "Aportes mediante PayPal, TPV o de Capital Riego activos"
+
+#~ msgid "Cash contributions prior to the campaign&ntilde;a"
+#~ msgstr "Aportes de cash anteriores a la campa&ntilde;a"
+
+#~ msgid "Notes"
+#~ msgstr "Notas"
+
+#~ msgid "Filter by type:"
+#~ msgstr "Mostrar por tipo de retorno:"
+
+#~ msgid "Basis"
+#~ msgstr "Base"
+
+#~ msgid "by recipient ID"
+#~ msgstr " Para el id de acceso del destinatario"
+
+#~ msgid "by recipient email"
+#~ msgstr " Para el email del destinatario"
+
+#~ msgid "by recipient name"
+#~ msgstr " Para el nombre del destinatario"
+
+#~ msgid "by the platform URL"
+#~ msgstr " Para la url de esta plataforma"
+
+#~ msgid "by project URL"
+#~ msgstr " Para la url del proyecto"
+
+#~ msgid "We are going to communicate with"
+#~ msgstr "Vamos a comunicarnos con"
+
+#~ msgid "Recipient listing"
+#~ msgstr "Lista destinatarios:"
+
+#~ msgid "To the"
+#~ msgstr "A los"
+
+#~ msgid "projects whose name contain"
+#~ msgstr "De proyectos que el nombre contenga"
+
+#~ msgid "in state"
+#~ msgstr "En estado"
+
+#~ msgid "via"
+#~ msgstr "Aportado mediante"
+
+#~ msgid "interested in end"
+#~ msgstr "Interesados en fin"
+
+#~ msgid "The information has been sent correctly with the following content:"
+#~ msgstr "La comunicación se ha enviado correctamente con este contenido:"
+
+#~ msgid "and we have finally sent to the following recipients"
+#~ msgstr " y finalmente hemos enviado a los siguientes destinatarios:"
+
+#~ msgid "Sent to"
+#~ msgstr "Enviado a"
+
+#~ msgid "Error during sending to"
+#~ msgstr "Fallo al enviar a"
+
+#~ msgid "via any method"
+#~ msgstr "mediante cualquier metodo"
+
+#~ msgid "whose password is identical to its email"
+#~ msgstr "que su contraseña sea igual que su email"
+
+#~ msgid "SQL failure!!!"
+#~ msgstr "Fallo el SQL!!!!!"
+
+#~ msgid "Edit meritocracy (admin)"
+#~ msgstr "modificacion de meritocracia (admin)"
+
+#~ msgid "Admin %s has %s the level of meritocracy %s"
+#~ msgstr "El admin %s ha %s el nivel de meritocrácia %s"
+
+#~ msgid "Editing Idea"
+#~ msgstr "Editando Idea"
+
+#~ msgid "Word Count"
+#~ msgstr "Conteo de palabras"
+
+#~ msgid "Management of fulfilled collective returns"
+#~ msgstr "Gestión de retornos colectivos cumplidos"
+
+#~ msgid "Management of Contributions and Transactions"
+#~ msgstr "Gestión de aportes y transacciones"
+
+#~ msgid "Contributions to Projects"
+#~ msgstr "Aportes a Proyectos"
+
+#~ msgid "Blog Carroussel"
+#~ msgstr "Carrusel de blog"
+
+#~ msgid "Sorting"
+#~ msgstr "Ordenando"
+
+#~ msgid "Campaign Management"
+#~ msgstr "Gestión de campañas"
+
+#~ msgid "New Campaign"
+#~ msgstr "Nueva Campaña"
+
+#~ msgid "Editing Campaign"
+#~ msgstr "Editando Campaña"
+
+#~ msgid "Report on the state of Campaign"
+#~ msgstr "Informe de estado de la Campaña"
+
+#~ msgid "Main administration panel"
+#~ msgstr "Panel principal de administración"
+
+#~ msgid ""
+#~ "Admin %s has <span class=\"red\">changed the dates</span> for project %s"
+#~ msgstr ""
+#~ "El admin %s ha <span class=\"red\">tocado las fechas</span> del proyecto "
+#~ "%s"
+
+#~ msgid ""
+#~ "Admin %s has <span class=\"red\">failed to change the dates</span> for "
+#~ "project %s"
+#~ msgstr ""
+#~ "%s Al admin %s le ha <span class=\"red\">fallado al tocar las fechas</"
+#~ "span> del proyecto %s"
+
+#~ msgid ""
+#~ "Admin %s has set the project %s to state <span class=\"red\">Review</span>"
+#~ msgstr ""
+#~ "El admin %s ha pasado el proyecto %s al estado <span class=\"red "
+#~ "\">Revisión</span>"
+
+#~ msgid ""
+#~ "Failed for admin %s when trying to set the project %s to state <span "
+#~ "class=\"red\">Review</span>"
+#~ msgstr ""
+#~ "Al admin %s le ha fallado al pasar el proyecto %s al estado <span class="
+#~ "\"red\">Revisión</span>"
+
+#~ msgid ""
+#~ "Admin %s has set the project %s to state <span class=\"red\">in Campaign</"
+#~ "span>"
+#~ msgstr ""
+#~ "El admin %s ha pasado el proyecto %s al estado <span class=\"red\">en "
+#~ "Campaña</span>"
+
+#~ msgid ""
+#~ "Failed for admin %s when trying to set the project %s to state <span "
+#~ "class=\"red\">in Campaign</span>"
+#~ msgstr ""
+#~ "Al admin %s le ha fallado al pasar el proyecto %s al estado <span class="
+#~ "\"red\">en Campaña</span>"
+
+#~ msgid ""
+#~ "Admin %s has set the project %s to state <span class=\"red\">Discarded</"
+#~ "span>"
+#~ msgstr ""
+#~ "El admin %s ha pasado el proyecto %s al estado <span class=\"red"
+#~ "\">Descartado</span>"
+
+#~ msgid ""
+#~ "Failed for admin %s when trying to set the project %s to state <span "
+#~ "class=\"red\">Discarded</span>"
+#~ msgstr ""
+#~ "Al admin %s le ha fallado al pasar el proyecto %s al estado <span class="
+#~ "\"red\">Descartado</span>"
+
+#~ msgid ""
+#~ "Admin %s has set the project %s to state <span class=\"red\">Edit</span>"
+#~ msgstr ""
+#~ "El admin %s ha pasado el proyecto %s al estado <span class=\"red"
+#~ "\">Edición</span>"
+
+#~ msgid ""
+#~ "Failed for admin %s when trying to set the project %s to state <span "
+#~ "class=\"red\">Edit</span>"
+#~ msgstr ""
+#~ "Al admin %s le ha fallado al pasar el proyecto %s al estado <span class="
+#~ "\"red\">Edición</span>"
+
+#~ msgid ""
+#~ "Admin %s has set the project %s to state <span class=\"red\">Financed</"
+#~ "span>"
+#~ msgstr ""
+#~ "El admin %s ha pasado el proyecto %s al estado <span class=\"red"
+#~ "\">Financiado</span>"
+
+#~ msgid ""
+#~ "Failed for admin %s when trying to set the project %s to state <span "
+#~ "class=\"red\">Financed</span>"
+#~ msgstr ""
+#~ "Al admin %s le ha fallado al pasar el proyecto %s al estado <span class="
+#~ "\"red\">Financiado</span>"
+
+#~ msgid ""
+#~ "Admin %s has set the project %s to state <span class=\"red\">Return "
+#~ "fulfilled</span>"
+#~ msgstr ""
+#~ "El admin %s ha pasado el proyecto %s al estado <span class=\"red"
+#~ "\">Retorno cumplido</span>"
+
+#~ msgid ""
+#~ "Failed for admin %s when trying to set the project %s to state <span "
+#~ "class=\"red\">Return fulfilled</span>"
+#~ msgstr ""
+#~ "Al admin %s le ha fallado al pasar el proyecto %s al estado <span class="
+#~ "\"red\">Retorno cumplido</span>"
+
+#~ msgid "Admin %s has valued %s with %s"
+#~ msgstr "El admin %s ha %s la valoración de %s"
+
+#~ msgid "Admin %s has valued %s for %s"
+#~ msgstr "El admin %s ha dado por %s la valoración de %s"
+
+#~ msgid "Admin %s has %s to %s the valuation of %s"
+#~ msgstr "El admin %s ha %s a %s la revisión de %s"
+
+#~ msgid "translation (admin)"
+#~ msgstr " traduccion (admin)"
+
+#~ msgid "Admin %s has %s to %s the translation of project %s"
+#~ msgstr "El admin %s ha %s a %s la traducción del proyecto %s"
+
+#~ msgid " is available for translation"
+#~ msgstr " se ha habilitado para traducir"
+
+#~ msgid "Admin %s has %s the translation of project %s"
+#~ msgstr "El admin %s ha %s la traducción del proyecto %s"
+
+#~ msgid "An email has been send to"
+#~ msgstr "Se ha enviado un email a"
+
+#~ msgid "Failed to report to"
+#~ msgstr "Ha fallado informar a"
+
+#~ msgid "of the possibility to translate your project"
+#~ msgstr "de la posibilidad de traducción de su proyecto"
+
+#~ msgid "Admin %s has set as %s the translation of %s"
+#~ msgstr "El admin %s ha dado por %s la traducción de %s"
+
+#~ msgid "Project has been featured correctly"
+#~ msgstr "Proyecto destacado correctamente"
+
+#~ msgid "new project featured on front page (admin)"
+#~ msgstr "nuevo proyecto destacado en portada (admin)"
+
+#~ msgid "Admin %s has %s project %s"
+#~ msgstr "El admin %s ha %s el proyecto %s"
+
+#~ msgid "Featured was updated correctly"
+#~ msgstr "Destacado actualizado correctamente"
+
+#~ msgid "project was removed from front page (admin)"
+#~ msgstr "proyecto quitado portada (admin)"
+
+#~ msgid "Project removed correctly"
+#~ msgstr "Proyecto quitado correctamente"
+
+#~ msgid "Data saved"
+#~ msgstr "Datos guardados"
+
+#~ msgid "new project banner featured on front page (admin)"
+#~ msgstr "nuevo banner de proyecto destacado en portada (admin)"
+
+#~ msgid "Admin %s has %s in project %s"
+#~ msgstr "El admin %s ha %s del proyecto %s"
+
+#~ msgid "Published a banner"
+#~ msgstr "Publicado un banner"
+
+#~ msgid "project banner removed from front page (admin)"
+#~ msgstr "banner de proyecto quitado portada (admin)"
+
+#~ msgid "Removed a banner"
+#~ msgstr "Quitado el banner"
+
+#~ msgid "Question added successfully"
+#~ msgstr "Pregunta añadida correctamente"
+
+#~ msgid "Question has been edited successfully"
+#~ msgstr "Pregunta editado correctamente"
+
+#~ msgid "Criterium added successfully"
+#~ msgstr "Criterio añadido correctamente"
+
+#~ msgid "Criterium edited successfully"
+#~ msgstr "Criterio editado correctamente"
+
+#~ msgid "New type added successfully"
+#~ msgstr "Nuevo tipo añadido correctamente"
+
+#~ msgid "Type edited successfully"
+#~ msgstr "Tipo editado correctamente"
+
+#~ msgid "Admin %s has %s the type of return/rewards %s"
+#~ msgstr "El admin %s ha %s el tipo de retorno/recompensa %s"
+
+#~ msgid "License added successfully"
+#~ msgstr "Licencia añadida correctamente"
+
+#~ msgid "License edited successfully"
+#~ msgstr "Licencia editada correctamente"
+
+#~ msgid "Admin %s has %s license %s"
+#~ msgstr "El admin %s ha %s la licencia %s"
+
+#~ msgid "Entry was successfully placed on front page"
+#~ msgstr "Entrada colocada en la portada correctamente"
+
+#~ msgid "Entry was successfully placed on footer"
+#~ msgstr "Entrada colocada en el footer correctamente"
+
+#~ msgid "New category"
+#~ msgstr "Nueva categoría"
+
+#~ msgid "Priority"
+#~ msgstr "Prioridad"
+
+#~ msgid "Admin %s has %s of user %s"
+#~ msgstr "El admin %s ha %s del usuario %s"
+
+#~ msgid "Has <strong>%s</strong> to user <strong>%s</strong> CORRECTLY"
+#~ msgstr "Ha <strong>%s</strong> al usuario <strong>%s</strong> CORRECTAMENTE"
+
+#~ msgid "Admin %s has %s to user %s"
+#~ msgstr "El admin %s ha %s al usuario %s"
+
+#~ msgid "FAILED when <strong>%s</strong> to user <strong>%s</strong>"
+#~ msgstr ""
+#~ " Ha FALLADO cuando ha <strong>%s</strong> al usuario <strong>%s</strong>"
+
+#~ msgid "This contribution can not be relocated!"
+#~ msgstr "No se puede reubicar este aporte!"
+
+#~ msgid "Contribution relocated"
+#~ msgstr "Aporte reubicado"
+
+#~ msgid "%s has contributed %s to project %s in the name of %s"
+#~ msgstr "%s ha aportado %s al proyecto %s en nombre de %s"
+
+#~ msgid "Contribution relocated successfully"
+#~ msgstr "Aporte reubicado correctamente"
+
+#~ msgid "Failed to change the original state of the contribution (%s)"
+#~ msgstr "A fallado al cambiar el estado del aporte original (%s)"
+
+#~ msgid "Manual contribution created correctly"
+#~ msgstr "Aporte manual creado correctamente"
+
+#~ msgid ""
+#~ "Something (indeterminate) has failed when creating the manual contribution"
+#~ msgstr "Ha fallado algo al crear el aporte manual"
+
+#~ msgid "Only manual"
+#~ msgstr "Solo los manuales"
+
+#~ msgid "Only those from \"Market\""
+#~ msgstr "Solo los de Bolsa"
+
+#~ msgid "Project instance isn't valid"
+#~ msgstr "Instancia de proyecto no valida"
+
+#~ msgid ""
+#~ "It should not be possible to cancel a contribution when the project is "
+#~ "already"
+#~ msgstr "No debería poderse cancelar un aporte cuando el proyecto ya está"
+
+#~ msgid ""
+#~ "It shouldn't be possible to cancel a contribution once the project is "
+#~ "fully financed. If you absolutely must, do it from the PayPal panel or "
+#~ "the TPV."
+#~ msgstr ""
+#~ "financiado. Si es imprescindible, hacerlo desde el panel de paypal o tpv"
+
+#~ msgid ""
+#~ "Admin %s has cancelled the contribution and preapproval of %s of %s via"
+#~ msgstr ""
+#~ "El admin %s ha cancelado aporte y preapproval de %s de %s mediante PayPal"
+
+#~ msgid "PayPal (id: %s) to project %s on date %s"
+#~ msgstr "(id: %s) al proyecto %s del dia %s"
+
+#~ msgid "Failed to cancel preapproval in PayPal:"
+#~ msgstr "Fallo al cancelar el preapproval en paypal:"
+
+#~ msgid "Contribution cancelled successfully."
+#~ msgstr "Aporte cancelado correctamente."
+
+#~ msgid ""
+#~ "Admin %s has cancelled a TPV charge of %s of %s via TPV (id: %s) to "
+#~ "projecct %s on date %s"
+#~ msgstr ""
+#~ "El admin %s ha anulado el cargo tpv de %s de %s mediante TPV (id: %s) al "
+#~ "proyecto %s del dia %s"
+
+#~ msgid "Task failed."
+#~ msgstr "Fallo en la operación."
+
+#~ msgid ""
+#~ "Admin %s has cancelled a manual contribution of %s of %s (id: %s) to "
+#~ "project %s on date %s"
+#~ msgstr ""
+#~ "El admin %s ha cancelado aporte manual de %s de %s (id: %s) al proyecto "
+#~ "%s del dia %s"
+
+#~ msgid ""
+#~ "Admin %s has failed to cancel a manual contribution of %s to %s (id: %s) "
+#~ "to project %s on date %s."
+#~ msgstr ""
+#~ "El admin %s ha fallado al cancelar el aporte manual de %s de %s (id: %s) "
+#~ "al proyecto %s del dia %s."
+
+#~ msgid "Charges cancelled (admin)"
+#~ msgstr "Cargo cancelado (admin)"
+
+#~ msgid ""
+#~ "Project doesn't have a PayPal account!!! add it to the Contract section "
+#~ "of the author's dashboard."
+#~ msgstr ""
+#~ "El proyecto no tiene cuenta paypal!!, ponersela en la seccion Contrato "
+#~ "del dashboard del autor"
+
+#~ msgid "Project without PayPal account (admin)"
+#~ msgstr "proyecto sin cuenta paypal (admin)"
+
+#~ msgid "Project %s has not yet set %s!!!"
+#~ msgstr "El proyecto %s aun no ha puesto su %s !!!"
+
+#~ msgid "PayPal account"
+#~ msgstr "cuenta PayPal"
+
+#~ msgid "PayPal was charged correctly"
+#~ msgstr "Cargo paypal correcto"
+
+#~ msgid ""
+#~ "Admin %s has executed a charge to %s for its contribution of %s via "
+#~ "PayPal (id: %s) to project %s on date %s"
+#~ msgstr ""
+#~ "El admin %s ha ejecutado el cargo a %s por su aporte de %s mediante "
+#~ "PayPal (id: %s) al proyecto %s del dia %s"
+
+#~ msgid "SERPEMA (Servicaixa) charge was correct"
+#~ msgstr "Cargo sermepa correcto"
+
+#~ msgid ""
+#~ "Admin %s has executed charge to %s for its contribution of %s via TPV "
+#~ "(id: %s) to project %s on date %s"
+#~ msgstr ""
+#~ "El admin %s ha ejecutado el cargo a %s por su aporte de %s mediante TPV "
+#~ "(id: %s) al proyecto %s del dia %s"
+
+#~ msgid "Failed to execute SERPEMA (Servicaixa) charge:"
+#~ msgstr "Fallo al ejecutar cargo sermepa:"
+
+#~ msgid "Cash contribution, nothing to execute."
+#~ msgstr "Aporte al contado, nada que ejecutar."
+
+#~ msgid "Rev. PayPal"
+#~ msgstr "Rev. PayPal"
+
+#~ msgid "Rev. TPV"
+#~ msgstr "Rev. TPV"
+
+#~ msgid "Online payments"
+#~ msgstr "Pagos Online"
+
+#~ msgid "We are sorry but the blog is disabled for this node"
+#~ msgstr "Lo sentimos, el blog para este nodo esta desactivado"
+
+#~ msgid "We couldn't find any blog for this node"
+#~ msgstr "No se ha encontrado ningún blog para este nodo"
+
+#~ msgid "A new entry was added sucessfully"
+#~ msgstr "Se ha añadido una nueva entrada"
+
+#~ msgid "Admin %s has %s the entry \"%s\" in the Goteo blog"
+#~ msgstr "El admin %s ha %s en el blog Goteo la entrada \"%s\""
+
+#~ msgid "Some problem (indeterminate) occurred while saving data"
+#~ msgstr "Ha habido algun problema al guardar los datos"
+
+#~ msgid "entry removed (admin)"
+#~ msgstr "entrada quitada (admin)"
+
+#~ msgid "Admin %s has %s entry \"%s\" from the Goteo blog"
+#~ msgstr "El admin %s ha %s la entrada \"%s\" del blog de Goteo"
+
+#~ msgid "Adding a new entry"
+#~ msgstr "Añadiendo una nueva entrada"
+
+#~ msgid "This entry is corrupt, please get in contact with us."
+#~ msgstr "La entrada esta corrupta, contacte con nosotros."
+
+#~ msgid "Editing an existing entry"
+#~ msgstr "Editando una entrada existente"
+
+#~ msgid "Term was updated successfully"
+#~ msgstr "El término se ha actualizado correctamente"
+
+#~ msgid "A new term has been added"
+#~ msgstr "Se ha añadido un nuevo término"
+
+#~ msgid "Term removed"
+#~ msgstr "Término eliminado"
+
+#~ msgid "Editing an existing term"
+#~ msgstr "Editando un término existente"
+
+#~ msgid "Modified"
+#~ msgstr "Modificado"
+
+#~ msgid "Added"
+#~ msgstr "Añadido"
+
+#~ msgid "edit Idea About  (admin)"
+#~ msgstr "modificacion de idea about (admin)"
+
+#~ msgid "Admin %s has %s the idea of strength \"%s\""
+#~ msgstr "El admin %s ha %s la Idea de fuerza \"%s\""
+
+#~ msgid "remove Idea About (admin)"
+#~ msgstr "quitar de idea about (admin)"
+
+#~ msgid "Removed"
+#~ msgstr "Eliminado"
+
+#~ msgid "new microblog (admin)"
+#~ msgstr "nueva micronoticia (admin)"
+
+#~ msgid "Admin %s has %s the microblog \"%s\""
+#~ msgstr "El admin %s ha %s la micronoticia \"%s\""
+
+#~ msgid "microblog entry removed (admin)"
+#~ msgstr "micronoticia quitada (admin)"
+
+#~ msgid "Add news item"
+#~ msgstr "Nueva noticia"
+
+#~ msgid "New node"
+#~ msgstr "Nuevo nodo"
