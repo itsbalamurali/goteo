@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 namespace Goteo\Library {
 
@@ -6,7 +24,7 @@ namespace Goteo\Library {
         Goteo\Core\Exception;
 
 	/*
-	 * Clase para gestionar la traducción de registros de tablas de content
+	 * Clase para gestionar la traducción de registros de tablas de contenido
      *
      * Ojo, todos los campos de traduccion son texto (a ver como sabemos si corto o largo...)
      *
@@ -15,21 +33,21 @@ namespace Goteo\Library {
 
         public static function _tables() {
          return array(
-                'promote'   => Text::_('Featured Projects'),
-                'patron'    => Text::_('Sponsored Projects'),
-                'icon'      => Text::_('altered the type of return/reward (admin)'),
-                'license'   => Text::_('Licenses'),
-                'category'  => Text::_('Categories'),
-                'news'      => Text::_('News'),
+                'promote'   => Text::_('Proyectos destacados'),
+                'patron'    => Text::_('Proyectos apadrinados'),
+                'icon'      => Text::_('Tipos de retorno/recompensa'),
+                'license'   => Text::_('Licencias'),
+                'category'  => Text::_('Categorías'),
+                'news'      => Text::_('Noticias'),
                 'faq'       => Text::_('Faq'),
                 'post'      => Text::_('Blog'),
                 'banner'    => Text::_('Banners'),
                 'tag'       => Text::_('Tags'),
-                'criteria'  => Text::_('Review criteria'),
-                'worthcracy'=> Text::_('Meritocracy'),
-                'template'  => Text::_('Automatic email templates'),
-                'glossary'  => Text::_('Glossary of Terms'),
-                'info'      => Text::_('Ideas about')
+                'criteria'  => Text::_('Criterios de evaluación'),
+                'worthcracy'=> Text::_('Meritocrácia'),
+                'template'  => Text::_('Plantillas emails automáticos'),
+                'glossary'  => Text::_('Glosario de términos'),
+                'info'      => Text::_('Ideas de about')
             );
         }
 
@@ -37,77 +55,77 @@ namespace Goteo\Library {
 
             return array(
                 'banner' => array (
-                    'title' => Text::_('Title'),
-                    'description' => Text::_('Description')
+                    'title' => Text::_('Título'),
+                    'description' => Text::_('Descripción')
                 ),
                 'promote' => array (
-                    'title' => Text::_('Title'),
-                    'description' => Text::_('Description')
+                    'title' => Text::_('Título'),
+                    'description' => Text::_('Descripción')
                 ),
                 'patron' => array (
-                    'title' => Text::_('Title'),
-                    'description' => Text::_('Description')
+                    'title' => Text::_('Título'),
+                    'description' => Text::_('Descripción')
                 ),
                 'icon' => array (
-                    'name' => Text::_('Name'),
-                    'description' => Text::_('Description')
+                    'name' => Text::_('Nombre'),
+                    'description' => Text::_('Descripción')
                 ),
                 'license' => array (
-                    'name' => Text::_('Name'),
-                    'description' => Text::_('Description'),
-                    'url' => 'Link'
+                    'name' => Text::_('Nombre'),
+                    'description' => Text::_('Descripción'),
+                    'url' => 'Enlace'
                 ),
                 'category' => array (
-                    'name' => Text::_('Name'),
-                    'description' => Text::_('Description')
+                    'name' => Text::_('Nombre'),
+                    'description' => Text::_('Descripción')
                 ),
                 'news' => array (
-                    'title' => Text::_('Title'),
-                    'description' => Text::_('Excerpt')
+                    'title' => Text::_('Título'),
+                    'description' => Text::_('Entradilla')
                 ),
                 'faq' => array (
-                    'title' => Text::_('Title'),
-                    'description' => Text::_('Description')
+                    'title' => Text::_('Título'),
+                    'description' => Text::_('Descripción')
                 ),
                 'post' => array (
-                    'title' => Text::_('Title'),
-                    'text' => Text::_('Text entered'),
-                    'legend' => Text::_('Middle legend')
+                    'title' => Text::_('Título'),
+                    'text' => Text::_('Texto entrada'),
+                    'legend' => Text::_('Leyenda media')
                 ),
                 'tag' => array (
-                    'name' => Text::_('Name')
+                    'name' => Text::_('Nombre')
                 ),
                 'criteria' => array (
-                    'title' => Text::_('Title')
+                    'title' => Text::_('Título')
                 ),
                 'worthcracy' => array (
-                    'name' => Text::_('Name')
+                    'name' => Text::_('Nombre')
                 ),
                 'template' => array (
-                    'title' => Text::_('Title'),
-                    'text' => Text::_('Content')
+                    'title' => Text::_('Título'),
+                    'text' => Text::_('Contenido')
                 ),
                 'glossary' => array (
-                    'title' => Text::_('Title'),
-                    'text' => Text::_('Content'),
-                    'legend' => Text::_('Middle legend')
+                    'title' => Text::_('Título'),
+                    'text' => Text::_('Contenido'),
+                    'legend' => Text::_('Leyenda media')
                 ),
                 'info' => array (
-                    'title' => Text::_('Title'),
-                    'text' => Text::_('Content'),
-                    'legend' => Text::_('Middle legend')
+                    'title' => Text::_('Título'),
+                    'text' => Text::_('Contenido'),
+                    'legend' => Text::_('Leyenda media')
                 )
             );
         }
 
         public static function _types() {
             return array(
-                'description' => Text::_('Description'),
-                'url'         => Text::_('Link'),
-                'name'        => Text::_('Name'),
-                'text'        => Text::_('Extended Text'),
-                'legend'      => Text::_('Legend'),
-                'title'       => Text::_('Title')
+                'description' => Text::_('Descripción'),
+                'url'         => Text::_('Enlace'),
+                'name'        => Text::_('Nombre'),
+                'text'        => Text::_('Texto extenso'),
+                'legend'      => Text::_('Leyenda'),
+                'title'       => Text::_('Título')
             );
         }
 
@@ -118,7 +136,7 @@ namespace Goteo\Library {
 
             $fields = static::_fields();
 
-            // buscamos el content para este registro de esta tabla
+            // buscamos el contenido para este registro de esta tabla
 			$sql = "SELECT  
                         {$table}.id as id,
                         ";
@@ -149,7 +167,7 @@ namespace Goteo\Library {
 		}
 
 		/*
-		 *  Metodo para la lista de registros de las tablas de contents
+		 *  Metodo para la lista de registros de las tablas de contenidos
 		 */
 		public static function getAll($filters = array(), $lang = 'original') {
 
@@ -171,7 +189,7 @@ namespace Goteo\Library {
 
             // si hay filtro de texto es para todas las sentencias
 
-            // y todos los campos sacan el content "purpose" si no tienen del suyo
+            // y todos los campos sacan el contenido "purpose" si no tienen del suyo
 
             try {
 
@@ -286,7 +304,7 @@ namespace Goteo\Library {
         }
 
 		/*
-		 *  Esto se usa para actualizar datos en cualquier tabla de content
+		 *  Esto se usa para actualizar datos en cualquier tabla de contenido
 		 */
 		public static function save($data, &$errors = array()) {
 
@@ -297,15 +315,15 @@ namespace Goteo\Library {
                 return false;
             }
             if (empty($data['lang']) || $data['lang'] == 'original') {
-                $errors[] = "No se peude traducir el content original, seleccionar un idioma para traducir";
+                $errors[] = "No se peude traducir el contenido original, seleccionar un idioma para traducir";
                 return false;
             }
 
   			try {
                 // tenemos el id en $this->id  (el campo id siempre se llama id)
                 // tenemos el lang en $this->lang
-                // tenemos el Name de la tabla en $this->table
-                // tenemos los campos en $fields[$table] y el content de cada uno en $this->$field
+                // tenemos el nombre de la tabla en $this->table
+                // tenemos los campos en $fields[$table] y el contenido de cada uno en $this->$field
 
                 $set = '`id` = :id, `lang` = :lang ';
                 $values = array(
@@ -328,7 +346,7 @@ namespace Goteo\Library {
                 }
                 
 			} catch(\PDOException $e) {
-                $errors[] = 'Error sql al grabar el content multiidioma. ' . $e->getMessage();
+                $errors[] = 'Error sql al grabar el contenido multiidioma. ' . $e->getMessage();
                 return false;
 			}
 

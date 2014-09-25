@@ -1,14 +1,33 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
+
 
 namespace Goteo\Library {
 
-    use Goteo\Core\Model,
-        Goteo\Core\Registry,
+	use Goteo\Core\Model,
+		Goteo\Core\Registry,
         Goteo\Core\Exception;
-    /*
-     * Clase para sacar textos dinámicos de la tabla text
+	/*
+	 * Clase para sacar textos dinámicos de la tabla text
      *  @TODO, definir donde se define y se cambia la constante LANG y utilizarla en los _::get_
-     */
+	 */
     class Text {
 
         public
@@ -55,7 +74,7 @@ namespace Goteo\Library {
         static public function getAdmin ($id) {
 
 
-            // buscamos el texto en la tabla, si no está sacamos el propósito
+			// buscamos el texto en la tabla, si no está sacamos el propósito
             $values = array(':id'=>$id, ':lang' => LANG);
 
             $sql = "SELECT
@@ -67,15 +86,15 @@ namespace Goteo\Library {
                     WHERE text.id = :id
                     ";
 
-            $query = Model::query($sql, $values);
+			$query = Model::query($sql, $values);
             return $query->fetchObject()->text;
-        }
+		}
 
         static public function getTrans ($id) {
 
             $lang = $_SESSION['translate_lang'];
 
-            // buscamos el texto en la tabla, si no está sacamos el propósito
+			// buscamos el texto en la tabla, si no está sacamos el propósito
             $values = array(':id'=>$id, ':lang' => $lang);
 
             $sql = "SELECT
@@ -87,19 +106,19 @@ namespace Goteo\Library {
                     WHERE text.id = :id
                     ";
 
-            $query = Model::query($sql, $values);
+			$query = Model::query($sql, $values);
             return $query->fetchObject()->text;
-        }
+		}
 
-        /**
-         * Gettext-like interface for the i18n of interface strings.
-         *
-         * @param string $str string to translate
-         * @return string translated version
-         */
-        static public function _($str) {
-            return Registry::get('translate')->text($str);
-        }
+		/**
+		 * Gettext-like interface for the i18n of interface strings.
+		 *
+		 * @param string $str string to translate
+		 * @return string translated version
+		 */
+		static public function _($str) {
+			return Registry::get('translate')->text($str);
+		}
 
         static public function get ($id) {
 
@@ -119,13 +138,13 @@ namespace Goteo\Library {
                 $args = array();
             }
 
-            // buscamos el texto en cache
-            static $_cache = array();
-            if (!$nocache && isset($_cache[$id][$lang]) && empty($args)) {
-                return $_cache[$id][$lang];
+			// buscamos el texto en cache
+			static $_cache = array();
+			if (!$nocache && isset($_cache[$id][$lang]) && empty($args)) {
+				return $_cache[$id][$lang];
             }
 
-            // buscamos el texto en la tabla
+			// buscamos el texto en la tabla
             $values = array(':id'=>$id, ':lang' => $lang);
 
             // Español de purpose como alternativa
@@ -152,7 +171,7 @@ namespace Goteo\Library {
             // idiomas no españoles usan alternativa en inglés
             $sql = (in_array($lang, array('es','ca', 'gl', 'eu', 'en'))) ? $sql_es : $sql_en;
             $query = Model::query($sql, $values);
-            if ($exist = $query->fetchObject()) {
+			if ($exist = $query->fetchObject()) {
                 $tmptxt = $_cache[$id][$lang] = $exist->text;
 
                 //contamos cuantos argumentos necesita el texto
@@ -164,34 +183,34 @@ namespace Goteo\Library {
                     $texto = $nocache ? $exist->text : $tmptxt;
                 }
 
-            } else {
+			} else {
                 // para catalogar textos nuevos
-//              Model::query("REPLACE INTO purpose (text, purpose, html, `group`) VALUES (:text, :purpose, NULL, 'new')", array(':text' => $id, ':purpose' => $id));
+//				Model::query("REPLACE INTO purpose (text, purpose, html, `group`) VALUES (:text, :purpose, NULL, 'new')", array(':text' => $id, ':purpose' => $id));
                 $texto = $id;
-            }
+			}
 
             $texto = nl2br($texto);
 
             return $texto;
-        }
+		}
 
-        static public function getPurpose ($id) {
-            // buscamos la explicación del texto en la tabla
-            $query = Model::query("SELECT purpose, html FROM purpose WHERE `text` = :id", array(':id' => $id));
-            $exist = $query->fetchObject();
-            if (!empty($exist->purpose)) {
+		static public function getPurpose ($id) {
+			// buscamos la explicación del texto en la tabla
+			$query = Model::query("SELECT purpose, html FROM purpose WHERE `text` = :id", array(':id' => $id));
+			$exist = $query->fetchObject();
+			if (!empty($exist->purpose)) {
                 return $exist->purpose;
-            } else {
-                Model::query("REPLACE INTO purpose (text, purpose) VALUES (:text, :purpose)", array(':text' => $id, ':purpose' => "Texto $id"));
-                return 'Texto: ' . $id;
-            }
-        }
+			} else {
+				Model::query("REPLACE INTO purpose (text, purpose) VALUES (:text, :purpose)", array(':text' => $id, ':purpose' => "Texto $id"));
+				return 'Texto: ' . $id;
+			}
+		}
 
         /*
          * Si un texto esta marcado como html devuelve true, si no está marcado así, false
          * Se marca en la tabla de propósitos ya que en la tabla texts habría que marcarlo en cada idioma
          */
-        static public function isHtml ($id) {
+		static public function isHtml ($id) {
             try
             {
                 // lo miramos en la tabla de propósitos
@@ -204,13 +223,13 @@ namespace Goteo\Library {
             } catch (\PDOException $e) {
                 return false; // Si la tabla purpose no tiene el campo html
             }
-        }
+		}
 
 
-        /*
-         *  Metodo para la lista de textos segun idioma
-         */
-        public static function getAll($filters = array(), $lang = null) {
+		/*
+		 *  Metodo para la lista de textos segun idioma
+		 */
+		public static function getAll($filters = array(), $lang = null) {
             $texts = array();
 
             $values = array(':lang' => $lang);
@@ -253,53 +272,53 @@ namespace Goteo\Library {
             } catch (\PDOException $e) {
                 throw new Exception($e->getMessage() . "<br />$sql<br /><pre>" . print_r($values, 1) . "</pre>");
             }
-        }
+		}
 
-        /*
-         *  Esto se usa para traducciones
-         */
-        public static function save($data, &$errors = array()) {
-            if (!is_array($data) ||
-                empty($data['id']) ||
-                empty($data['text']) ||
-                empty($data['lang'])) {
-                    return false;
-            }
+		/*
+		 *  Esto se usa para traducciones
+		 */
+		public static function save($data, &$errors = array()) {
+			if (!is_array($data) ||
+				empty($data['id']) ||
+				empty($data['text']) ||
+				empty($data['lang'])) {
+					return false;
+			}
 
             $sql = "REPLACE `text` SET
                             `text` = :text,
                             id = :id,
                             lang = :lang
                     ";
-            if (Model::query($sql, array(':text' => $data['text'], ':id' => $data['id'], ':lang' => $data['lang']))) {
-                return true;
-            } else {
-                $errors[] = 'Error al insertar los datos <pre>' . print_r($data, 1) . '</pre>';
-                return false;
-            }
-        }
+			if (Model::query($sql, array(':text' => $data['text'], ':id' => $data['id'], ':lang' => $data['lang']))) {
+				return true;
+			} else {
+				$errors[] = 'Error al insertar los datos <pre>' . print_r($data, 1) . '</pre>';
+				return false;
+			}
+		}
 
-        /*
-         *  Esto se usa para gestión de originales
-         */
-        public static function update($data, &$errors = array()) {
-            if (!is_array($data) ||
-                empty($data['id']) ||
-                empty($data['text'])) {
-                    return false;
-            }
+		/*
+		 *  Esto se usa para gestión de originales
+		 */
+		public static function update($data, &$errors = array()) {
+			if (!is_array($data) ||
+				empty($data['id']) ||
+				empty($data['text'])) {
+					return false;
+			}
 
             $sql = "UPDATE `purpose` SET
                             `purpose` = :text
                             WHERE `text` = :id
                     ";
-            if (Model::query($sql, array(':text' => $data['text'], ':id' => $data['id']))) {
-                return true;
-            } else {
-                $errors[] = 'Error al insertar los datos <pre>' . print_r($data, 1) . '</pre>';
-                return false;
-            }
-        }
+			if (Model::query($sql, array(':text' => $data['text'], ':id' => $data['id']))) {
+				return true;
+			} else {
+				$errors[] = 'Error al insertar los datos <pre>' . print_r($data, 1) . '</pre>';
+				return false;
+			}
+		}
 
         /*
          * Grupos de textos
@@ -387,7 +406,7 @@ namespace Goteo\Library {
 
             // seleccionar toda la tabla,
             $sql = "SELECT ".implode(', ', $fields)." FROM {$table}{$sqlFilter}";
-            $query = Model::query($sql, $values);
+			$query = Model::query($sql, $values);
             foreach ($query->fetchAll(\PDO::FETCH_ASSOC) as $row) {
                 // para cada campo
                 foreach ($fields as $field) {
@@ -441,24 +460,24 @@ namespace Goteo\Library {
             return $urls;
         }
 
-        /*
-         *   Pone el enlace a gmaps segun localidad
+		/*
+		 *   Pone el enlace a gmaps segun localidad
          * @TODO , ponerle el LANG
-         */
-        static public function GmapsLink($location)
-        {
-            $texto = '<a href="http://maps.google.es/maps?q='.htmlspecialchars(rawurlencode($location)).'&hl=es" target="_blank">'.htmlspecialchars($location).'</a>';
-            return $texto;
-        }
+		 */
+		static public function GmapsLink($location)
+		{
+			$texto = '<a href="http://maps.google.es/maps?q='.htmlspecialchars(rawurlencode($location)).'&hl=es" target="_blank">'.htmlspecialchars($location).'</a>';
+			return $texto;
+		}
 
-        /*
-         *   Método para formatear friendly un texto para ponerlo en la url
-         */
-        static public function urliza($texto)
-        {
-            $texto = trim(strtolower($texto));
-            // Acentos
-//          $texto = strtr($texto, "ÁÀÄÂáàâäÉÈËÊéèêëÍÌÏÎíìîïÓÒÖÔóòôöÚÙÛÜúùûüÇçÑñ", "aaaaaaaaeeeeeeeeiiiiiiiioooooooouuuuuuuuccnn");
+		/*
+		 *   Método para formatear friendly un texto para ponerlo en la url
+		 */
+		static public function urliza($texto)
+		{
+			$texto = trim(strtolower($texto));
+			// Acentos
+//			$texto = strtr($texto, "ÁÀÄÂáàâäÉÈËÊéèêëÍÌÏÎíìîïÓÒÖÔóòôöÚÙÛÜúùûüÇçÑñ", "aaaaaaaaeeeeeeeeiiiiiiiioooooooouuuuuuuuccnn");
             $table = array(
                 'Š'=>'S', 'š'=>'s', 'Đ'=>'Dj', 'đ'=>'dj', 'Ž'=>'Z', 'ž'=>'z', 'Č'=>'C', 'č'=>'c', 'Ć'=>'C', 'ć'=>'c',
                 'À'=>'A', 'Á'=>'A', 'Â'=>'A', 'Ã'=>'A', 'Ä'=>'A', 'Å'=>'A', 'Æ'=>'A', 'Ç'=>'C', 'È'=>'E', 'É'=>'E',
@@ -471,55 +490,55 @@ namespace Goteo\Library {
             );
 
             $texto = strtr($texto, $table);
-            // Separadores
-            $texto = preg_replace("/[\s\,\;\_\/\-]+/i", "-", $texto);
-            $texto = preg_replace("/[^a-z0-9\.\-\+]/", "", $texto);
-            return $texto;
-        }
+			// Separadores
+			$texto = preg_replace("/[\s\,\;\_\/\-]+/i", "-", $texto);
+			$texto = preg_replace("/[^a-z0-9\.\-\+]/", "", $texto);
+			return $texto;
+		}
 
-        /*
-         *   Método para recortar un texto
-         */
-        static public function recorta ($texto, $longitud, $puntos = '...')  {
-            // Es HTML?
-            $html = (strip_tags($texto) != $texto);
-            $palabras_vacias = array();
-            $separadores = array(" ",".",",",";");
+		/*
+		 *   Método para recortar un texto
+		 */
+		static public function recorta ($texto, $longitud, $puntos = '...')  {
+			// Es HTML?
+			$html = (strip_tags($texto) != $texto);
+			$palabras_vacias = array();
+			$separadores = array(" ",".",",",";");
 
-            $palabras_vacias = array ("un", "uno", "unos", "unas", "una",
-            "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez",
-            "el", "la", "los", "las", "lo",
-            "que",
-            "o", "y", "u", "e", "a",
-            "ante", "bajo", "cabe", "con", "contra", "de", "desde", "hasta", "hacia", "para", "por", "según", "sin", "sobre", "tras", "durante", "mediante",
-            );
+			$palabras_vacias = array ("un", "uno", "unos", "unas", "una",
+			"dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve", "diez",
+			"el", "la", "los", "las", "lo",
+			"que",
+			"o", "y", "u", "e", "a",
+			"ante", "bajo", "cabe", "con", "contra", "de", "desde", "hasta", "hacia", "para", "por", "según", "sin", "sobre", "tras", "durante", "mediante",
+			);
 
-            $texto = trim($texto);
-            if (strlen($texto) <= $longitud) return $texto;
-            $texto = substr($texto,0,$longitud);
+			$texto = trim($texto);
+			if (strlen($texto) <= $longitud) return $texto;
+			$texto = substr($texto,0,$longitud);
 
-            // Buscamos el último espacio
-            $texto = substr($texto, 0, strrpos($texto, " "));
+			// Buscamos el último espacio
+			$texto = substr($texto, 0, strrpos($texto, " "));
 
-            // Quitamos palabras vacías
-            $ultima = self::ultima_palabra($texto,$separadores );
-            while ($texto != "" && (in_array($ultima,$palabras_vacias) || strlen($ultima)<=2) || ($html && $ultima{1} == "<" && substr($ultima,-1) == ">")) {
-                $texto = substr($texto,0,strlen($texto)-strlen($ultima));
-                while ($texto != "" && in_array(substr($texto,-1),$separadores)){
-                    $texto = substr($texto, 0, -1);
-                }
-                $ultima = self::ultima_palabra($texto,$separadores);
-            }
+			// Quitamos palabras vacías
+			$ultima = self::ultima_palabra($texto,$separadores );
+			while ($texto != "" && (in_array($ultima,$palabras_vacias) || strlen($ultima)<=2) || ($html && $ultima{1} == "<" && substr($ultima,-1) == ">")) {
+				$texto = substr($texto,0,strlen($texto)-strlen($ultima));
+				while ($texto != "" && in_array(substr($texto,-1),$separadores)){
+					$texto = substr($texto, 0, -1);
+				}
+				$ultima = self::ultima_palabra($texto,$separadores);
+			}
 
-            // Hemos cortado una etiqueta html?
-            if ($html && strrpos($texto,"<") > strrpos($texto,">")) {
-                $texto = substr($texto,0,strrpos($texto,"<"));
-            }
-            // Si el texto era html, cerramos las etiquetas
-            if ($html) $texto = self::cerrar_etiquetas($texto);
-            if ($puntos !== false) $texto .= $puntos;
-            return $texto;
-        }
+			// Hemos cortado una etiqueta html?
+			if ($html && strrpos($texto,"<") > strrpos($texto,">")) {
+				$texto = substr($texto,0,strrpos($texto,"<"));
+			}
+			// Si el texto era html, cerramos las etiquetas
+			if ($html) $texto = self::cerrar_etiquetas($texto);
+			if ($puntos !== false) $texto .= $puntos;
+			return $texto;
+		}
 
         static public function ultima_palabra ($texto, $separadores = false) {
             $palabra = '';
@@ -562,8 +581,8 @@ namespace Goteo\Library {
         }
 
 
-        /*
-         *   Método para aplicar saltos de linea y poner links en las url
+		/*
+		 *   Método para aplicar saltos de linea y poner links en las url
          *   ¿¡Como se puede ser tan guay!?
          *   http://www.kwi.dk/projects/php/UrlLinker/
          * -------------------------------------------------------------------------------
@@ -575,9 +594,9 @@ namespace Goteo\Library {
          *  and related or neighboring rights to UrlLinker.
          *  http://creativecommons.org/publicdomain/zero/1.0/
          * -------------------------------------------------------------------------------
-         */
-        static public function urlink($text)
-        {
+		 */
+		static public function urlink($text)
+		{
             /*
              *  Regular expression bits used by htmlEscapeAndLinkUrls() to match URLs.
              */
@@ -646,7 +665,7 @@ namespace Goteo\Library {
             return $result;
 
 
-        }
+		}
 
         /*
          * Método para ocultar parámetros de una url
@@ -656,6 +675,6 @@ namespace Goteo\Library {
         }
         
         
-    }
+	}
     
 }

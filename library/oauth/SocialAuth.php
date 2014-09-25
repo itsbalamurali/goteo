@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 //Includes all necessary files for oAuth
 $dir = dirname(__FILE__);
@@ -367,7 +385,7 @@ class SocialAuth {
 
 			$userInfo = $twitterObj->get_accountVerify_credentials();
 
-			//Twitter NO RETORNA the email!!!
+			//Twitter NO RETORNA el email!!!
 			$this->user_data['username'] = $userInfo->screen_name;
 			$this->user_data['name'] = $userInfo->name;
 			$this->user_data['profile_image_url'] = str_replace("_normal","",$userInfo->profile_image_url);
@@ -404,7 +422,7 @@ class SocialAuth {
 				$data = $openid->getAttributes();
 				//print_r($data);print_r($openid);print_r($openid->identity);die;
 				/*
-				//por seguridad no aceptaremos conexions de OpenID que no nos devuelvan the email
+				//por seguridad no aceptaremos conexions de OpenID que no nos devuelvan el email
 				if(!Goteo\Library\Check::mail($data['contact/email'])) {
 					$this->last_error = "oauth-openid-email-required";
 					return false;
@@ -435,7 +453,7 @@ class SocialAuth {
 	}
 
 	/**
-	 * Hace el login en goteo si es posible (existen tokens o the email es el mismo)
+	 * Hace el login en goteo si es posible (existen tokens o el email es el mismo)
 	 * Guarda los tokens si se encuentra el usuario
 	 *
 	 * @param $force_login	logea en goteo sin comprovar que la contraseña esté vacía o que el usuario este activo
@@ -444,7 +462,7 @@ class SocialAuth {
 		/*****
 		 * POSIBLE PROBLEMA:
 		 * en caso de que ya se haya dado permiso a la aplicación goteo,
-		 * el token da acceso al login del usuario aunque este haya cambiado the email en goteo.org
+		 * el token da acceso al login del usuario aunque este haya cambiado el email en goteo.org
 		 * es un problema? o da igual...
 		*****/
 		//Comprovar si existe el mail en la base de datos
@@ -456,7 +474,7 @@ class SocialAuth {
 		$username = $query->fetchColumn();
 
 		if(empty($username)) {
-			//no existen tokens, comprovamos si existe the email
+			//no existen tokens, comprovamos si existe el email
 			/**
 			 * Problema de seguridad, si el proveedor openid nos indica un mail que no pertenece al usuario
 			 * da un método para acceder a los contenidos de cualquier usuario
