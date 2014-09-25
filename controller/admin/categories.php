@@ -50,7 +50,7 @@ namespace Goteo\Controller\Admin {
                                 'action' => "$url/edit/",
                                 'submit' => array(
                                     'name' => 'update',
-                                    'label' => 'Add to'
+                                    'label' => 'Añadir'
                                 ),
                                 'fields' => array (
                                     'id' => array(
@@ -60,12 +60,12 @@ namespace Goteo\Controller\Admin {
 
                                     ),
                                     'name' => array(
-                                        'label' => 'Category',
+                                        'label' => 'Categoría',
                                         'name' => 'name',
                                         'type' => 'text'
                                     ),
                                     'description' => array(
-                                        'label' => 'Description', 
+                                        'label' => 'Descripción',
                                         'name' => 'description',
                                         'type' => 'textarea',
                                         'properties' => 'cols="100" rows="2"',
@@ -109,7 +109,7 @@ namespace Goteo\Controller\Admin {
                                 'action' => "$url/edit/$id",
                                 'submit' => array(
                                     'name' => 'update',
-                                    'label' => 'Save'
+                                    'label' => 'Guardar'
                                 ),
                                 'fields' => array (
                                     'id' => array(
@@ -119,12 +119,12 @@ namespace Goteo\Controller\Admin {
 
                                     ),
                                     'name' => array(
-                                        'label' => 'Category',
+                                        'label' => 'Categoría',
                                         'name' => 'name',
                                         'type' => 'text'
                                     ),
                                     'description' => array(
-                                        'label' => 'Description', 
+                                        'label' => 'Descripción',
                                         'name' => 'description',
                                         'type' => 'textarea',
                                         'properties' => 'cols="100" rows="2"',
@@ -169,15 +169,15 @@ namespace Goteo\Controller\Admin {
                     'folder' => 'base',
                     'file' => 'list',
                     'model' => 'category',
-                    'addbutton' => 'New Category',
-                    'otherbutton' => '<a href="/admin/categories/keywords" class="button">See Keywords</a>',
+                    'addbutton' => 'Nueva categoría',
+                    'otherbutton' => '<a href="/admin/categories/keywords" class="button">Ver Palabras clave</a>',
                     'data' => $model::getAll(),
                     'columns' => array(
                         'edit' => '',
-                        'name' => 'Category',
-                        'numProj' => 'Projects', 
-                        'numUser' => 'Users',
-                        'order' => 'Priority',
+                        'name' => 'Categoría',
+                        'numProj' => 'Proyectos',
+                        'numUser' => 'Usuarios',
+                        'order' => 'Prioridad',
                         'translate' => '',
                         'up' => '',
                         'down' => '',

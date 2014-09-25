@@ -46,15 +46,15 @@ namespace Goteo\Controller\Admin {
                         $template->title = $_POST['title'];
                         $template->text  = $_POST['text'];
                         if ($template->save($errors)) {
-                            Message::Info(Text::_('The template has been updated successfully'));
+                            Message::Info(Text::_('La plantilla se ha actualizado correctamente'));
                             throw new Redirection("/admin/templates");
                         } else {
-                            Message::Error(Text::_('Was not correctly saved.') . implode('<br />', $errors));
+                            Message::Error(Text::_('No se ha grabado correctamente. ') . implode('<br />', $errors));
                         }
                     }
 
 
-                    // sino, mostramos para 
+                    // sino, mostramos para editar
                     return new View(
                         'view/admin/index.html.php',
                         array(

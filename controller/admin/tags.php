@@ -49,7 +49,7 @@ namespace Goteo\Controller\Admin {
                                 'action' => "$url/edit/",
                                 'submit' => array(
                                     'name' => 'update',
-                                    'label' => Text::_('Add')
+                                    'label' => Text::_('Añadir')
                                 ),
                                 'fields' => array (
                                     'id' => array(
@@ -84,10 +84,10 @@ namespace Goteo\Controller\Admin {
                         ));
 
                         if ($item->save($errors)) {
-                            Message::Info(Text::_('The tag has been updated'));
+                            Message::Info(Text::_('El tag ha sido actualizado'));
                             throw new Redirection($url);
                         } else {
-                            Message::Error(Text::_('Was not saved correctly').implode('<br />', $errors));
+                            Message::Error(Text::_('No se ha guardado correctamente').implode('<br />', $errors));
                         }
                     } else {
                         $item = $model::get($id);
@@ -137,12 +137,12 @@ namespace Goteo\Controller\Admin {
                     'folder' => 'base',
                     'file' => 'list',
                     'model' => 'tag',
-                    'addbutton' => Text::_('New tag'),
+                    'addbutton' => Text::_('Nuevo tag'),
                     'data' => $model::getList(1),
                     'columns' => array(
                         'edit' => '',
                         'name' => Text::_('Tag'),
-                        'used' => Text::_('Entry'),
+                        'used' => Text::_('Entradas'),
                         'translate' => '',
                         'remove' => ''
                     ),

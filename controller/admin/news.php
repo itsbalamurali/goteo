@@ -142,7 +142,7 @@ namespace Goteo\Controller\Admin {
 
                                     ),
                                     'title' => array(
-                                        'label' => 'News',
+                                        'label' => 'Noticia',
                                         'name' => 'title',
                                         'type' => 'text',
                                         'properties' => 'size="100"  maxlength="80"'
@@ -154,13 +154,13 @@ namespace Goteo\Controller\Admin {
                                         'properties' => 'cols="100" rows="2"'
                                     ),
                                     'url' => array(
-                                        'label' => 'Link',
+                                        'label' => 'Enlace',
                                         'name' => 'url',
                                         'type' => 'text',
                                         'properties' => 'size=100'
                                     ),
                                     'order' => array(
-                                        'label' => 'Position',
+                                        'label' => 'Posición',
                                         'name' => 'order',
                                         'type' => 'text'
                                     )
@@ -202,13 +202,13 @@ namespace Goteo\Controller\Admin {
                     'folder' => 'base',
                     'file' => 'list',
                     'model' => 'news',
-                    'addbutton' => 'New News',
+                    'addbutton' => 'Nueva noticia',
                     'data' => $model::getAll(),
                     'columns' => array(
                         'edit' => '',
-                        'title' => 'News',
+                        'title' => 'Noticia',
 //                        'url' => 'Enlace',
-                        'order' => 'Position',
+                        'order' => 'Posición',
                         'up' => '',
                         'down' => '',
                         'translate' => '',

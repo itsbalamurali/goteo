@@ -54,7 +54,7 @@ namespace Goteo\Controller\Admin {
             );
 
 
-            // Contribution details
+            // detalles del aporte
             if ($action == 'details') {
 
                 $invest = Model\Invest::get($id);

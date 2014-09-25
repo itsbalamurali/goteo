@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 namespace Goteo\Controller\Dashboard {
 
@@ -72,7 +90,7 @@ namespace Goteo\Controller\Dashboard {
             if ($project instanceof \Goteo\Model\Project) {
                 $_SESSION['project'] = $project; // lo guardamos en sesión para la próxima verificación
             } else {
-                Message::Error('You can not work with the selected project, contact us');
+                Message::Error('No se puede trabajar con el proyecto seleccionado, contacta con nosotros');
                 $project = null;
             }
             
@@ -377,7 +395,7 @@ namespace Goteo\Controller\Dashboard {
                             // Evento Feed
                             $log = new Feed();
                             $log->setTarget($project->id);
-                            $log->populate('user sets a new collaboration on your project (dashboard)', '/admin/projects', \vsprintf('%s has published a new %s in the project, entitled "%s"', array(
+                            $log->populate('usuario pone una nueva colaboracion en su proyecto (dashboard)', '/admin/projects', \vsprintf('%s ha publicado una nueva %s en el proyecto %s, con el título "%s"', array(
                                         Feed::item('user', $_SESSION['user']->name, $_SESSION['user']->id),
                                         Feed::item('message', 'Colaboración'),
                                         Feed::item('project', $project->name, $project->id),
@@ -402,7 +420,7 @@ namespace Goteo\Controller\Dashboard {
 
                 $new_support = new Model\Project\Support(array(
                             'project' => $project->id,
-                            'support' => 'New collaboration',
+                            'support' => 'Nueva colaboración',
                             'type' => 'task',
                             'description' => ''
                         ));
@@ -414,7 +432,7 @@ namespace Goteo\Controller\Dashboard {
                 } else {
                     $project->supports[] = new Model\Project\Support(array(
                                 'project' => $project->id,
-                                'support' => 'New collaboration',
+                                'support' => 'Nueva colaboración',
                                 'type' => 'task',
                                 'description' => ''
                             ));
@@ -503,7 +521,7 @@ namespace Goteo\Controller\Dashboard {
                     // Evento Feed
                     $log = new Feed();
                     $log->setTarget($project->id);
-                    $log->populate('user published new in your project (dashboard)', '/project/' . $project->id . '/updates/' . $post->id, 
+                    $log->populate('usuario publica una novedad en su proyecto (dashboard)', '/project/' . $project->id . '/updates/' . $post->id, 
                             \vsprintf('%s ha publicado un nuevo post en %s sobre el proyecto %s, con el título "%s"', array(
                                 Feed::item('user', $_SESSION['user']->name, $_SESSION['user']->id),
                                 Feed::item('blog', Text::get('project-menu-updates')),

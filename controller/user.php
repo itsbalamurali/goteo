@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 namespace Goteo\Controller {
 
@@ -196,7 +214,7 @@ namespace Goteo\Controller {
                 //no hará falta comprovar la contraseña ni el estado del usuario
                 $skip_validations = array('password', 'active');
 
-                //si the email proviene del proveedor de oauth, podemos confiar en el y lo activamos por defecto
+                //si el email proviene del proveedor de oauth, podemos confiar en el y lo activamos por defecto
                 if ($_POST['provider_email'] == $user->email) {
                     $user->confirmed = 1;
                 }
@@ -653,8 +671,8 @@ namespace Goteo\Controller {
 
         /**
          * Recuperacion de contraseña
-         * - Si no llega nada, mostrar formulario para que pongan su username y the email correspondiente
-         * - Si llega post es una peticion, comprobar que el username y the email que han puesto son válidos
+         * - Si no llega nada, mostrar formulario para que pongan su username y el email correspondiente
+         * - Si llega post es una peticion, comprobar que el username y el email que han puesto son válidos
          *      si no lo son, dejarlos en el formulario y mensaje de error
          *      si son válidos, enviar email con la url y mensaje de ok
          *
@@ -672,7 +690,7 @@ namespace Goteo\Controller {
                     $query = Model\User::query('SELECT id FROM user WHERE email = ? AND token = ?', array($parts[1], $token));
                     if ($id = $query->fetchColumn()) {
                         if (!empty($id)) {
-                            // el token coincide con the email y he obtenido una id
+                            // el token coincide con el email y he obtenido una id
                             Model\User::query('UPDATE user SET active = 1 WHERE id = ?', array($id));
                             $user = Model\User::get($id);
                             $_SESSION['user'] = $user;
@@ -707,8 +725,8 @@ namespace Goteo\Controller {
 
         /**
          * Darse de baja
-         * - Si no llega nada, mostrar formulario para que pongan the email de su cuenta
-         * - Si llega post es una peticion, comprobar que the email que han puesto es válido
+         * - Si no llega nada, mostrar formulario para que pongan el email de su cuenta
+         * - Si llega post es una peticion, comprobar que el email que han puesto es válido
          *      si no es, dejarlos en el formulario y mensaje de error
          *      si es válido, enviar email con la url y mensaje de ok
          *
@@ -726,7 +744,7 @@ namespace Goteo\Controller {
                     $query = Model\User::query('SELECT id FROM user WHERE email = ? AND token = ?', array($parts[1], $token));
                     if ($id = $query->fetchColumn()) {
                         if (!empty($id)) {
-                            // el token coincide con the email y he obtenido una id
+                            // el token coincide con el email y he obtenido una id
                             if (Model\User::cancel($id)) {
                                 Message::Info(Text::get('leave-process-completed'));
                                 throw new Redirection(SEC_URL.'/user/login');

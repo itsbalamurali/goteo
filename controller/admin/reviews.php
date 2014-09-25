@@ -46,7 +46,7 @@ namespace Goteo\Controller\Admin {
                     $project = Model\Project::getMini($review->project);
 
                     if (empty($id) || ($action == 'edit' && !$review instanceof Model\Review)) {
-                        Message::Error(Text::_('We have lost sight of the project or revision'));
+                        Message::Error(Text::_('Hemos perdido de vista el proyecto o la revisión'));
                         throw new Redirection('/admin/reviews');
                     }
 
@@ -61,12 +61,12 @@ namespace Goteo\Controller\Admin {
                         if ($review->save($errors)) {
                             switch ($action) {
                                 case 'add':
-                                    Message::Info(Text::_('Review started correctly'));
+                                    Message::Info(Text::_('Revisión iniciada correctamente'));
 
                                     // Evento Feed
                                     $log = new Feed();
                                     $log->setTarget($project->id);
-                                    $log->populate(Text::_('assessment began (admin)'), '/admin/reviews',
+                                    $log->populate(Text::_('valoración iniciada (admin)'), '/admin/reviews',
                                         \vsprintf('El admin %s ha %s la valoración de %s', array(
                                             Feed::item('user', $_SESSION['user']->name, $_SESSION['user']->id),
                                             Feed::item('relevant', Text::_('Iniciado')),
@@ -78,12 +78,12 @@ namespace Goteo\Controller\Admin {
                                     throw new Redirection('/admin/reviews/?project='.  urlencode($project->id));
                                     break;
                                 case 'edit':
-                                    Message::Info(Text::_('Information was edited correctly'));
+                                    Message::Info(Text::_('Datos editados correctamente'));
                                     throw new Redirection('/admin/reviews');
                                     break;
                             }
                         } else {
-                            Message::Error(Text::_('Is has not been possible to save the information'), implode(', ', $errors));
+                            Message::Error(Text::_('No se han podido grabar los datos. '), implode(', ', $errors));
                         }
                     }
 
@@ -105,12 +105,12 @@ namespace Goteo\Controller\Admin {
 
                     // marcamos la revision como completamente cerrada
                     if (Model\Review::close($id, $errors)) {
-                        Message::Info(Text::_('Review is now closed'));
+                        Message::Info(Text::_('La revisión se ha cerrado'));
 
                         // Evento Feed
                         $log = new Feed();
                         $log->setTarget($review->project);
-                        $log->populate(Text::_('assessment is finished (admin)'), '/admin/reviews',
+                        $log->populate(Text::_('valoración finalizada (admin)'), '/admin/reviews',
                             \vsprintf('El admin %s ha dado por %s la valoración de %s', array(
                                 Feed::item('user', $_SESSION['user']->name, $_SESSION['user']->id),
                                 Feed::item('relevant', Text::_('Finalizada')),
@@ -120,7 +120,7 @@ namespace Goteo\Controller\Admin {
                         unset($log);
 
                     } else {
-                        Message::Error(Text::_('The review has not been able to be closed').implode(', ', $errors));
+                        Message::Error(Text::_('La revisión no se ha podido cerrar. ').implode(', ', $errors));
                     }
                     throw new Redirection('/admin/reviews');
                     break;
@@ -156,12 +156,12 @@ namespace Goteo\Controller\Admin {
                             $userData = Model\User::getMini($user);
                             $reviewData = Model\Review::getData($id);
 
-                            Message::Info(Text::_('Review started correctly'));
+                            Message::Info(Text::_('Revisión asignada correctamente'));
 
                             // Evento Feed
                             $log = new Feed();
                             $log->setTarget($userData->id, 'user');
-                            $log->populate(Text::_('assign review (admin)'), '/admin/reviews',
+                            $log->populate(Text::_('asignar revision (admin)'), '/admin/reviews',
                                 \vsprintf('El admin %s ha %s a %s la revisión de %s', array(
                                     Feed::item('user', $_SESSION['user']->name, $_SESSION['user']->id),
                                     Feed::item('relevant', Text::_('Asignado')),
@@ -193,12 +193,12 @@ namespace Goteo\Controller\Admin {
                             $userData = Model\User::getMini($user);
                             $reviewData = Model\Review::getData($id);
 
-                            Message::Info(Text::_('Review started correctly'));
+                            Message::Info(Text::_('Revisión desasignada correctamente'));
 
                             // Evento Feed
                             $log = new Feed();
                             $log->setTarget($userData->id, 'user');
-                            $log->populate(Text::_('assign review (admin)'), '/admin/reviews',
+                            $log->populate(Text::_('Desasignar revision (admin)'), '/admin/reviews',
                                 \vsprintf('El admin %s ha %s a %s la revisión de %s', array(
                                     Feed::item('user', $_SESSION['user']->name, $_SESSION['user']->id),
                                     Feed::item('relevant', Text::_('Desasignado')),
@@ -245,9 +245,9 @@ namespace Goteo\Controller\Admin {
             $list = Model\Review::getList($filters, $node);
             $projects = Model\Review::getProjects($node);
             $status = array(
-                'unstarted' => Text::_('No initiated'),
-                'open' => Text::_('Open'),
-                'closed' => Text::_('Closed')
+                'unstarted' => Text::_('No iniciada'),
+                'open' => Text::_('Abierta'),
+                'closed' => Text::_('Cerrada')
             );
             $checkers = Model\User::getAll(array('role'=>'checker'));
 

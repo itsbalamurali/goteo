@@ -1,4 +1,22 @@
 <?php
+/*
+ *  Copyright (C) 2012 Platoniq y Fundación Fuentes Abiertas (see README for details)
+ *	This file is part of Goteo.
+ *
+ *  Goteo is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU Affero General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  Goteo is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU Affero General Public License for more details.
+ *
+ *  You should have received a copy of the GNU Affero General Public License
+ *  along with Goteo.  If not, see <http://www.gnu.org/licenses/agpl.txt>.
+ *
+ */
 
 
 namespace Goteo\Controller {
@@ -411,103 +429,103 @@ namespace Goteo\Controller {
 
             $menu = array(
                 'contents' => array(
-                    'label'   => Text::_('Manage Texts and Translations'),
+                    'label'   => Text::_('Gestión de Textos y Traducciones'),
                     'options' => array (
                         'banner' => array(
                             'label' => Text::_('Banners'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
-                                'edit' => array('label' => Text::_('Translating Banner'), 'item' => true)
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
+                                'edit' => array('label' => Text::_('Traduciendo Banner'), 'item' => true)
                             )
                         ),
                         'post' => array(
                             'label' => Text::_('Blog'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
-                                'edit' => array('label' => Text::_('Translating Entry'), 'item' => true)
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
+                                'edit' => array('label' => Text::_('Traduciendo Entrada'), 'item' => true)
                             )
                         ),
                         'texts' => array(
-                            'label' => Text::_('Interface texts'),
+                            'label' => Text::_('Textos interficie'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
-                                'edit' => array('label' => Text::_(' Texto'), 'item' => true)
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
+                                'edit' => array('label' => Text::_('Traduciendo Texto'), 'item' => true)
                             )
                         ),
                         'faq' => array(
                             'label' => Text::_('FAQs'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
-                                'edit' => array('label' => Text::_('Translating Question'), 'item' => true)
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
+                                'edit' => array('label' => Text::_('Traduciendo Pregunta'), 'item' => true)
                             )
                         ),
                         'pages' => array(
                             'label' => Text::_('Contenidos institucionales'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
                                 'edit' => array('label' => Text::_('Traduciendo contenido de Página'), 'item' => true)
                             )
                         ),
                         'category' => array(
                             'label' => Text::_('Categorias e Intereses'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
-                                'edit' => array('label' => Text::_('Translating Category'), 'item' => true)
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
+                                'edit' => array('label' => Text::_('Traduciendo Categoría'), 'item' => true)
                             )
                         ),
                         'license' => array(
-                            'label' => Text::_('Licenses'),
+                            'label' => Text::_('Licencias'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
-                                'edit' => array('label' => Text::_('Translating License'), 'item' => true)
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
+                                'edit' => array('label' => Text::_('Traduciendo Licencia'), 'item' => true)
                             )
                         ),
                         'icon' => array(
-                            'label' => Text::_('Types of Return'),
+                            'label' => Text::_('Tipos de Retorno'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
-                                'edit' => array('label' => Text::_('Translating Type'), 'item' => true)
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
+                                'edit' => array('label' => Text::_('Traduciendo Tipo'), 'item' => true)
                             )
                         ),
                         'tag' => array(
                             'label' => Text::_('Tags de blog'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
                                 'edit' => array('label' => Text::_('Traduciendo Tag'), 'item' => true)
                             )
                         ),
                         'criteria' => array(
-                            'label' => Text::_('Review criteria'),
+                            'label' => Text::_('Criterios de revisión'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
-                                'edit' => array('label' => Text::_('Translating Criteria'), 'item' => true)
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
+                                'edit' => array('label' => Text::_('Traduciendo Criterio'), 'item' => true)
                             )
                         ),
                         'template' => array(
                             'label' => Text::_('Plantillas de email'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
                                 'edit' => array('label' => Text::_('Traduciendo Plantilla'), 'item' => true)
                             )
                         ),
                         'glossary' => array(
-                            'label' => Text::_('Glossary'),
+                            'label' => Text::_('Glosario'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
-                                'edit' => array('label' => Text::_('Translating Term'), 'item' => true)
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
+                                'edit' => array('label' => Text::_('Traduciendo Término'), 'item' => true)
                             )
                         ),
                         'info' => array(
                             'label' => Text::_('Ideas about'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
                                 'edit' => array('label' => Text::_('Traduciendo Idea'), 'item' => true)
                             )
                         ),
                         'worthcracy' => array(
                             'label' => Text::_('Meritocracia'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
                                 'edit' => array('label' => Text::_('Traduciendo Nivel'), 'item' => true)
                             )
                         )
@@ -517,23 +535,23 @@ namespace Goteo\Controller {
                     'label'   => Text::_('Portada'),
                     'options' => array (
                         'news' => array(
-                            'label' => Text::_('Micronews'),
+                            'label' => Text::_('Micronoticias'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
                                 'edit' => array('label' => Text::_('Traduciendo Micronoticia'), 'item' => true)
                             )
                         ),
                         'promote' => array(
                             'label' => Text::_('Proyectos destacados'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
                                 'edit' => array('label' => Text::_('Traduciendo Destacado'), 'item' => true)
                             )
                         ),
                         'patron' => array(
                             'label' => Text::_('Proyectos recomendados'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
                                 'edit' => array('label' => Text::_('Traduciendo recomendado'), 'item' => true)
                             )
                         )
@@ -545,28 +563,28 @@ namespace Goteo\Controller {
                         'data' => array(
                             'label' => Text::_('Descripción'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
                                 'edit' => array('label' => Text::_('Traduciendo'), 'item' => false)
                             )
                         ),
                         'banner' => array(
                             'label' => Text::_('Banners'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
-                                'edit' => array('label' => Text::_('Translating Banner'), 'item' => true)
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
+                                'edit' => array('label' => Text::_('Traduciendo banner'), 'item' => true)
                             )
                         ),
                         'post' => array(
                             'label' => Text::_('Blog'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
-                                'edit' => array('label' => Text::_('Translating Entry'), 'item' => true)
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
+                                'edit' => array('label' => Text::_('Traduciendo entrada'), 'item' => true)
                             )
                         ),
                         'page' => array(
                             'label' => Text::_('Páginas institucionales'),
                             'actions' => array(
-                                'list' => array('label' => Text::_('Listing'), 'item' => false),
+                                'list' => array('label' => Text::_('Listando'), 'item' => false),
                                 'edit' => array('label' => Text::_('Traduciendo página'), 'item' => true)
                             )
                         )

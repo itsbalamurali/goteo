@@ -105,7 +105,7 @@ namespace Goteo\Controller\Admin {
                     }
                     break;
                 case 'add':
-                    // New Entry con wisiwig
+                    // nueva entrada con wisiwig
                     // obtenemos datos basicos
                     $post = new Model\Glossary();
 

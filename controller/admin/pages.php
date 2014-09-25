@@ -105,7 +105,7 @@ namespace Goteo\Controller\Admin {
                     }
 
 
-                    // sino, mostramos para 
+                    // sino, mostramos para editar
                     return new View(
                         'view/admin/index.html.php',
                         array(

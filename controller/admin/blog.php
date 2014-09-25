@@ -140,7 +140,7 @@ namespace Goteo\Controller\Admin {
                         if ($action == 'edit') {
                             Message::Info('La entrada se ha actualizado correctamente');
                         } else {
-                            Message::Info('Se ha añadido una New Entry');
+                            Message::Info('Se ha añadido una nueva entrada');
                             $id = $post->id;
                         }
                         $action = $editing ? 'edit' : 'list';
@@ -149,7 +149,7 @@ namespace Goteo\Controller\Admin {
                             // Evento Feed
                             $log = new Feed();
                             $log->setTarget('goteo', 'blog');
-                            $log->populate('New Entry blog Goteo (admin)', '/admin/blog',
+                            $log->populate('nueva entrada blog Goteo (admin)', '/admin/blog',
                                 \vsprintf('El admin %s ha %s en el blog Goteo la entrada "%s"', array(
                                 Feed::item('user', $_SESSION['user']->name, $_SESSION['user']->id),
                                 Feed::item('relevant', 'Publicado'),
@@ -179,12 +179,12 @@ namespace Goteo\Controller\Admin {
                     // obtenemos los datos
                     $filters['node'] = $node;
                     $show = array(
-                        'all' => 'All existing entries',
-                        'published' => 'Only published in the Blog',
-                        'owned' => 'Only the node itself',
-                        'home' => 'Only cover',
-                        'entries' => 'Only certain node',
-                        'updates' => 'Only Project'
+                        'all' => 'Todas las entradas existentes',
+                        'published' => 'Solamente las publicadas en el blog',
+                        'owned' => 'Solamente las del propio nodo',
+                        'home' => 'Solamente las de portada',
+                        'entries' => 'Solamente las de cierto nodo',
+                        'updates' => 'Solamente las de proyectos'
                     );
 
                     // filtro de blogs de proyectos/nodos
@@ -226,7 +226,7 @@ namespace Goteo\Controller\Admin {
                     );
                     break;
                 case 'add':
-                    // New Entry con wisiwig
+                    // nueva entrada con wisiwig
                     // obtenemos datos basicos
                     $post = new Model\Blog\Post(
                             array(
@@ -239,7 +239,7 @@ namespace Goteo\Controller\Admin {
                             )
                         );
 
-                    $message = 'Añadiendo una New Entry';
+                    $message = 'Añadiendo una nueva entrada';
 
                     return new View(
                         'view/admin/index.html.php',
